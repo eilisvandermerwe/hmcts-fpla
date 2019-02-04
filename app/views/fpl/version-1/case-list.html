@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+
+    <div class="hmcts-filter">
+
+      <div class="hmcts-filter__header">
+
+        <div class="hmcts-filter__header-title">
+          <h2 class="govuk-heading-m">Filters</h2>
+        </div>
+
+      </div>
+
+      <div class="hmcts-filter__content">
+
+        <div class="hmcts-filter__options">
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              Jurisdiction
+            </label>
+            <select class="govuk-select" id="sort" name="sort">
+              <option value="published">Public Law</option>
+            </select>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              Case type
+            </label>
+            <select class="govuk-select" id="sort" name="sort">
+              <option value="published">Public Law</option>
+              <option value="published">Care, supervision and EPOs</option>
+              <option value="published">TRIB Manchester</option>
+            </select>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              State
+            </label>
+            <select class="govuk-select" id="sort" name="sort">
+              <option value="published">Open</option>
+              <option value="published">Submitted</option>
+            </select>
+          </div>
+
+          <br><br>
+
+          <button type="submit" class="govuk-button">
+            Apply
+          </button>
+
+          <button type="submit" class="govuk-button hmcts-button--secondary">
+            Reset
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-column-two-thirds">
+    <button type="submit" class="govuk-button float-right">
+      Create case
+    </button>
+  </div>
+
+</div>
+
+{% endblock %}
