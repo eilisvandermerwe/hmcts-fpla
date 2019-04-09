@@ -1,0 +1,62 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-xl">Set advocates meeting date</span>
+        <h1 class="govuk-heading-xl">Complete task</h1>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="notes">
+            Can you provide more detail?
+          </label>
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8" aria-describedby="more-detail-hint"></textarea>
+        </div>
+
+        <br>
+        <h2 class="govuk-heading-m">Upload file (optional)</h2>
+        <span id="selectfile-hint" class="govuk-hint">
+          You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+        </span>
+        <input class="govuk-file-upload" id="selectfile" name="selectfile" type="file" aria-describedby="selectfile-hint">
+
+        <br><br><br>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="displayname">
+            Name to display for file
+          </label>
+
+
+          <input class="govuk-input" id="displayname" name="displayname" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="notes">
+            Notes (optional)
+          </label>
+
+          <textarea class="govuk-textarea" id="notes" name="notes" rows="5"></textarea>
+        </div>
+
+
+        <a class="govuk-button" href="case-view">Submit</a>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

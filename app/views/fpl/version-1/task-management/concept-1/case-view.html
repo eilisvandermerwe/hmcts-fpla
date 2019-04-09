@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">Case name</h1>
+
+        <div class="govuk-tabs" data-module="tabs">
+      <h2 class="govuk-tabs__title">
+        Contents
+      </h2>
+
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#summary">
+            Summary
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#tasks">
+            Tasks
+          </a>
+        </li>
+      </ul>
+
+      <section class="govuk-tabs__panel" id="summary">
+        <h2 class="govuk-heading-l">Summary of case</h2>
+      </section>
+      
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tasks">
+        <h2 class="govuk-heading-l">Tasks</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Task</th>
+              <th class="govuk-table__header" scope="col">Assigned to</th>
+              <th class="govuk-table__header" scope="col">Due date</th>
+              <th class="govuk-table__header" scope="col">Status</th>
+              <th class="govuk-table__header" scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Draft the Case Management Order</td>
+              <td class="govuk-table__cell">Local Authority</td>
+              <td class="govuk-table__cell">11 April 2019</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag">complete</strong></td>
+              <td class="govuk-table__cell"><a href="">View</a></td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Set date for advocates meeting</td>
+              <td class="govuk-table__cell">Local Authority</td>
+              <td class="govuk-table__cell">11 April 2019</td>
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell"><a href="comply">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+    </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}
