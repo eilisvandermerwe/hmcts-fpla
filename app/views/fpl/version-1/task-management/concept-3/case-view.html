@@ -154,6 +154,26 @@
                     </div>
                   </div>
 
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="task-5">
+                    <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                      Request respondent to attend from prison (production order)
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="task-5">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="contact-by-phone">
+                        Can you provide more detail?
+                      </label>
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8" aria-describedby="more-detail-hint"></textarea>
+                      <h3 class="govuk-heading-s">Upload file (optional)</h3>
+                      <span id="selectfile-hint" class="govuk-hint">
+                        You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                      </span>
+                      <input class="govuk-file-upload" id="selectfile" name="selectfile" type="file" aria-describedby="selectfile-hint">
+                    </div>
+                  </div>
+
 
                 </div>
               </fieldset>
@@ -162,7 +182,7 @@
 
             <a class="govuk-button" href="">Submit</a>
 
-            <h2 class="govuk-heading-l">All completed tasks</h2>
+            <h2 class="govuk-heading-l">All tasks</h2>
             <table class="govuk-table">
               <thead class="govuk-table__head">
                 <tr class="govuk-table__row">
@@ -189,7 +209,19 @@
                   <td class="govuk-table__cell"><strong class="govuk-tag" style="background-color: #bfc1c3;">Incomplete</strong></td>
 
                 </tr>
+
               </tbody>
+
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Arrange an advocate’s meeting</td>
+                  <td class="govuk-table__cell">Child's solicitor</td>
+                  <td class="govuk-table__cell">11 April 2019</td>
+                  <td class="govuk-table__cell"><strong class="govuk-tag" style="background-color: #bfc1c3;">Incomplete</strong></td>
+
+                </tr>
+              </tbody>
+
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
                   <td class="govuk-table__cell">Send parents’ response to threshold statement</td>
@@ -201,8 +233,18 @@
               </tbody>
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">Child’s solicitor</td>
-                  <td class="govuk-table__cell">Child's solicitor</td>
+                  <td class="govuk-table__cell">Get an assessment on mental capacity</td>
+                  <td class="govuk-table__cell">Parent's solicitor</td>
+                  <td class="govuk-table__cell">11 April 2019</td>
+                  <td class="govuk-table__cell"><strong class="govuk-tag" style="background-color: #bfc1c3;">Incomplete</strong></td>
+
+                </tr>
+              </tbody>
+
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Send mental capacity report to the Official Solicitor</td>
+                  <td class="govuk-table__cell">Parent's solicitor</td>
                   <td class="govuk-table__cell">11 April 2019</td>
                   <td class="govuk-table__cell"><strong class="govuk-tag" style="background-color: #bfc1c3;">Incomplete</strong></td>
 
