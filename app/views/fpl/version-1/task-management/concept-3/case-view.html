@@ -45,7 +45,7 @@
         </section>
 
         <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tasks">
-          <h2 class="govuk-heading-l">Tasks</h2>
+          <h2 class="govuk-heading-l">My tasks</h2>
 
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
@@ -53,10 +53,11 @@
                   Select all the tasks you have completed
                 </span>
                 <div class="govuk-checkboxes" data-module="checkboxes">
+
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="citizenship-conditional-1" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional-1">
                     <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-1">
-                      Task 1
+                      Draft the Case Management Order
                     </label>
                   </div>
                   <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-1">
@@ -71,12 +72,12 @@
                       </span>
                       <input class="govuk-file-upload" id="selectfile" name="selectfile" type="file" aria-describedby="selectfile-hint">
                     </div>
-
                   </div>
+
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
                     <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
-                      Task 2
+                      Send application and documents
                     </label>
                   </div>
                   <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-2">
@@ -91,18 +92,18 @@
                       </span>
                       <input class="govuk-file-upload" id="selectfile" name="selectfile" type="file" aria-describedby="selectfile-hint">
                     </div>
-
                   </div>
+
                   <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox" value="text message" data-aria-controls="conditional-citizenship-conditional-3">
-                    <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
-                      Task 3
+                    <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="task-3">
+                    <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                      Send a case summary and draft case management order
                     </label>
                   </div>
-                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-3">
+                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="task-3">
                     <div class="govuk-form-group">
-                      <label class="govuk-label" for="contact-by-text">
-                        Can you provide more detail
+                      <label class="govuk-label" for="contact-by-phone">
+                        Can you provide more detail?
                       </label>
                       <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8" aria-describedby="more-detail-hint"></textarea>
                       <h3 class="govuk-heading-s">Upload file (optional)</h3>
@@ -111,14 +112,104 @@
                       </span>
                       <input class="govuk-file-upload" id="selectfile" name="selectfile" type="file" aria-describedby="selectfile-hint">
                     </div>
-
                   </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="task-4">
+                    <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                      Lodge the bundle
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="task-4">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="contact-by-phone">
+                        Can you provide more detail?
+                      </label>
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8" aria-describedby="more-detail-hint"></textarea>
+                      <h3 class="govuk-heading-s">Upload file (optional)</h3>
+                      <span id="selectfile-hint" class="govuk-hint">
+                        You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                      </span>
+                      <input class="govuk-file-upload" id="selectfile" name="selectfile" type="file" aria-describedby="selectfile-hint">
+                    </div>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="task-5">
+                    <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                      Do forward planning
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="task-5">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="contact-by-phone">
+                        Can you provide more detail?
+                      </label>
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8" aria-describedby="more-detail-hint"></textarea>
+                      <h3 class="govuk-heading-s">Upload file (optional)</h3>
+                      <span id="selectfile-hint" class="govuk-hint">
+                        You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                      </span>
+                      <input class="govuk-file-upload" id="selectfile" name="selectfile" type="file" aria-describedby="selectfile-hint">
+                    </div>
+                  </div>
+
+
                 </div>
               </fieldset>
 
             </div>
 
             <a class="govuk-button" href="">Submit</a>
+
+            <h2 class="govuk-heading-l">All completed tasks</h2>
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="col">Task</th>
+                  <th class="govuk-table__header" scope="col">Assigned to</th>
+                  <th class="govuk-table__header" scope="col">Due date</th>
+                  <th class="govuk-table__header" scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><a href="view-task">Appoint a children’s guardian</a></td>
+                  <td class="govuk-table__cell">Cafcass</td>
+                  <td class="govuk-table__cell">11 April 2019</td>
+                  <td class="govuk-table__cell"><strong class="govuk-tag">complete</strong></td>
+
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Send children’s guardian analysis</td>
+                  <td class="govuk-table__cell">Cafcass</td>
+                  <td class="govuk-table__cell">11 April 2019</td>
+                  <td class="govuk-table__cell"><strong class="govuk-tag" style="background-color: #bfc1c3;">Incomplete</strong></td>
+
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Send parents’ response to threshold statement</td>
+                  <td class="govuk-table__cell">Parent's solicitor</td>
+                  <td class="govuk-table__cell">11 April 2019</td>
+                  <td class="govuk-table__cell"><strong class="govuk-tag" style="background-color: #bfc1c3;">Incomplete</strong></td>
+
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Child’s solicitor</td>
+                  <td class="govuk-table__cell">Child's solicitor</td>
+                  <td class="govuk-table__cell">11 April 2019</td>
+                  <td class="govuk-table__cell"><strong class="govuk-tag" style="background-color: #bfc1c3;">Incomplete</strong></td>
+
+                </tr>
+              </tbody>
+
+            </table>
 
           </section>
 
