@@ -34,6 +34,7 @@
   GOV.UK Prototype Kit
 {% endblock %}
 
+<div class="ccd-container">
 {% block header %}
   {% include "includes/cookie-banner.html" %}
   {# Set serviceName in config.js. #}
@@ -44,6 +45,7 @@
     containerClasses: "govuk-width-container"
   }) }}
 {% endblock %}
+</div>
 
 {% if useAutoStoreData %}
   {% block footer %}
