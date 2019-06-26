@@ -17,16 +17,43 @@ $govuk-global-styles: true;
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
-// Full width
-
 .float-right {
   float:right;
 }
 
-.govuk-width-container {
-  max-width: none !important;
-  margin: 0 10px !important;
+// Full width
+
+// .govuk-width-container {
+//   max-width: none !important;
+//   margin: 0 10px !important;
+// }
+
+// .govuk-header__container {
+//   border-bottom: 10px solid #005ea5 !important;
+// }
+
+// CCD header
+
+.ccd-header {
+  .govuk-header__logo {
+    padding-right: 0px !important;
+  }
+  .govuk-header__logotype-text {
+    font-size: 30px !important;
+  }
+  .govuk-header__link--service-name {
+    font-size: 24px !important;
+  }
+  span {
+    float: right !important;
+    .govuk-header__link {
+      font-size: 16px !important;
+      font-weight: bold !important;
+      padding-left: 10px !important;
+    }
+  }
 }
+
 
 // CCD tables
 

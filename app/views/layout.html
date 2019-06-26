@@ -34,18 +34,29 @@
   GOV.UK Prototype Kit
 {% endblock %}
 
-<div class="ccd-container">
+
 {% block header %}
   {% include "includes/cookie-banner.html" %}
+  {% include "task-management/v1/header.html" %}
   {# Set serviceName in config.js. #}
-  {{ govukHeader({
+  <!-- {{ govukHeader({
     homepageUrl: "/",
     serviceName: serviceName,
     serviceUrl: "/",
-    containerClasses: "govuk-width-container"
-  }) }}
+    containerClasses: "govuk-width-container",
+    navigation: [
+      {
+        href: "#1",
+        text: "Case list"
+      },
+      {
+        href: "#2",
+        text: "Create case"
+      }
+    ]
+  }) }} -->
 {% endblock %}
-</div>
+
 
 {% if useAutoStoreData %}
   {% block footer %}
