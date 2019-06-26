@@ -17,6 +17,8 @@ $govuk-global-styles: true;
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+// Full width
+
 .float-right {
   float:right;
 }
@@ -25,6 +27,8 @@ $govuk-global-styles: true;
   max-width: none !important;
   margin: 0 10px !important;
 }
+
+// CCD tables
 
 .ccd-table {
   border: 1px solid #BFC1C3;
@@ -51,4 +55,33 @@ $govuk-global-styles: true;
     position: relative !important;
     display: inline-block !important;
   }
+}
+
+// Font size to be set to 16px to align with CCD
+
+a, p, caption, td, li, label, select {
+  font-size: 16px !important;
+}
+
+.govuk-heading-xl {
+  font-size: 32px !important;
+  margin-bottom: 20px !important;
+}
+
+// CCD tab styles
+
+.govuk-tabs__tab {
+  background-color: #DEE0E2 !important;
+  color: #3374B0 !important;
+}
+
+.govuk-tabs__tab--selected {
+  background-color: white !important;
+  color: black !important;
+}
+
+.govuk-tabs__panel {
+  border: none !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
