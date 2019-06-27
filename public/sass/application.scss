@@ -21,10 +21,55 @@ $govuk-global-styles: true;
   float:right;
 }
 
+// Full width
+
 .govuk-width-container {
   max-width: none !important;
   margin: 0 10px !important;
 }
+
+// .govuk-header__container {
+//   border-bottom: 10px solid #005ea5 !important;
+// }
+
+// CCD header
+
+.ccd-header {
+  .govuk-header__container {
+    border-bottom: 0px !important;
+  }
+  width: 60% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  .govuk-header__logo {
+    padding-right: 0px !important;
+  }
+  .govuk-header__logotype-text {
+    font-size: 30px !important;
+  }
+  .govuk-header__link--service-name {
+    font-size: 24px !important;
+  }
+  span {
+    float: right !important;
+    .govuk-header__link {
+      font-size: 16px !important;
+      font-weight: bold !important;
+      padding-left: 10px !important;
+    }
+  }
+}
+
+
+.govuk-select {
+  width: 250px !important;
+  // height: 31px !important;
+  border-radius: 3px !important;
+  background-color: white !important;
+}
+
+
+// CCD tables
 
 .ccd-table {
   border: 1px solid #BFC1C3;
@@ -51,4 +96,33 @@ $govuk-global-styles: true;
     position: relative !important;
     display: inline-block !important;
   }
+}
+
+// Font size to be set to 16px to align with CCD
+
+a, p, caption, td, li, label, select {
+  font-size: 16px !important;
+}
+
+.govuk-heading-xl {
+  font-size: 32px !important;
+  margin-bottom: 20px !important;
+}
+
+// CCD tab styles
+
+.govuk-tabs__tab {
+  background-color: #DEE0E2 !important;
+  color: #3374B0 !important;
+}
+
+.govuk-tabs__tab--selected {
+  background-color: white !important;
+  color: black !important;
+}
+
+.govuk-tabs__panel {
+  border: none !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }

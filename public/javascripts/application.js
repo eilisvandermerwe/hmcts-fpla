@@ -7,7 +7,7 @@ if (window.console && window.console.info) {
 
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
-})
+});
 
 $("a.govuk-back-link").click(function() {
     return false;
