@@ -77,9 +77,29 @@ $govuk-global-styles: true;
   padding: 0 15px 0 15px !important;
   p {
     text-align: right;
-    font-size: 18px !important;
-    color: white !important;
     padding-top: 15px !important;
+    a:link {
+      color: white !important;
+      font-size: 18px !important;
+      text-decoration: none;
+    }
+    /* visited link */
+    a:visited {
+      color: white !important;
+      font-size: 18px !important;
+      text-decoration: none;
+    }
+    /* mouse over link */
+    a:hover {
+      color: white !important;
+      font-size: 18px !important;
+      text-decoration: underline;
+    }
+    /* selected link */
+    a:active {
+      color: white !important;
+      font-size: 18px !important;
+    }
   }
 }
 
