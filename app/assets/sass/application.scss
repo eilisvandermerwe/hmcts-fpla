@@ -23,10 +23,10 @@ $govuk-global-styles: true;
 
 // Full width
 
-// .govuk-width-container {
-//   max-width: none !important;
-//   margin: 0 10px !important;
-// }
+.govuk-width-container {
+  max-width: none !important;
+  margin: 0 10px !important;
+}
 
 // .govuk-header__container {
 //   border-bottom: 10px solid #005ea5 !important;
@@ -52,6 +52,14 @@ $govuk-global-styles: true;
       padding-left: 10px !important;
     }
   }
+}
+
+
+.govuk-select {
+  width: 250px !important;
+  // height: 31px !important;
+  border-radius: 3px !important;
+  background-color: white !important;
 }
 
 

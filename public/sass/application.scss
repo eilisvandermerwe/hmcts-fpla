@@ -16,3 +16,39 @@ $govuk-global-styles: true;
 @import "node_modules/@hmcts/frontend/all";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.float-right {
+  float:right;
+}
+
+.govuk-width-container {
+  max-width: none !important;
+  margin: 0 10px !important;
+}
+
+.ccd-table {
+  border: 1px solid #BFC1C3;
+  .ccd-table-head {
+    background-color: #DEE0E2;
+    padding: 10px;
+    border: 1px solid #BFC1C3;
+  }
+  td {
+    padding: 10px;
+  }
+  .table-header {
+    width: 30%;
+  }
+}
+
+.ccd-dropdown {
+  text-align: right;
+  .govuk-label {
+    display: inline;
+    padding-left: 15px;
+  }
+  .govuk-button {
+    position: relative !important;
+    display: inline-block !important;
+  }
+}
