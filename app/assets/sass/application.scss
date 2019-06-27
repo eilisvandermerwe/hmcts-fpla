@@ -103,6 +103,12 @@ $govuk-global-styles: true;
   }
 }
 
+.govuk-phase-banner {
+  width: 60%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 
 .govuk-select {
   width: 250px !important;
