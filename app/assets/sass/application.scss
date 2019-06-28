@@ -23,6 +23,12 @@ $govuk-global-styles: true;
 
 // Full width
 
+.ccd-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 64% !important;
+}
+
 .govuk-width-container {
   max-width: none !important;
   margin: 0 10px !important;
