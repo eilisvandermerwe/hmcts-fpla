@@ -7,112 +7,114 @@
 
 {% block content %}
 <div class="ccd-container">
-<div class="govuk-width-container">
-  <a href="#" class="govuk-back-link">Back</a>
+  <div class="govuk-width-container">
 
-  <main class="govuk-main-wrapper">
+    <a href="#" class="govuk-back-link">Back</a>
 
-    <div class="govuk-grid-row">
+      <main class="govuk-main-wrapper">
 
-      <div class="govuk-grid-column-full">
-        <h1 class="govuk-heading-xl">Complete my tasks</h1>
-        <h1 class="govuk-heading-xl">#1545-3874-6217-4575</h1>
+        <div class="govuk-grid-row">
 
-        <h2 class="govuk-heading-l">My tasks</h2>
+          <div class="govuk-grid-column-full">
 
-        <form action="check-my-answers" method="post" class="form">
+          <h1 class="govuk-heading-xl">Complete my tasks</h1>
+          <br>
+          <h1 class="govuk-heading-xl">#1545-3874-6217-4575</h1>
+          <br>
+          <h2 class="govuk-heading-l">My tasks</h2>
 
-          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-              <h1 class="govuk-fieldset__heading">
-                Serve application and documents
-              </h1>
-            </legend>
-            <p>Can you do this now?</p>
+            <form action="check-my-answers" method="post" class="form">
 
-            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  <h1 class="govuk-fieldset__heading">
+                    Serve application and documents
+                  </h1>
+                </legend>
+                <p>Can you do this now?</p>
 
-              <!-- Yes -->
+                  <div class="govuk-radios govuk-radios--conditional" data-module="radios">
 
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents" type="radio" value="Completed" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents", "Completed") }}>
-                <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes-yes">
-                  Yes
-                </label>
-              </div>
+                    <!-- Yes -->
 
-              <!-- Contidtional yes -->
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents" type="radio" value="Completed" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents", "Completed") }} checked>
+                      <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                        Yes
+                      </label>
+                    </div>
 
-              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
-                <div class="govuk-form-group">
+                    <!-- Contidtional yes -->
 
-                  <label class="govuk-label" for="serve-application-give-details">
-                    Give details
-                  </label>
-                  <input class="govuk-input" id="serve-application-give-details" name="serve-application-details-yes" type="text">
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                      <div class="govuk-form-group">
 
-                  <label class="govuk-label" for="file-upload-1">
-                    <br>
-                    <h3 class="govuk-heading-s">Upload file (Optional)</h3>
-                    <span id="changed-name-hint" class="govuk-hint">
-                      You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
-                    </span>
-                  </label>
+                        <label class="govuk-label" for="serve-application-give-details">
+                          Give details
+                        </label>
+                        <input class="govuk-input" type="text" value="All parties were served on 31st May 2019. {{ data['serve-application-give-details-yes'] }}" name="serve-application-give-details-yes">
 
-                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
-                  <br><br>
+                        <label class="govuk-label" for="file-upload-1">
+                          <br>
+                          <h3 class="govuk-heading-s">Upload file (Optional)</h3>
+                          <span id="changed-name-hint" class="govuk-hint">
+                            You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                          </span>
+                        </label>
 
-                  <label class="govuk-label" for="contact-by-email">
-                    File name
-                  </label>
-                  <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+                        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                        <br><br>
 
-                  <br><br>
+                        <label class="govuk-label" for="contact-by-email">
+                          File name
+                        </label>
+                        <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
 
-                  <label class="govuk-label" for="contact-by-email">
-                    Notes (optional)
-                  </label>
-                  <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+                        <br><br>
 
-                </div>
-              </div>
+                        <label class="govuk-label" for="contact-by-email">
+                          Notes (optional)
+                        </label>
+                        <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
 
-              <!-- No -->
+                      </div>
+                    </div>
 
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="how-contacted-conditional-2" name="serve-application-and-documents" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                  No
-                </label>
-              </div>
+                    <!-- No -->
 
-              <!-- Contidtional no -->
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="how-contacted-conditional-2" name="serve-application-and-documents" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                        No
+                      </label>
+                    </div>
 
-              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="contact-by-phone">
-                    Can you tell us why?
-                  </label>
-                  <input class="govuk-input" id="registration-number" name="serve-application-details-no" type="text">
-                </div>
-              </div>
+                    <!-- Contidtional no -->
+
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-phone">
+                          Can you tell us why?
+                        </label>
+                        <input class="govuk-input" id="registration-number" name="serve-application-details-no" type="text">
+                      </div>
+                    </div>
+
+                  </div>
+                </fieldset>
+
+                <button class="govuk-button">Continue</button>
+
+              </form>
 
             </div>
-          </fieldset>
 
-        <button class="govuk-button">Continue</button>
+          </div>
 
-      </form>
-
-      </div>
-
-
-
+        </main>
 
     </div>
 
-  </main>
-</div>
 </div>
 
 {% endblock %}

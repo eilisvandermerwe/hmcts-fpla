@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-
+<div class="ccd-container">
 <div class="govuk-width-container">
   <a href="#" class="govuk-back-link">Back</a>
 
@@ -15,8 +15,9 @@
       <div class="govuk-grid-column-two-thirds-from-desktop">
 
         <h1 class="govuk-heading-xl">Check your answers</h1>
+        <br>
         <h1 class="govuk-heading-xl">#1545-3874-6217-4575</h1>
-
+        <br>
         <h2 class="govuk-heading-m">Your tasks</h2>
 
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
@@ -28,10 +29,10 @@
               {{ data['serve-application-and-documents'] }}
             </dd>
             <dd class="govuk-summary-list__value">
-              {{ data['serve-application-details-yes'] }}
+              {{ data['serve-application-give-details-yes'] }}
             </dd>
             <dd class="govuk-summary-list__value">
-              <a href="">{{ data['serve-application-details-yes'] }}</a>
+              <a href="">{{ data['file-upload-1'] }}</a>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
@@ -42,7 +43,7 @@
 
         </dl>
 
-        <form action="/form-handler" method="post" novalidate>
+        <form action="case-view" method="post" novalidate>
 
           <input type="hidden" name="answers-checked" value="true">
 
@@ -56,5 +57,5 @@
     </div>
   </main>
 </div>
-
+<div>
 {% endblock %}

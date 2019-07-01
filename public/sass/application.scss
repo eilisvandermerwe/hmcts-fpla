@@ -35,29 +35,78 @@ $govuk-global-styles: true;
 // CCD header
 
 .ccd-header {
-  .govuk-header__container {
-    border-bottom: 0px !important;
-  }
-  width: 60% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  .govuk-header__logo {
-    padding-right: 0px !important;
-  }
   .govuk-header__logotype-text {
-    font-size: 30px !important;
+    padding-left: 10px !important;
   }
-  .govuk-header__link--service-name {
-    font-size: 24px !important;
+  .govuk-header__link {
+    margin-bottom: 0px !important;
   }
-  span {
-    float: right !important;
-    .govuk-header__link {
-      font-size: 16px !important;
+  border-bottom: none !important;
+  .govuk-header__container {
+    .ccd-top-banner {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      width: 60%;
+    }
+    .govuk-header__logo {
+      padding-right: 0px !important;
+    }
+    .govuk-header__logotype-text {
+      font-size: 30px !important;
+    }
+    .govuk-header__link--service-name {
+      font-size: 24px !important;
+    }
+    span {
+      float: right !important;
       font-weight: bold !important;
-      padding-left: 10px !important;
+      .govuk-header__link {
+        font-size: 16px !important;
+        padding-left: 10px !important;
+      }
     }
   }
+}
+
+.ccd-blue-banner {
+  width: 60%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background-color: #005ea5 !important;
+  height: 55px !important;
+  padding: 0 15px 0 15px !important;
+  p {
+    text-align: right;
+    padding-top: 15px !important;
+    a:link {
+      color: white !important;
+      font-size: 18px !important;
+      text-decoration: none;
+    }
+    /* visited link */
+    a:visited {
+      color: white !important;
+      font-size: 18px !important;
+      text-decoration: none;
+    }
+    /* mouse over link */
+    a:hover {
+      color: white !important;
+      font-size: 18px !important;
+      text-decoration: underline;
+    }
+    /* selected link */
+    a:active {
+      color: white !important;
+      font-size: 18px !important;
+    }
+  }
+}
+
+.govuk-phase-banner {
+  width: 60%;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 
