@@ -92,17 +92,23 @@
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
                   <td class="govuk-table__cell">Status</td>
-                  <td class="govuk-table__cell">Complete</td>
+                  <td class="govuk-table__cell">
+                    {% if data['serve-application-give-details-yes'] %}
+                      {{ data['serve-application-give-details-yes'] }}
+                    {% else %}
+                      {{ data['serve-application-give-details-response']}}
+                    {% endif %}
+                  </td>
                 </tr>
               </tbody>
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
                   <td class="govuk-table__cell">Response</td>
                   <td class="govuk-table__cell">
-                    {% if data['serve-application-give-details-yes'] %}
-                      {{ data['serve-application-give-details-yes'] }}
+                    {% if data['serve-application-and-documents-status'] %}
+                      {{ data['serve-application-and-documents-status'] }}
                     {% else %}
-                      {{ data['serve-application-give-details-response']}}
+                      {{ data['serve-application-and-documents-status-original']}}
                     {% endif %}
                   </td>
                 </tr>
