@@ -23,17 +23,21 @@
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Name
+              Name {{ data['val']}}
             </dt>
             <dd class="govuk-summary-list__value">
               {{ data['serve-application-and-documents-status'] }}
             </dd>
-            <dd class="govuk-summary-list__value">
-              {{ data['serve-application-give-details-yes'] }}
-            </dd>
-            <dd class="govuk-summary-list__value">
-              <a href="">{{ data['file-upload-1'] }}</a>
-            </dd>
+            {% if data['serve-application-and-documents-status'] == "Complete" %}
+              <dd class="govuk-summary-list__value">
+                {{ data['serve-application-give-details-yes'] }}
+              </dd>
+            {% endif %}
+            {% if data['serve-application-and-documents-status'] == "Complete" %}
+              <dd class="govuk-summary-list__value">
+                <a href="">{{ data['file-upload-1'] }}</a>
+              </dd>
+            {% endif %}
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
                 Change<span class="govuk-visually-hidden"> name</span>
