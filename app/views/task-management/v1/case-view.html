@@ -98,7 +98,13 @@
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
                   <td class="govuk-table__cell">Response</td>
-                  <td class="govuk-table__cell" value="All parties were served on 31st May 2019.">{{ data['serve-application-give-details-yes'] }}</td>
+                  <td class="govuk-table__cell">
+                    {% if data['serve-application-give-details-yes'] %}
+                      {{ data['serve-application-give-details-yes'] }}
+                    {% else %}
+                      {{ data['serve-application-give-details-response']}}
+                    {% endif %}
+                  </td>
                 </tr>
               </tbody>
               <tbody class="govuk-table__body">
