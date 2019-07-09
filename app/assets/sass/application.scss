@@ -111,10 +111,12 @@ $govuk-global-styles: true;
 
 .header-admin {
   .govuk-header__content {
+    width: 100% !important;
     span {
       text-align: right !important;
       float: right !important;
       padding-top: 5px !important;
+      padding-right: 10px !important;
     }
     .govuk-header__link--service-name {
       padding-bottom: 10px !important;
