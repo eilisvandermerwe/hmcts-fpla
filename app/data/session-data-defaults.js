@@ -20,6 +20,7 @@ Example usage:
 module.exports = {
   "serve-application-give-details-response": "All parties were served on 31st May 2019.",
   "serve-application-and-documents-status-original": "Complete",
+  "file-upload-original": "file.pdf",
 
 
 
