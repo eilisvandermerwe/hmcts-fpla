@@ -110,6 +110,12 @@ $govuk-global-styles: true;
 }
 
 .header-admin {
+  .govuk-phase-banner {
+    width: 100% !important;
+    p {
+      padding-left: 25px !important;
+    }
+  }
   .govuk-header__content {
     width: 100% !important;
     span {
