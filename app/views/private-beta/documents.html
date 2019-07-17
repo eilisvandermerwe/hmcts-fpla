@@ -1,0 +1,384 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container documents">
+  <div class="govuk-width-container">
+
+    <a href="#" class="govuk-back-link">Back</a>
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+          <h1 class="govuk-heading-xl">Documents</h1>
+          <br>
+          <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+          <br>
+          <p>You must upload these documents if possible. Give the reason and date you expect to provide it if you don’t have a document yet.</p>
+
+          <h3 class="govuk-heading-m">1. Social work chronology (Optional)</h3>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label upload-file" for="file-upload-1">
+                Upload a file (Optional)
+                <br><br>
+              </label>
+              <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+            </div>
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                  <p class="govuk-fieldset__heading">Document status (Optional)</p>
+                </legend>
+
+                <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+                      In social work evidence template (SWET)
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                      To follow
+                    </label>
+                  </div>
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="contact-by-phone">
+                        Explain why the document isn't included and when you expect to provide it. (Optional)
+                      </label>
+                      <input class="govuk-input" id="contact-by-phone" name="contact-by-phone" type="tel">
+                    </div>
+
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-3">
+                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                      Attached
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+
+            <h3 class="govuk-heading-m">2. Social work statement and genogram (Optional)</h3>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label upload-file" for="file-upload-1">
+                  Upload a file (Optional)
+                  <br><br>
+                </label>
+                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+              </div>
+
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <p class="govuk-fieldset__heading">Document status (Optional)</p>
+                  </legend>
+
+                  <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+                        In social work evidence template (SWET)
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                        To follow
+                      </label>
+                    </div>
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-phone">
+                          Explain why the document isn't included and when you expect to provide it. (Optional)
+                        </label>
+                        <input class="govuk-input" id="contact-by-phone" name="contact-by-phone" type="tel">
+                      </div>
+
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-3">
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                        Attached
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+
+
+              <h3 class="govuk-heading-m">3. Social work assessment (Optional)</h3>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label upload-file" for="file-upload-1">
+                    Upload a file (Optional)
+                    <br><br>
+                  </label>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                </div>
+
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                      <p class="govuk-fieldset__heading">Document status (Optional)</p>
+                    </legend>
+
+                    <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+                          In social work evidence template (SWET)
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          To follow
+                        </label>
+                      </div>
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="contact-by-phone">
+                            Explain why the document isn't included and when you expect to provide it. (Optional)
+                          </label>
+                          <input class="govuk-input" id="contact-by-phone" name="contact-by-phone" type="tel">
+                        </div>
+
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-3">
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                          Attached
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+
+                <h3 class="govuk-heading-m">4. Care plan (Optional)</h3>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label upload-file" for="file-upload-1">
+                      Upload a file (Optional)
+                      <br><br>
+                    </label>
+                    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                        <p class="govuk-fieldset__heading">Document status (Optional)</p>
+                      </legend>
+
+                      <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+                          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+                            In social work evidence template (SWET)
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                            To follow
+                          </label>
+                        </div>
+                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="contact-by-phone">
+                              Explain why the document isn't included and when you expect to provide it. (Optional)
+                            </label>
+                            <input class="govuk-input" id="contact-by-phone" name="contact-by-phone" type="tel">
+                          </div>
+
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-3">
+                          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                            Attached
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+
+                  <h3 class="govuk-heading-m">5. Social work evidence template (SWET) (Optional)</h3>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label upload-file" for="file-upload-1">
+                        Upload a file (Optional)
+                        <br><br>
+                      </label>
+                      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                          <p class="govuk-fieldset__heading">Document status (Optional)</p>
+                        </legend>
+
+                        <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                            <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                              To follow
+                            </label>
+                          </div>
+                          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label" for="contact-by-phone">
+                                Explain why the document isn't included and when you expect to provide it. (Optional)
+                              </label>
+                              <input class="govuk-input" id="contact-by-phone" name="contact-by-phone" type="tel">
+                            </div>
+
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-3">
+                            <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                              Attached
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+
+                    <h3 class="govuk-heading-m">6. Threshold document (Optional)</h3>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label upload-file" for="file-upload-1">
+                          Upload a file (Optional)
+                          <br><br>
+                        </label>
+                        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                            <p class="govuk-fieldset__heading">Document status (Optional)</p>
+                          </legend>
+
+                          <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+                              <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+                                In social work evidence template (SWET)
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                              <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                                To follow
+                              </label>
+                            </div>
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label" for="contact-by-phone">
+                                  Explain why the document isn't included and when you expect to provide it. (Optional)
+                                </label>
+                                <input class="govuk-input" id="contact-by-phone" name="contact-by-phone" type="tel">
+                              </div>
+
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-3">
+                              <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                                Attached
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+
+                      <h3 class="govuk-heading-m">7. Checklist document (Optional)</h3>
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label upload-file" for="file-upload-1">
+                            Upload a file (Optional)
+                            <br><br>
+                          </label>
+                          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                        </div>
+
+                        <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                              <p class="govuk-fieldset__heading">Document status (Optional)</p>
+                            </legend>
+
+                            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+                                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+                                  In social work evidence template (SWET)
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                                  To follow
+                                </label>
+                              </div>
+                              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label" for="contact-by-phone">
+                                    Explain why the document isn't included and when you expect to provide it. (Optional)
+                                  </label>
+                                  <input class="govuk-input" id="contact-by-phone" name="contact-by-phone" type="tel">
+                                </div>
+
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-3">
+                                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                                  Attached
+                                </label>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+
+
+                        <div class="govuk-inset-text">
+                          <h3 class="govuk-heading-m">Additional documents (Optional)</h3>
+                          <button class="govuk-button">Add new</button>
+                        </div>
+
+
+
+
+            <button class="govuk-button">Continue</button>
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+{% endblock %}

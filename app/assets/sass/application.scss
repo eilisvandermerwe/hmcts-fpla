@@ -221,3 +221,15 @@ a, p, caption, td, li, label, select {
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
+
+
+// Documents
+
+.documents {
+  .govuk-file-upload {
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+  }
+}
