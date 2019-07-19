@@ -233,3 +233,38 @@ a, p, caption, td, li, label, select {
     width: 100%;
   }
 }
+
+// .history-table {
+//   th {
+//   }
+//   .govuk-table__body {
+//     .govuk-table__row {
+//       td {
+//         height: 50px !important;
+//       }
+//   }
+// }
+
+.history-table {
+.history-row:hover {
+  background-color: #ffa;
+}
+
+td, th {
+  position: relative;
+}
+td {
+  height: 70px;
+}
+td:hover::after{
+  content: "";
+  position: absolute;
+  background-color: #ffa;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}
+
+}
