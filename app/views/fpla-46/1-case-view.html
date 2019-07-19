@@ -1,0 +1,77 @@
+
+{% extends "layout-admin.html" %}
+
+<!-- <link rel="stylesheet" type="text/css" href="public/stylesheets/full-width.css"> -->
+
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">#1545-3874-6217-4575</h1>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <div class="govuk-form-group ccd-dropdown">
+          <label class="govuk-label" for="sort">
+            Next step
+          </label>
+          <select class="govuk-select" id="sort" name="sort">
+              <option value="">Select action</option>
+            <option value="">Send to gatekeeper</option>
+            <option value="">Documents</option>
+            <option value="">Add case number</option>
+            <option value="">Add hearing details</option>
+          </select>
+          <a href="complete-tasks" class="govuk-button">Go</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div class="govuk-tabs" data-module="tabs">
+
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#summary">
+                Orders and hearing
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#documents">
+                Documents
+              </a>
+            </li>
+
+          </ul>
+
+          <section class="govuk-tabs__panel" id="summary">
+
+
+          </section>
+
+          <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="documents">
+
+
+          </section>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}
