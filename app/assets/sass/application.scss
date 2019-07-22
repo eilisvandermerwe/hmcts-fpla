@@ -246,25 +246,18 @@ a, p, caption, td, li, label, select {
 // }
 
 .history-table {
-.history-row:hover {
-  background-color: #ffa;
-}
-
-td, th {
+  .history-row {
+  border-left: 10px solid white;
+  }
+  .history-row:hover {
+  background: rgba(43, 140, 196, 0.1);
+  border-left: 10px solid #2b8cc4;
+  }
+  td, th {
   position: relative;
-}
-td {
+  }
+  td {
   height: 70px;
-}
-td:hover::after{
-  content: "";
-  position: absolute;
-  background-color: #ffa;
-  left: 0;
-  top: -5000px;
-  height: 10000px;
-  width: 100%;
-  z-index: -1;
-}
-
+  padding-left: 20px;
+  }
 }
