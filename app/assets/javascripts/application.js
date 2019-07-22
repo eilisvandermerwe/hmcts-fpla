@@ -17,3 +17,16 @@ $("a.govuk-back-link").click(function(){
   parent.history.back();
   return false;
 });
+
+$(function(){
+
+$("table td").click(function(){
+
+    event.preventDefault();
+        $('table td').removeClass('current');
+        $(this).addClass("current");
+        var tab = $(this).parent().attr("data-tab");
+        $('.details-content').hide();
+        $('#' + tab).show();
+    });
+});

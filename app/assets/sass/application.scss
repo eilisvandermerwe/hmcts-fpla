@@ -247,17 +247,33 @@ a, p, caption, td, li, label, select {
 
 .history-table {
   .history-row {
-  border-left: 10px solid white;
+    border-left: 10px solid white;
   }
   .history-row:hover {
-  background: rgba(43, 140, 196, 0.1);
-  border-left: 10px solid #2b8cc4;
-  }
-  td, th {
-  position: relative;
+    background: rgba(43, 140, 196, 0.1);
+    border-left: 10px solid #2b8cc4;
   }
   td {
-  height: 70px;
-  padding-left: 20px;
+    height: 70px;
+    padding-left: 10px;
   }
+}
+
+.details-table {
+  border: 1px solid #bfc1c3;
+  padding: 10px;
+  td {
+    border: none;
+    height: 50px;
+  }
+}
+
+#one {
+  display: none;
+}
+#two {
+  display: none;
+}
+#three {
+  display: none;
 }

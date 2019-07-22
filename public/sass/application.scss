@@ -221,3 +221,56 @@ a, p, caption, td, li, label, select {
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
+
+
+// Documents
+
+.documents {
+  .govuk-file-upload {
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+  }
+}
+
+// .history-table {
+//   th {
+//   }
+//   .govuk-table__body {
+//     .govuk-table__row {
+//       td {
+//         height: 50px !important;
+//       }
+//   }
+// }
+
+.history-table {
+  .history-row {
+  border-left: 10px solid white;
+  }
+  .history-row:hover {
+  background: rgba(43, 140, 196, 0.1);
+  border-left: 10px solid #2b8cc4;
+  }
+  td, th {
+  position: relative;
+  }
+  td {
+  height: 70px;
+  padding-left: 20px;
+  }
+}
+
+.details-table {
+  border: 1px solid #bfc1c3;
+  padding: 10px;
+  td {
+    border: none;
+    height: 50px;
+  }
+}
+
+#one {
+  display: none;
+}
