@@ -30,3 +30,10 @@ $("table td").click(function(){
         $('#' + tab).show();
     });
 });
+
+// $('table tr').each(function(a,b){
+//     $(b).click(function(){
+//          $('table tr').css('background','#ffffff');
+//          $(this).css('background','#ff0000');
+//     });
+// });

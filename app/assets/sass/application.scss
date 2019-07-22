@@ -253,6 +253,9 @@ a, p, caption, td, li, label, select {
     background: rgba(43, 140, 196, 0.1);
     border-left: 10px solid #2b8cc4;
   }
+  .history-row:focus {
+    background: red !important;
+  }
   td {
     height: 70px;
     padding-left: 10px;
