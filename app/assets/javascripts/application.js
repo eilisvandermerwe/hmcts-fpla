@@ -23,17 +23,13 @@ $(function(){
 $("table td").click(function(){
 
     event.preventDefault();
-        $('table td').removeClass('current');
-        $(this).addClass("current");
         var tab = $(this).parent().attr("data-tab");
         $('.details-content').hide();
         $('#' + tab).show();
     });
 });
 
-// $('table tr').each(function(a,b){
-//     $(b).click(function(){
-//          $('table tr').css('background','#ffffff');
-//          $(this).css('background','#ff0000');
-//     });
-// });
+$('#history-row-click tr').on('click', function(){
+    $('#history-row-click tr').removeClass('active');
+    $(this).addClass('active');
+});

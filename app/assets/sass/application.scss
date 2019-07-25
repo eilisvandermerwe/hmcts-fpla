@@ -249,15 +249,16 @@ a, p, caption, td, li, label, select {
   .history-row {
     border-left: 10px solid white;
   }
-  .history-row:hover {
+  .active {
     background: rgba(43, 140, 196, 0.1);
     border-left: 10px solid #2b8cc4;
   }
-  .history-row:focus {
-    background: red !important;
+  .history-row:hover {
+    border-left: 10px solid #2b8cc4;
+    background-color: #f8f8f8;
   }
   td {
-    height: 70px;
+    height: 40px;
     padding-left: 10px;
   }
 }
@@ -271,9 +272,6 @@ a, p, caption, td, li, label, select {
   }
 }
 
-#one {
-  display: none;
-}
 #two {
   display: none;
 }

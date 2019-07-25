@@ -22,23 +22,12 @@
 
                 <form action="ccd-buffer" method="post" class="form">
 
-                  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="contact-by-phone">
-                        Venue
-                      </label>
-                      <input class="govuk-input" id="registration-number" name="hearing-venue" type="text">
-                    </div>
-                  </fieldset>
-
-                  <!-- <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="contact-by-phone">
-                        Date
-                      </label>
-                      <input class="govuk-input" id="registration-number" name="hearing-date" type="text">
-                    </div>
-                  </fieldset> -->
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-20">
+                      Venue
+                    </label>
+                    <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text">
+                  </div>
 
                   <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
@@ -46,7 +35,7 @@
                         Date
                       </label>
                       <span id="passport-issued-hint" class="govuk-hint">
-                        For example, 27 3 2007
+                        For example, 27 09 2019
                       </span>
                       <div class="govuk-date-input" id="passport-issued">
                         <div class="govuk-date-input__item">
@@ -77,14 +66,15 @@
                     </fieldset>
                   </div>
 
-                  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="contact-by-phone">
-                        Time of hearing
-                      </label>
-                      <input class="govuk-input" id="registration-number" name="hearing-start" type="text">
-                    </div>
-                  </fieldset>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-10">
+                      Time
+                    </label>
+                    <span id="passport-issued-hint" class="govuk-hint">
+                      For example, 2:30pm
+                    </span>
+                    <input class="govuk-input govuk-input--width-10" id="width-10" name="hearing-start" type="text">
+                  </div>
 
                 <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
                 <button class="govuk-button">Continue</button>
