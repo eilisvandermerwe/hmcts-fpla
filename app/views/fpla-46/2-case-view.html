@@ -44,13 +44,13 @@
 
           <ul class="govuk-tabs__list">
             <li class="govuk-tabs__list-item">
-              <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#history">
-                History
+              <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#overview">
+                Overview
               </a>
             </li>
             <li class="govuk-tabs__list-item">
-              <a class="govuk-tabs__tab" href="#hearing-details">
-                Case summary
+              <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#history">
+                History
               </a>
             </li>
             <li class="govuk-tabs__list-item">
@@ -75,6 +75,83 @@
             </li>
           </ul>
 
+          <section class="govuk-tabs__panel" id="overview">
+
+            <p>The case management hearing will be on 20 June 2019 at 3:30pm. The expected length of hearing  is 2 hours.<p>
+            <p>The 26 week time limit expires on 1 September 2019.</p>
+            <p>The case management judge is Circuit Judge Malcolm Sharpe.</p>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Upcoming hearing details</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Venue</td>
+                  <td class="govuk-table__cell">{{ data['hearing-venue'] }}</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Date</td>
+                  <td class="govuk-table__cell">{{ data['hearing-date'] }}</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Pre-hearing attendance</td>
+                  <td class="govuk-table__cell">** need to do some clever calculations</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Time of hearing</td>
+                  <td class="govuk-table__cell">{{ data['hearing-start'] }}</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Children in the case</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Jim Reeves</td>
+                  <td class="govuk-table__cell">boy</td>
+                  <td class="govuk-table__cell">date of birth 9 April 2005</td>
+                  <td class="govuk-table__cell">Age 13</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">Beth Reeves</td>
+                  <td class="govuk-table__cell">girl</td>
+                  <td class="govuk-table__cell">date of birth 6 November 2018</td>
+                  <td class="govuk-table__cell">Age 6 months</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Parties in the case</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Applicant</th>
+                  <td class="govuk-table__cell">London Borough of Southwark</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">First respondent</th>
+                  <td class="govuk-table__cell">Isabella Reeves</td>
+                </tr>
+              </tbody><tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Second respondent</th>
+                  <td class="govuk-table__cell">Rob Reeves</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </section>
+
           <section class="govuk-tabs__panel" id="history">
 
           <div class="govuk-grid-row">
@@ -89,11 +166,11 @@
                     <th class="govuk-table__header" scope="col">Author</th>
                   </tr>
                 </thead>
-                <tbody class="govuk-table__body">
-                  <tr class="govuk-table__row history-row" data-tab="three">
+                <tbody class="govuk-table__body" id="history-row-click">
+                  <tr class="govuk-table__row history-row active" data-tab="three">
                     <td class="govuk-table__cell"><a href="">Add hearing details</a></td>
-                    <td class="govuk-table__cell">22 Jul 2019 4:08 PM</td>
-                    <td class="govuk-table__cell">HMCTS admin</td>
+                    <td class="govuk-table__cell">25 Jul 2019 14:04 30 AM</td>
+                    <td class="govuk-table__cell">Author</td>
                   </tr>
                   <tr class="govuk-table__row history-row" data-tab="one">
                     <td class="govuk-table__cell"><a href="">Open case</a></td>
@@ -101,6 +178,11 @@
                     <td class="govuk-table__cell">Tester TESTER</td>
                   </tr>
                   <tr class="govuk-table__row history-row" data-tab="two">
+                    <td class="govuk-table__cell"><a href="">Event name</a></td>
+                    <td class="govuk-table__cell">Date</td>
+                    <td class="govuk-table__cell">Author</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row" data-tab="three">
                     <td class="govuk-table__cell"><a href="">Event name</a></td>
                     <td class="govuk-table__cell">Date</td>
                     <td class="govuk-table__cell">Author</td>
@@ -237,38 +319,6 @@
           </section>
 
           <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="documents">
-
-          </section>
-
-          <section class="govuk-tabs__panel" id="hearing-details">
-
-            <table class="govuk-table ccd-table">
-              <caption class="govuk-table__caption ccd-table-head">Hearing details</caption>
-              <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell table-header">Venue</td>
-                  <td class="govuk-table__cell">{{ data['hearing-venue'] }}</td>
-                </tr>
-              </tbody>
-              <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">Date</td>
-                  <td class="govuk-table__cell">{{ data['hearing-date'] }}</td>
-                </tr>
-              </tbody>
-              <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">Pre-hearing attendance</td>
-                  <td class="govuk-table__cell">** need to do some clever calculations</td>
-                </tr>
-              </tbody>
-              <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell">Time of hearing</td>
-                  <td class="govuk-table__cell">{{ data['hearing-start'] }}</td>
-                </tr>
-              </tbody>
-            </table>
 
           </section>
 
