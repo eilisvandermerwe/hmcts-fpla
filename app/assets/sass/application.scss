@@ -168,11 +168,13 @@ $govuk-global-styles: true;
 
 .ccd-table {
   border: 1px solid #BFC1C3;
+  width: 100% !important;
   .ccd-table-head {
     background-color: #DEE0E2;
     padding: 10px;
     border: 1px solid #BFC1C3;
   }
+
   th{
     font-size: 16px !important;
     padding: 10px;
@@ -182,6 +184,13 @@ $govuk-global-styles: true;
   }
   .table-header {
     width: 30%;
+  }
+}
+
+.nested-row {
+  margin: 20px !important;
+  th {
+    background-color: #DEE0E2;
   }
 }
 
