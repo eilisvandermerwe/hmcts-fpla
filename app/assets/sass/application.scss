@@ -178,6 +178,8 @@ $govuk-global-styles: true;
   th{
     font-size: 16px !important;
     padding: 10px;
+    font-weight: normal;
+    width: 450px;
   }
   td {
     padding: 10px;
@@ -191,6 +193,7 @@ $govuk-global-styles: true;
   margin: 20px !important;
   th {
     background-color: #DEE0E2;
+    width: 600px;
   }
 }
 

@@ -15,27 +15,29 @@
 
           <div class="govuk-grid-column-two-thirds">
 
-              <h1 class="govuk-heading-xl">Add hearing details</h1>
+              <h1 class="govuk-heading-xl">Children</h1>
               <br>
               <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
               <br>
+
+              <h3 class="govuk-heading-m">Children (Optional)</h3>
+              <h3 class="govuk-heading-m">Child 1 (Optional)</h3>
 
                 <form action="ccd-buffer" method="post" class="form">
 
                   <div class="govuk-form-group">
                     <label class="govuk-label" for="width-20">
-                      Venue
+                      Child's full name (Optional)
                     </label>
-                    <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text">
+                    <input class="govuk-input" type="text" name="" value="Jim Young">
                   </div>
-
                   <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
                       <label class="govuk-label" for="contact-by-phone">
-                        Date
+                        Date of birth
                       </label>
-                      <span id="passport-issued-hint" class="govuk-hint">
-                        For example, 27 09 2019
+                      <span id="" class="govuk-hint">
+                        For example, 31 3 2016
                       </span>
                       <div class="govuk-date-input" id="passport-issued">
                         <div class="govuk-date-input__item">
@@ -43,7 +45,7 @@
                             <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
                               Day
                             </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*">
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="9">
                           </div>
                         </div>
                         <div class="govuk-date-input__item">
@@ -51,7 +53,7 @@
                             <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
                               Month
                             </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*">
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="4">
                           </div>
                         </div>
                         <div class="govuk-date-input__item">
@@ -59,21 +61,314 @@
                             <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
                               Year
                             </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*">
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="2005">
                           </div>
                         </div>
                       </div>
                     </fieldset>
                   </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                      Gender (Optional)
+                    </label>
+                    <select class="govuk-select" id="sort" name="sort"  >
+                      <option value="published">Boy</option>
+                      <option value="published">Girl</option>
+                      <option value="published">Other</option>
+                    </select>
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                      Describe child's situation (Optional)
+                    </label>
+                    <select class="govuk-select" id="sort" name="sort">
+                      <option value="published">Other</option>
+                      <option value="published">In hospital and soon to be discharged</option>
+                      <option value="published">Living with her family or friends</option>
+                      <option value="published">Removed by Police, powers ending soon</option>
+                      <option value="published">Voluntarily in section 20 care order</option>
+                    </select>
+                  </div>
+                  <div class="govuk-inset-text">
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                        <label class="govuk-label" for="contact-by-phone">
+                          What date did they start living here?
+                        </label>
+                        <span id="" class="govuk-hint">
+                          For example, 31 3 2016
+                        </span>
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="9">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="4">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="2005">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <h3 class="govuk-heading-m">Current address (Optional)</h3>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        Enter a UK postcode
+                      </label>
+                      <input class="govuk-input" type="text" name="" value="BT7 1NT">
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="sort">
+                        Select an address
+                      </label>
+                      <select class="govuk-select" id="sort" name="sort">
+                        <option value="published">3, Upper Cresent, Belfast</option>
+                      </select>
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        Building and street (Optional)
+                      </label>
+                      <input class="govuk-input" type="text" name="" value="3">
+                      <br><br>
+                      <input class="govuk-input" type="text" name="" value="Upper Cresent">
+                      <br><br>
+                      <input class="govuk-input" type="text" name="" value="">
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        Town or City (Optional)
+                      </label>
+                      <input class="govuk-input" type="text" name="" value="Belfast">
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        County (Optional)
+                      </label>
+                      <input class="govuk-input" type="text" name="" value="">
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        Postcode/Zipcode (Optional)
+                      </label>
+                      <input class="govuk-input" type="text" name="" value="BT7 1NT">
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        Country (Optional)
+                      </label>
+                      <input class="govuk-input" type="text" name="" value="United Kingdom">
+                    </div>
+                  </div>
 
                   <div class="govuk-form-group">
-                    <label class="govuk-label" for="width-10">
-                      Time
+                    <label class="govuk-label" for="width-20">
+                      Key dates for this child (Optional)
                     </label>
-                    <span id="passport-issued-hint" class="govuk-hint">
-                      For example, 2:30pm
+                    <span id="" class="govuk-hint">
+                      List any events HMCTS will need to take into account when scheduling hearings. For example, child starting primary school or taking GCSEs.
                     </span>
-                    <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text">
+                    <input class="govuk-input" type="text" value="" name="">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-20">
+                      Brief summary of care and contact plan (Optional)
+                    </label>
+                    <span id="" class="govuk-hint">
+                      For example, place baby in local authority foster care until further assessments are completed. Supervised contact for parents will be arranged.
+                    </span>
+                    <input class="govuk-input" type="text" value="" name="">
+                  </div>
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                      <label class="govuk-label" for="width-20">
+                        Are you considering adoption at this stage (Optional)
+                      </label>
+                      <div class="govuk-radios govuk-radios--inline">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                          <label class="govuk-label govuk-radios__label" for="changed-name">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                            No
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-20">
+                      Mother's full name (Optional)
+                    </label>
+                    <input class="govuk-input" type="text" value="" name="">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-20">
+                      Father's full name (Optional)
+                    </label>
+                    <input class="govuk-input" type="text" value="" name="">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                      Does the father have parental responsibility? (Optional)
+                    </label>
+                    <select class="govuk-select" id="sort" name="sort">
+                      <option value="published">Don't know</option>
+                      <option value="published">No</option>
+                      <option value="published">Yes</option>
+                    </select>
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-20">
+                      Name of social worker (Optional)
+                    </label>
+                    <input class="govuk-input" type="text" value="" name="">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-20">
+                      Social words telephone number (Optional)
+                    </label>
+                    <input class="govuk-input" type="text" value="" name="">
+                  </div>
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                      <label class="govuk-label" for="width-20">
+                        Does the child have any additional needs? (Optional)
+                      </label>
+                      <span id="" class="govuk-hint">
+                        For example, child has severe autism and leaning disabilities. Special needs for autism should be taken into account.
+                      </span>
+                      <div class="govuk-radios govuk-radios--inline">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                          <label class="govuk-label govuk-radios__label" for="changed-name">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                            No
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+                  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+                    <p>Do you need contact details hidden from other parties? (Optional)</p>
+
+                      <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                        <!-- Yes -->
+
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents-status", "Complete") }}>
+                          <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                            Yes
+                          </label>
+                        </div>
+
+                        <!-- Contidtional yes -->
+
+                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                          <div class="govuk-form-group">
+
+                            <label class="govuk-label" for="serve-application-give-details">
+                              Give details (Optional)
+                            </label>
+
+                              <input class="govuk-input" type="text" value="" name="serve-application-give-details-yes">
+
+                          </div>
+                        </div>
+
+                        <!-- No -->
+
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" {{ checked("serve-application-and-documents-status", "Incomplete") }} checked>
+                          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                            No
+                          </label>
+                        </div>
+
+                        <br>
+
+                        <!-- Contidtional no -->
+
+                        <!-- <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="contact-by-phone">
+                              Can you tell us why?
+                            </label>
+                            <input class="govuk-input" id="registration-number" name="serve-application-details-no" type="text">
+                          </div>
+                        </div> -->
+
+                      </div>
+                    </fieldset>
+
+                  <h3 class="govuk-heading-m">Ability to take part in proceedings (Optional)</h3>
+
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <label class="govuk-label" for="width-20">
+                        Do you believe this child will have problems with litigation capacity (understanding what’s happening in the case)? (Optional)
+                      </label>
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                            Don't know
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                            No
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                            Yes
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+
+
+                  <div class="govuk-inset-text">
+                    <h3 class="govuk-heading-m">Additional children (Optional)</h3>
+                    <button class="govuk-button" onclick="doMath();" >Add new</button>
                   </div>
 
                 <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
@@ -81,7 +376,11 @@
 
                 <p><a href="">Cancel</a></p>
 
+
               </form>
+
+
+
 
             </div>
 
