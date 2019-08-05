@@ -306,3 +306,12 @@ a, p, caption, td, li, label, select {
     display: none;
   }
 }
+
+
+.documents {
+  .govuk-select {
+    width: 100% !important;
+    border-radius: 3px !important;
+    background-color: white !important;
+  }
+}
