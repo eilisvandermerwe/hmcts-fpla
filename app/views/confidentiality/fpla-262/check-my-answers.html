@@ -1,5 +1,5 @@
 
-{% extends "layout.html" %}
+{% extends "layout-admin.html" %}
 
 {% block pageTitle %}
   GOV.UK Prototype Kit
@@ -7,59 +7,47 @@
 
 {% block content %}
 <div class="ccd-container">
-<div class="govuk-width-container">
-  <a href="#" class="govuk-back-link">Back</a>
+  <div class="govuk-width-container">
 
-  <main class="govuk-main-wrapper " id="main-content" role="main">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds-from-desktop">
+      <main class="govuk-main-wrapper">
 
-        <h1 class="govuk-heading-xl">Check your answers</h1>
-        <br>
-        <h1 class="govuk-heading-xl">#1545-3874-6217-4575</h1>
-        <br>
-        <h2 class="govuk-heading-m">Your tasks</h2>
+        <div class="govuk-grid-row">
 
-        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Serve application and documents
-            </dt>
-            <dd class="govuk-summary-list__value">
-              {{ data['serve-application-and-documents-status'] }}
-            </dd>
-            {% if data['serve-application-and-documents-status'] == "Complete" %}
-              <dd class="govuk-summary-list__value">
-                {{ data['serve-application-give-details-yes'] }}
-              </dd>
-            {% endif %}
-            {% if data['serve-application-and-documents-status'] == "Complete" %}
-              <dd class="govuk-summary-list__value">
-                <a href="">{{ data['file-upload-1'] }}</a>
-              </dd>
-            {% endif %}
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> name</span>
-              </a>
-            </dd>
+          <div class="govuk-grid-column-two-thirds">
+
+              <h1 class="govuk-heading-xl">Documents</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+              <br>
+
+                <form method="post" class="form">
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-20">
+                      Event summary (Optional)
+                    </label>
+                    <span id="" class="govuk-hint">
+                      A few words describing the purpose of the event
+                    </span>
+                    <input class="govuk-input" type="text" name="" value="">
+                  </div>
+
+                <a href="complete-tasks" class="govuk-button govuk-button--secondary" style="font-size: 18px !important;">Previous</a>
+                <a href="case-view" class="govuk-button govuk-button--secondary" style="font-size: 18px !important;">Save and continue</a>
+
+                <p><a href="">Cancel</a></p>
+
+              </form>
+
+            </div>
+
           </div>
 
-        </dl>
+        </main>
 
-        <form action="case-view" method="post" novalidate>
-
-          <input type="hidden" name="answers-checked" value="true">
-
-          <button type="submit" class="govuk-button">
-            Continue
-          </button>
-
-        </form>
-
-      </div>
     </div>
-  </main>
+
 </div>
-<div>
+
+
 {% endblock %}

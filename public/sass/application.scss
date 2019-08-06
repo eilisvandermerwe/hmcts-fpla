@@ -168,16 +168,32 @@ $govuk-global-styles: true;
 
 .ccd-table {
   border: 1px solid #BFC1C3;
+  width: 100% !important;
   .ccd-table-head {
     background-color: #DEE0E2;
     padding: 10px;
     border: 1px solid #BFC1C3;
+  }
+
+  th{
+    font-size: 16px !important;
+    padding: 10px;
+    font-weight: normal;
+    width: 450px;
   }
   td {
     padding: 10px;
   }
   .table-header {
     width: 30%;
+  }
+}
+
+.nested-row {
+  margin: 20px !important;
+  th {
+    background-color: #DEE0E2;
+    width: 600px;
   }
 }
 
@@ -277,4 +293,25 @@ a, p, caption, td, li, label, select {
 }
 #three {
   display: none;
+}
+
+.confidential-history-tabs {
+  #one {
+    display: none;
+  }
+  #two {
+    display: none;
+  }
+  #three {
+    display: none;
+  }
+}
+
+
+.documents {
+  .govuk-select {
+    width: 100% !important;
+    border-radius: 3px !important;
+    background-color: white !important;
+  }
 }
