@@ -33,10 +33,18 @@ $('#history-row-click tr').on('click', function(){
     $(this).addClass('active');
 });
 
-function showDiv() {
+function showHearingOne() {
    document.getElementById('welcomeDiv').style.display = "block";
 }
 
-function hideDiv() {
+function hideHearingOne() {
    document.getElementById('welcomeDiv').style.display = "none";
+}
+
+function showHearingTwo() {
+   document.getElementById('second-hearing').style.display = "block";
+}
+
+function hideHearingTwo() {
+   document.getElementById('second-hearing').style.display = "none";
 }

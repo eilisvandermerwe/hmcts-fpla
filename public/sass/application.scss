@@ -21,6 +21,12 @@ $govuk-global-styles: true;
   float:right;
 }
 
+.govuk-button--secondary {
+  background-color: #f3f2f1 !important;
+  box-shadow: 0 2px 0 #929191 !important;
+  color: #0b0c0c !important;
+}
+
 // Full width
 
 .ccd-container {
