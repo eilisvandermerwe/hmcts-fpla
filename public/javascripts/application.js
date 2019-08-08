@@ -21,7 +21,6 @@ $("a.govuk-back-link").click(function(){
 $(function(){
 
 $("table td").click(function(){
-
     event.preventDefault();
         var tab = $(this).parent().attr("data-tab");
         $('.details-content').hide();
@@ -33,3 +32,11 @@ $('#history-row-click tr').on('click', function(){
     $('#history-row-click tr').removeClass('active');
     $(this).addClass('active');
 });
+
+function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+}
+
+function hideDiv() {
+   document.getElementById('welcomeDiv').style.display = "none";
+}

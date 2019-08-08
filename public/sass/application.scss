@@ -27,6 +27,9 @@ $govuk-global-styles: true;
   margin-left: auto !important;
   margin-right: auto !important;
   width: 64% !important;
+  .govuk-hint {
+    font-size: 16px;
+  }
 }
 
 .govuk-width-container {
