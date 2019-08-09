@@ -316,7 +316,6 @@ a, p, caption, td, li, label, select {
   }
 }
 
-
 .documents {
   .govuk-select {
     width: 100% !important;
@@ -324,3 +323,12 @@ a, p, caption, td, li, label, select {
     background-color: white !important;
   }
 }
+
+
+  .inline-block {
+    display:inline-block;
+  }
+  .float-right {
+    float: right;
+    margin-right: 150px;
+  }
