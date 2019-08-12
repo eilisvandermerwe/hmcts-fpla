@@ -1,0 +1,268 @@
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-two-thirds">
+
+              <h1 class="govuk-heading-xl">Add hearing details</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+              <br>
+              <h3 class="govuk-heading-m">Add hearing details</h3>
+
+                <form method="post" class="form">
+
+                  <div class="govuk-inset-text">
+                    <h3 class="govuk-heading-m">Add hearing details (Optional)</h3>
+                    <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingOne()" />
+                    <br>
+
+                    <h4 class="govuk-heading-s inline-block">Hearing 3</h4>
+                    <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingOne()" />
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <label class="govuk-label" for="width-20">
+                          Type of hearing
+                        </label>
+                        <br>
+                        <div class="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="hearing-2-1" name="hearing" type="radio" value="england">
+                            <label class="govuk-label govuk-radios__label" for="hearing-2-1">
+                              Case management
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="hearing-2-2" name="hearing" type="radio" value="scotland">
+                            <label class="govuk-label govuk-radios__label" for="hearing-2-2">
+                              Further case management
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="hearing-2-3" name="hearing" type="radio" value="wales" checked>
+                            <label class="govuk-label govuk-radios__label" for="hearing-2-3">
+                              Issue resolution
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="hearing-2-4" name="hearing" type="radio" value="northern-ireland">
+                            <label class="govuk-label govuk-radios__label" for="hearing-2-4">
+                              Final
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        Venue
+                      </label>
+                      <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="Family Court Swansea">
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                        <label class="govuk-label" for="contact-by-phone">
+                          Date
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          For example, 27 09 2019
+                        </span>
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="15">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="9">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="2019">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-10">
+                        Pre-hearing attendance
+                      </label>
+                      <span id="passport-issued-hint" class="govuk-hint">
+                        This is usually one hour before the hearing
+                      </span>
+                      <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="1:30pm">
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-10">
+                        Hearing time
+                      </label>
+                      <span id="passport-issued-hint" class="govuk-hint">
+                        For example, 2:30pm
+                      </span>
+                      <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="2:30pm">
+                    </div>
+
+                    <br>
+
+                    <div id="second-hearing"  class="answer_list" >
+                      <h4 class="govuk-heading-s inline-block">Hearing 3</h4>
+                      <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingTwo()" />
+
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                          <label class="govuk-label" for="width-20">
+                            Type of hearing
+                          </label>
+                          <br>
+                          <div class="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                Case management
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                Further case management
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                                Issue resolution
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland" checked>
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                                Final
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Venue
+                        </label>
+                        <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="Family Court Swansea">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                          <label class="govuk-label" for="contact-by-phone">
+                            Date
+                          </label>
+                          <span id="passport-issued-hint" class="govuk-hint">
+                            For example, 27 09 2019
+                          </span>
+                          <div class="govuk-date-input" id="passport-issued">
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                  Day
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="15">
+                              </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                  Month
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="9">
+                              </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                  Year
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="2019">
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-10">
+                          Pre-hearing attendance
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          This is usually one hour before the hearing
+                        </span>
+                        <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="1:30pm">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-10">
+                          Hearing time
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          For example, 2:30pm
+                        </span>
+                        <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="2:30pm">
+                      </div>
+
+
+
+
+
+
+
+                      <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showDiv()" />
+
+                    </div>
+
+                  </div>
+
+                <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
+                <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+                <p><a href="">Cancel</a></p>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
