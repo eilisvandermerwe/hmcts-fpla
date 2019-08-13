@@ -267,12 +267,45 @@
                       <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text">
                     </div>
 
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="width-20">
+                    <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                      <label class="govuk-label" for="width-10">
                         Are there any additional hearing needs?
                       </label>
-                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
-                    </div>
+                        <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                          <!-- Yes -->
+
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" {{ checked("serve-application-and-documents-status", "Incomplete") }}>
+                            <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                              Yes
+                            </label>
+                          </div>
+
+                          <!-- Contidtional yes -->
+
+                          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+
+                            <label class="govuk-label" for="width-20">
+                              Give details
+                            </label>
+                            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+
+                          </div>
+
+                          <!-- No -->
+
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+                            <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                              No
+                            </label>
+                          </div>
+
+                        </div>
+                      </fieldset>
+
+                      <br>
 
                     <h4 class="govuk-heading-s inline-block">Judge or magistrate</h4>
                     <div class="govuk-form-group">
