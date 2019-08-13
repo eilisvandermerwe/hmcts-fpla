@@ -23,27 +23,11 @@
 
               <p>The Local Authorities allocation decision is a High Court judge.</p>
 
-              <p>(Reason for decision is included in application)</p>
-
-              <table class="govuk-table ccd-table">
-                <caption class="govuk-table__caption ccd-table-head">Allocation proposal </caption>
-                <tbody class="govuk-table__body">
-                  <tr class="govuk-table__row">
-                    <td class="govuk-table__cell table-header">Which level of judge do you recommend for this case? </td>
-                    <td class="govuk-table__cell">High Court judge</td>
-                  </tr>
-                </tbody>
-                <tbody class="govuk-table__body">
-                  <tr class="govuk-table__row">
-                    <td class="govuk-table__cell table-header">Give reason</td>
-                    <td class="govuk-table__cell">Test</td>
-                  </tr>
-                </tbody>
-              </table>
+              <p>(Reason for decision is included in application, lets find some examples so we can get an idea on how much content will be here. Will come into play in the textbox below too)</p>
 
               <form action="check-my-answers" method="post" class="form">
 
-                <p>Would you like to accept or change the allocation decision?</p>
+                <p>Would you like to accept the allocation decision?</p>
 
                 <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
 
@@ -54,7 +38,7 @@
                       <div class="govuk-radios__item">
                         <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
                         <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
-                          Accept
+                          Yes
                         </label>
                       </div>
 
@@ -63,28 +47,69 @@
                       <div class="govuk-radios__item">
                         <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" {{ checked("serve-application-and-documents-status", "Incomplete") }}>
                         <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                          Change
+                          No
                         </label>
                       </div>
 
                       <!-- Contidtional no -->
 
-                      <!-- <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+
+                        <p>Something something...</p>
+                        <form action="check-my-answers" method="post" class="form">
+
+                          <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset">
+                            <div class="govuk-radios">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                  Lay justices (magistrates)
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                  District judge
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                                  Circuit judge
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                                  Section 9 circuit judge
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                                  High Court judge
+                                </label>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+
                         <div class="govuk-form-group">
-                          <label class="govuk-label" for="contact-by-phone">
-                            Can you tell us why?
+                          <label class="govuk-label" for="more-detail">
+                            Why have you made this decision?
                           </label>
                           <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
                         </div>
-                      </div> -->
+
+                        </form>
+                      </div>
 
                     </div>
                   </fieldset>
 
-                  <br>
-
                   <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
-                  <a href="reject-allocation" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+                  <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
 
                   <p><a href="">Cancel</a></p>
 
