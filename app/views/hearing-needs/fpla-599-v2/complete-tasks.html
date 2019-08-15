@@ -170,18 +170,23 @@
                             </label>
                           </div>
 
+
                           <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="other-option" name="citizen" type="checkbox" value="text message" data-aria-controls="conditional-other-option">
+                            <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="mycheckbox" value="0" />
                             <label class="govuk-label govuk-checkboxes__label" for="other-option">
                               Something else
                             </label>
                           </div>
-                          <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-other-option">
+
+                          <div id="mycheckboxdiv" style="display:none">
                             <div class="govuk-form-group">
-                              <label class="govuk-label" for="contact-by-text">
-                                Mobile phone number
-                              </label>
-                              <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
+                              <div class="govuk-inset-text" style="border-left: 5px solid #bfc1c3;margin-left: 15px;">
+                                <label class="govuk-label" for="contact-by-text">
+                                  Give details
+                                </label>
+                                <input class="govuk-input" id="contact-by-text" name="contact-by-text" type="tel">
+                              </div>
+
                             </div>
                           </div>
 

@@ -48,3 +48,9 @@ function showHearingTwo() {
 function hideHearingTwo() {
    document.getElementById('second-hearing').style.display = "none";
 }
+
+$(document).ready(function() {
+    $('#mycheckbox').change(function() {
+        $('#mycheckboxdiv').toggle();
+    });
+});
