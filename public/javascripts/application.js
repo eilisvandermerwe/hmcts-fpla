@@ -54,3 +54,9 @@ $(document).ready(function() {
         $('#mycheckboxdiv').toggle();
     });
 });
+
+$(document).ready(function() {
+    $('#mycheckbox-2').change(function() {
+        $('#mycheckboxdiv-2').toggle();
+    });
+});
