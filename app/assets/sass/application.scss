@@ -183,7 +183,6 @@ $govuk-global-styles: true;
     padding: 10px;
     border: 1px solid #BFC1C3;
   }
-
   th{
     font-size: 16px !important;
     padding: 10px;
@@ -196,6 +195,13 @@ $govuk-global-styles: true;
   .table-header {
     width: 30%;
   }
+}
+
+th {
+  font-size: 16px !important;
+  padding: 10px;
+  font-weight: normal;
+  width: 450px;
 }
 
 .nested-row {

@@ -1,5 +1,5 @@
 
-{% extends "layout-admin.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
   GOV.UK Prototype Kit
@@ -121,8 +121,11 @@
                         <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
                           <div class="govuk-form-group">
                             <label class="govuk-label" for="width-20">
-                              Enter a UK postcode
+                              Where did you send it from?
                             </label>
+                            <span id="passport-issued-hint" class="govuk-hint">
+                              Enter a UK postcode
+                            </span>
                             <input class="govuk-input govuk-input--width-10" type="text" name="">
                             <br><br>
                             <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
@@ -141,8 +144,11 @@
                         <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
                           <div class="govuk-form-group">
                             <label class="govuk-label" for="width-20">
-                              Enter a UK postcode
+                              Where were you?
                             </label>
+                            <span id="passport-issued-hint" class="govuk-hint">
+                              Enter a UK postcode
+                            </span>
                             <input class="govuk-input govuk-input--width-10" type="text" name="">
                             <br><br>
                             <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
@@ -250,8 +256,11 @@
                               <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label" for="width-20">
-                                    Enter a UK postcode
+                                    Where did you send it from?
                                   </label>
+                                  <span id="passport-issued-hint" class="govuk-hint">
+                                    Enter a UK postcode
+                                  </span>
                                   <input class="govuk-input govuk-input--width-10" type="text" name="">
                                   <br><br>
                                   <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
@@ -270,8 +279,11 @@
                               <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label" for="width-20">
-                                    Enter a UK postcode
+                                    Where were you?
                                   </label>
+                                  <span id="passport-issued-hint" class="govuk-hint">
+                                    Enter a UK postcode
+                                  </span>
                                   <input class="govuk-input govuk-input--width-10" type="text" name="">
                                   <br><br>
                                   <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
@@ -384,8 +396,11 @@
                               <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label" for="width-20">
-                                    Enter a UK postcode
+                                    Where did you send it from?
                                   </label>
+                                  <span id="passport-issued-hint" class="govuk-hint">
+                                    Enter a UK postcode
+                                  </span>
                                   <input class="govuk-input govuk-input--width-10" type="text" name="">
                                   <br><br>
                                   <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
@@ -404,8 +419,11 @@
                               <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label" for="width-20">
-                                    Enter a UK postcode
+                                    Where were you?
                                   </label>
+                                  <span id="passport-issued-hint" class="govuk-hint">
+                                    Enter a UK postcode
+                                  </span>
                                   <input class="govuk-input govuk-input--width-10" type="text" name="">
                                   <br><br>
                                   <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
