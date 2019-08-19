@@ -28,34 +28,36 @@
 
 
               <form method="post" class="form">
+                <h3 class="govuk-heading-m">Recipient 1</h3>
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="width-20">
+                    Name of recipient
+                  </label>
+                  <input class="govuk-input" type="text" name="" >
+                </div>
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="width-20">
+                    Address of recipient
+                  </label>
+                  <span id="passport-issued-hint" class="govuk-hint">
+                    Enter a UK postcode
+                  </span>
+                  <input class="govuk-input govuk-input--width-10" type="text" name="">
+                  <br>
+                  <br>
+                  <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
+                </div>
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="width-20">
+                    Name of document
+                  </label>
+                  <span id="passport-issued-hint" class="govuk-hint">
+                    For example, something and something
+                  </span>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
+                </div>
 
-                  <div class="govuk-form-group">
-                    <label class="govuk-label" for="width-20">
-                      Name of document
-                    </label>
-                    <span id="passport-issued-hint" class="govuk-hint">
-                      For example, something and something 
-                    </span>
-                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
-                  </div>
-                  <div class="govuk-form-group">
-                    <label class="govuk-label" for="width-20">
-                      Name of recipient
-                    </label>
-                    <input class="govuk-input" type="text" name="" >
-                  </div>
-                  <div class="govuk-form-group">
-                    <label class="govuk-label" for="width-20">
-                      Address of recipient
-                    </label>
-                    <span id="passport-issued-hint" class="govuk-hint">
-                      Enter a UK postcode
-                    </span>
-                    <input class="govuk-input govuk-input--width-10" type="text" name="">
-                    <br>
-                    <br>
-                    <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
-                  </div>
+
                   <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
                       <label class="govuk-label" for="contact-by-phone">
@@ -152,19 +154,13 @@
                     </fieldset>
 
                     <div class="govuk-inset-text">
-                      <h3 class="govuk-heading-m">Additional parties (Optional)</h3>
+                      <h3 class="govuk-heading-m">Additional recipient (Optional)</h3>
 
                       <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingOne()" />
 
                       <div id="welcomeDiv"  style="display:none;" class="answer_list" >
-                        <h4 class="govuk-heading-s inline-block">Additional party 1</h4>
+                        <h4 class="govuk-heading-s inline-block">Additional recipient 1</h4>
                         <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingOne()" />
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="width-20">
-                            Name of document
-                          </label>
-                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
-                        </div>
                         <div class="govuk-form-group">
                           <label class="govuk-label" for="width-20">
                             Name of recipient
@@ -183,6 +179,14 @@
                           <br>
                           <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
                         </div>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Name of document
+                          </label>
+                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
+                        </div>
+
+
                         <div class="govuk-form-group">
                           <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
                             <label class="govuk-label" for="contact-by-phone">
@@ -289,14 +293,9 @@
                       <br>
 
                       <div id="second-hearing"  style="display:none;" class="answer_list" >
-                        <h4 class="govuk-heading-s inline-block">Additional party 2</h4>
+                        <h4 class="govuk-heading-s inline-block">Additional recipient 2</h4>
                         <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingTwo()" />
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="width-20">
-                            Name of document
-                          </label>
-                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
-                        </div>
+
                         <div class="govuk-form-group">
                           <label class="govuk-label" for="width-20">
                             Name of recipient
@@ -315,6 +314,13 @@
                           <br>
                           <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
                         </div>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Name of document
+                          </label>
+                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
+                        </div>
+
                         <div class="govuk-form-group">
                           <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
                             <label class="govuk-label" for="contact-by-phone">
