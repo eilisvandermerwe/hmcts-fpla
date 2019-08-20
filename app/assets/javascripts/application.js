@@ -60,3 +60,34 @@ $(document).ready(function() {
         $('#mycheckboxdiv-2').toggle();
     });
 });
+
+
+$(document).ready(function() {
+    $('#interpretor-checkbox').change(function() {
+        $('#interpretor-div').toggle();
+    });
+});
+
+$(document).ready(function() {
+    $('#welsh-checkbox').change(function() {
+        $('#welsh-div').toggle();
+    });
+});
+
+$(document).ready(function() {
+    $('#intermediary-checkbox').change(function() {
+        $('#intermediary-div').toggle();
+    });
+});
+
+$(document).ready(function() {
+    $('#disability-checkbox').change(function() {
+        $('#disability-div').toggle();
+    });
+});
+
+$(document).ready(function() {
+    $('#security-checkbox').change(function() {
+        $('#security-div').toggle();
+    });
+});
