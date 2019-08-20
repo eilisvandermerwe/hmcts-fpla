@@ -63,8 +63,8 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-    $('#interpretor-checkbox').change(function() {
-        $('#interpretor-div').toggle();
+    $('#Interpreter-checkbox').change(function() {
+        $('#Interpreter-div').toggle();
     });
 });
 
