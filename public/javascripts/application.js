@@ -135,3 +135,12 @@ $(document).ready(function() {
         $('#security-div-2').toggle();
     });
 });
+
+
+
+
+$(document).ready(function() {
+    $('#hide-checkbox').change(function() {
+        $('#hide-div').toggle();
+    });
+});
