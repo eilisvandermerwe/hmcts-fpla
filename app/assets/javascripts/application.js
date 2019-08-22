@@ -144,3 +144,9 @@ $(document).ready(function() {
         $('#hide-div').toggle();
     });
 });
+
+$(document).ready(function() {
+    $('#hide-checkbox-2').change(function() {
+        $('#hide-div-2').toggle();
+    });
+});

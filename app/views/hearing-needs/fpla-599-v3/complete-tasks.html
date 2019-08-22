@@ -153,7 +153,12 @@
                     </div>
 
                     <div class="govuk-form-group">
-                      <h4 class="govuk-heading-s inline-block">Hearing needs booked</h4>
+                      <label class="govuk-label" for="width-10">
+                        Hearing needs booked
+                      </label>
+                      <span id="passport-issued-hint" class="govuk-hint">
+                        Select all that apply
+                      </span>
                       <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
                         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
 
@@ -212,7 +217,7 @@
                           <div class="govuk-inset-text">
                             <div class="govuk-form-group">
                               <label class="govuk-label" for="contact-by-text">
-                                Give details about your hearing needs
+                                Give details about the hearing needs booked
                               </label>
                               <input class="govuk-input" id="contact-by-text" name="contact-by-text" type="tel">
                             </div>
@@ -355,125 +360,76 @@
                     </div>
 
                     <div class="govuk-form-group">
-                      <h4 class="govuk-heading-s inline-block">Hearing needs booked</h4>
+                      <label class="govuk-label" for="width-10">
+                        Hearing needs booked
+                      </label>
+                      <span id="passport-issued-hint" class="govuk-hint">
+                        Select all that apply
+                      </span>
                       <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
                         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
 
                           <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="Interpreter-checkbox-2" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional">
+                            <input class="govuk-checkboxes__input" id="Interpreter-checkbox" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional">
                             <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
                               Interpreter
                             </label>
                           </div>
 
-                          <div id="Interpreter-div-2" style="display:none">
-                            <div class="govuk-form-group">
-                              <div class="govuk-inset-text" style="border-left: 5px solid #bfc1c3;margin-left: 15px;margin-bottom: 10px;">
-                                <label class="govuk-label" for="contact-by-text">
-                                  Give details
-                                </label>
-                                <input class="govuk-input" id="contact-by-text" name="contact-by-text" type="tel">
-                              </div>
-                            </div>
-                          </div>
-
                           <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="welsh-checkbox-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                            <input class="govuk-checkboxes__input" id="welsh-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
                             <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
                               Spoken or written Welsh
                             </label>
                           </div>
 
-                          <div id="welsh-div-2" style="display:none">
-                            <div class="govuk-form-group">
-                              <div class="govuk-inset-text" style="border-left: 5px solid #bfc1c3;margin-left: 15px;margin-bottom: 10px;">
-                                <label class="govuk-label" for="contact-by-text">
-                                  Give details
-                                </label>
-                                <input class="govuk-input" id="contact-by-text" name="contact-by-text" type="tel">
-                              </div>
-                            </div>
-                          </div>
-
                           <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="intermediary-checkbox-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                            <input class="govuk-checkboxes__input" id="intermediary-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
                             <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
                               Intermediary
                             </label>
                           </div>
 
-                          <div id="intermediary-div-2" style="display:none">
-                            <div class="govuk-form-group">
-                              <div class="govuk-inset-text" style="border-left: 5px solid #bfc1c3;margin-left: 15px;margin-bottom: 10px;">
-                                <label class="govuk-label" for="contact-by-text">
-                                  Give details
-                                </label>
-                                <input class="govuk-input" id="contact-by-text" name="contact-by-text" type="tel">
-                              </div>
-                            </div>
-                          </div>
-
                           <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="disability-checkbox-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                            <input class="govuk-checkboxes__input" id="disability-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
                             <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
                               Facilities or assistance for a disability
                             </label>
                           </div>
 
-                          <div id="disability-div-2" style="display:none">
-                            <div class="govuk-form-group">
-                              <div class="govuk-inset-text" style="border-left: 5px solid #bfc1c3;margin-left: 15px;margin-bottom: 10px;">
-                                <label class="govuk-label" for="contact-by-text">
-                                  Give details
-                                </label>
-                                <input class="govuk-input" id="contact-by-text" name="contact-by-text" type="tel">
-                              </div>
-                            </div>
-                          </div>
 
                           <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="security-checkbox-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                            <input class="govuk-checkboxes__input" id="security-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
                             <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
                               Separate waiting room or other security measures
                             </label>
                           </div>
 
-                          <div id="security-div-2" style="display:none">
-                            <div class="govuk-form-group">
-                              <div class="govuk-inset-text" style="border-left: 5px solid #bfc1c3;margin-left: 15px;margin-bottom: 10px;">
-                                <label class="govuk-label" for="contact-by-text">
-                                  Give details
-                                </label>
-                                <input class="govuk-input" id="contact-by-text" name="contact-by-text" type="tel">
-                              </div>
-                            </div>
-                          </div>
-
-
                           <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="mycheckbox-3" value="0" />
+                            <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="mycheckbox" value="0" />
                             <label class="govuk-label govuk-checkboxes__label" for="other-option">
                               Something else
                             </label>
                           </div>
 
-                          <div id="mycheckboxdiv-3" style="display:none">
-                            <div class="govuk-form-group">
-                              <div class="govuk-inset-text" style="border-left: 5px solid #bfc1c3;margin-left: 15px;margin-bottom: 10px;">
-                                <label class="govuk-label" for="contact-by-text">
-                                  Give details
-                                </label>
-                                <input class="govuk-input" id="contact-by-text" name="contact-by-text" type="tel">
-                              </div>
-                            </div>
-                          </div>
-
                           <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="" value="0" />
+                            <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="hide-checkbox-2" value="0" />
                             <label class="govuk-label govuk-checkboxes__label" for="other-option">
                               None
                             </label>
                           </div>
+
+
+                          <div id="hide-div-2">
+                          <div class="govuk-inset-text">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label" for="contact-by-text">
+                                Give details about the hearing needs booked
+                              </label>
+                              <input class="govuk-input" id="contact-by-text" name="contact-by-text" type="tel">
+                            </div>
+                          </div>
+                        </div>
 
                         </div>
                       </fieldset>
