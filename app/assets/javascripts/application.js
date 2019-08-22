@@ -91,3 +91,47 @@ $(document).ready(function() {
         $('#security-div').toggle();
     });
 });
+
+
+$(document).ready(function() {
+    $('#mycheckbox-2').change(function() {
+        $('#mycheckboxdiv-2').toggle();
+    });
+});
+
+$(document).ready(function() {
+    $('#mycheckbox-3').change(function() {
+        $('#mycheckboxdiv-3').toggle();
+    });
+});
+
+
+$(document).ready(function() {
+    $('#Interpreter-checkbox-2').change(function() {
+        $('#Interpreter-div-2').toggle();
+    });
+});
+
+$(document).ready(function() {
+    $('#welsh-checkbox-2').change(function() {
+        $('#welsh-div-2').toggle();
+    });
+});
+
+$(document).ready(function() {
+    $('#intermediary-checkbox-2').change(function() {
+        $('#intermediary-div-2').toggle();
+    });
+});
+
+$(document).ready(function() {
+    $('#disability-checkbox-2').change(function() {
+        $('#disability-div-2').toggle();
+    });
+});
+
+$(document).ready(function() {
+    $('#security-checkbox-2').change(function() {
+        $('#security-div-2').toggle();
+    });
+});
