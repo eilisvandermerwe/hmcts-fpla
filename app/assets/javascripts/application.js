@@ -49,6 +49,22 @@ function hideHearingTwo() {
    document.getElementById('second-hearing').style.display = "none";
 }
 
+function showHearingThree() {
+   document.getElementById('third-hearing').style.display = "block";
+}
+
+function hideHearingThree() {
+   document.getElementById('third-hearing').style.display = "none";
+}
+
+function showHearingFour() {
+   document.getElementById('fourth-hearing').style.display = "block";
+}
+
+function hideHearingFour() {
+   document.getElementById('third-hearing').style.display = "none";
+}
+
 $(document).ready(function() {
     $('#mycheckbox').change(function() {
         $('#mycheckboxdiv').toggle();
