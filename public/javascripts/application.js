@@ -18,6 +18,15 @@ $("a.govuk-back-link").click(function(){
   return false;
 });
 
+$("button.govuk-button--secondary").click(function() {
+    return false;
+});
+
+$("button.govuk-button--secondary").click(function(){
+  parent.history.back();
+  return false;
+});
+
 $(function(){
 
 $("table td").click(function(){
