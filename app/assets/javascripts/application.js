@@ -166,3 +166,36 @@ $(document).ready(function() {
         $('#hide-div-2').toggle();
     });
 });
+
+
+function hideDirectionOne() {
+   document.getElementById('direction-1').style.display = "none";
+}
+
+function hideDirectionTwo() {
+   document.getElementById('direction-2').style.display = "none";
+}
+
+function hideDirectionThree() {
+   document.getElementById('direction-3').style.display = "none";
+}
+
+function hideDirectionFour() {
+   document.getElementById('direction-4').style.display = "none";
+}
+
+function hideDirectionFive() {
+   document.getElementById('direction-5').style.display = "none";
+}
+
+function hideDirectionSix() {
+   document.getElementById('direction-6').style.display = "none";
+}
+
+function hideDirectionSeven() {
+   document.getElementById('direction-7').style.display = "none";
+}
+
+function hideDirectionEight() {
+   document.getElementById('direction-8').style.display = "none";
+}
