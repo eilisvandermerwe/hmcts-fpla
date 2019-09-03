@@ -1,0 +1,608 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+
+              <h1 class="govuk-heading-xl">Add statement of service</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+              <h3 class="govuk-heading-m">Add statement of service</h3>
+
+              <form method="post" class="form">
+                <h3 class="govuk-heading-m">Recipient 1</h3>
+                <span id="passport-issued-hint" class="govuk-hint">
+                  If you send documents to a party's solicitor or a children's guardian, give their details.
+                </span>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="width-20">
+                    Name of recipient
+                  </label>
+                  <input class="govuk-input" type="text" name="" >
+                </div>
+
+
+                <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+                  <p>Would you like to add the recipient's address?</p>
+
+                    <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                      <!-- No -->
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="yes-address" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          Yes
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="yes-address">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Address of recipient
+                          </label>
+                          <span id="passport-issued-hint" class="govuk-hint">
+                            Enter a UK postcode
+                          </span>
+                          <input class="govuk-input govuk-input--width-10" type="text" name="">
+                          <br>
+                          <br>
+                          <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
+                        </div>
+                      </div>
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents-status", "Complete") }}>
+                        <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                          No
+                        </label>
+                      </div>
+
+                    </div>
+                  </fieldset>
+
+                  <br>
+
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="width-20">
+                    Name of documents
+                  </label>
+                  <span id="passport-issued-hint" class="govuk-hint">
+                    For example, standard directions order and c6
+                  </span>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
+                </div>
+
+
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                      <label class="govuk-label" for="contact-by-phone">
+                        Date sent
+                      </label>
+                      <span id="" class="govuk-hint">
+                        For example, 31 3 2016
+                      </span>
+                      <div class="govuk-date-input" id="passport-issued">
+                        <div class="govuk-date-input__item">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                              Day
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" >
+                          </div>
+                        </div>
+                        <div class="govuk-date-input__item">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                              Month
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" >
+                          </div>
+                        </div>
+                        <div class="govuk-date-input__item">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                              Year
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" >
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-10">
+                      Time sent
+                    </label>
+                    <span id="passport-issued-hint" class="govuk-hint">
+                      For example, 2:30pm
+                    </span>
+                    <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text">
+                  </div>
+
+
+                  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+                    <p>How were they sent?</p>
+
+                      <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                        <!-- No -->
+
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-email" >
+                          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                            by email
+                          </label>
+                        </div>
+
+                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-email">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="width-40">
+                              Recipient's email address
+                            </label>
+
+                            <input class="govuk-input govuk-input--width-40" type="text" name="">
+
+                          </div>
+                        </div>
+
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents-status", "Complete") }}>
+                          <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                            by post office
+                          </label>
+                        </div>
+
+                        <!-- Contidtional yes -->
+
+                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="width-20">
+                              Post office address
+                            </label>
+                            <span id="passport-issued-hint" class="govuk-hint">
+                              Enter a UK postcode
+                            </span>
+                            <input class="govuk-input govuk-input--width-10" type="text" name="">
+                            <br><br>
+                            <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
+                          </div>
+                        </div>
+
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" {{ checked("serve-application-and-documents-status", "Incomplete") }}>
+                          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                            given in person
+                          </label>
+                        </div>
+
+                        <!-- Contidtional no -->
+
+                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="width-20">
+                              Where did you serve the documents to the recipient?
+                            </label>
+                            <span id="passport-issued-hint" class="govuk-hint">
+                              Enter a UK postcode
+                            </span>
+                            <input class="govuk-input govuk-input--width-10" type="text" name="">
+                            <br><br>
+                            <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </fieldset>
+
+                    <div class="govuk-inset-text">
+                      <h3 class="govuk-heading-m">Additional recipient (Optional)</h3>
+
+                      <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingOne()" />
+
+                      <div id="welcomeDiv"  style="display:none;" class="answer_list" >
+                        <h4 class="govuk-heading-s inline-block">Additional recipient 1</h4>
+                        <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingOne()" />
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Name of recipient
+                          </label>
+                          <input class="govuk-input" type="text" name="" >
+                        </div>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Address of recipient
+                          </label>
+                          <span id="passport-issued-hint" class="govuk-hint">
+                            Enter a UK postcode
+                          </span>
+                          <input class="govuk-input govuk-input--width-10" type="text" name="">
+                          <br>
+                          <br>
+                          <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
+                        </div>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Name of documents
+                          </label>
+                          <span id="passport-issued-hint" class="govuk-hint">
+                            For example, standard directions order and c6
+                          </span>
+                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
+                        </div>
+
+
+                        <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                            <label class="govuk-label" for="contact-by-phone">
+                              Date and time they were sent
+                            </label>
+                            <span id="" class="govuk-hint">
+                              For example, 31 9 2019
+                            </span>
+                            <div class="govuk-date-input" id="passport-issued">
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                    Day
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" >
+                                </div>
+                              </div>
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                    Month
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" >
+                                </div>
+                              </div>
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                    Year
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" >
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+
+
+                        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+                          <p>How were they sent?</p>
+
+                          <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                            <!-- No -->
+
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-email" >
+                              <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                                by email
+                              </label>
+                            </div>
+
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-email">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label" for="width-40">
+                                  Recipients email address
+                                </label>
+
+                                <input class="govuk-input govuk-input--width-40" type="text" name="">
+
+                              </div>
+                            </div>
+
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents-status", "Complete") }}>
+                              <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                                Post office
+                              </label>
+                            </div>
+
+                            <!-- Contidtional yes -->
+
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label" for="width-20">
+                                  Postal address
+                                </label>
+                                <span id="passport-issued-hint" class="govuk-hint">
+                                  Enter a UK postcode
+                                </span>
+                                <input class="govuk-input govuk-input--width-10" type="text" name="">
+                                <br><br>
+                                <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
+                              </div>
+                            </div>
+
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" {{ checked("serve-application-and-documents-status", "Incomplete") }}>
+                              <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                                given in person
+                              </label>
+                            </div>
+
+                            <!-- Contidtional no -->
+
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label" for="width-20">
+                                  Where were you when you served them the documents?
+                                </label>
+                                <span id="passport-issued-hint" class="govuk-hint">
+                                  Enter a UK postcode
+                                </span>
+                                <input class="govuk-input govuk-input--width-10" type="text" name="">
+                                <br><br>
+                                <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
+                              </div>
+                            </div>
+
+
+                          </div>
+                          </fieldset>
+
+                          <br>
+
+                        <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingTwo()" />
+
+                      </div>
+
+                      <!-- Second additional hearing   -->
+
+                      <br>
+
+                      <div id="second-hearing"  style="display:none;" class="answer_list" >
+                        <h4 class="govuk-heading-s inline-block">Additional recipient 2</h4>
+                        <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingTwo()" />
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Name of recipient
+                          </label>
+                          <input class="govuk-input" type="text" name="" >
+                        </div>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Address of recipient
+                          </label>
+                          <span id="passport-issued-hint" class="govuk-hint">
+                            Enter a UK postcode
+                          </span>
+                          <input class="govuk-input govuk-input--width-10" type="text" name="">
+                          <br>
+                          <br>
+                          <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
+                        </div>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Name of documents
+                          </label>
+                          <span id="passport-issued-hint" class="govuk-hint">
+                            For example, standard directions order and c6
+                          </span>
+                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
+                        </div>
+
+                        <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                            <label class="govuk-label" for="contact-by-phone">
+                              When were they sent?
+                            </label>
+                            <span id="" class="govuk-hint">
+                              For example, 31 3 2016
+                            </span>
+                            <div class="govuk-date-input" id="passport-issued">
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                    Day
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" >
+                                </div>
+                              </div>
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                    Month
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" >
+                                </div>
+                              </div>
+                              <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                    Year
+                                  </label>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" >
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+                        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+                          <p>How were they sent?</p>
+
+                          <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                            <!-- No -->
+
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-email" >
+                              <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                                by email
+                              </label>
+                            </div>
+
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-email">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label" for="width-40">
+                                  Recipients email address
+                                </label>
+
+                                <input class="govuk-input govuk-input--width-40" type="text" name="">
+
+                              </div>
+                            </div>
+
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents-status", "Complete") }}>
+                              <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                                Post office
+                              </label>
+                            </div>
+
+                            <!-- Contidtional yes -->
+
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label" for="width-20">
+                                  Postal address
+                                </label>
+                                <span id="passport-issued-hint" class="govuk-hint">
+                                  Enter a UK postcode
+                                </span>
+                                <input class="govuk-input govuk-input--width-10" type="text" name="">
+                                <br><br>
+                                <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
+                              </div>
+                            </div>
+
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" {{ checked("serve-application-and-documents-status", "Incomplete") }}>
+                              <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                                given in person
+                              </label>
+                            </div>
+
+                            <!-- Contidtional no -->
+
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label" for="width-20">
+                                  Where were you when you served them the documents?
+                                </label>
+                                <span id="passport-issued-hint" class="govuk-hint">
+                                  Enter a UK postcode
+                                </span>
+                                <input class="govuk-input govuk-input--width-10" type="text" name="">
+                                <br><br>
+                                <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
+                              </div>
+                            </div>
+
+
+                          </div>
+                          </fieldset>
+
+                          <br>
+
+                        <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingTwo()" />
+
+                      </div>
+
+                    </div>
+
+                    <h3 class="govuk-heading-m">Declaration</h3>
+
+                    <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+                      <p>I am the:</p>
+
+                        <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                          <!-- No -->
+
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-email" >
+                            <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                              applicant
+                            </label>
+                          </div>
+
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents-status", "Complete") }}>
+                            <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                              solicitor for the applicant
+                            </label>
+                          </div>
+
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="other-role">
+                            <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                              other
+                            </label>
+                          </div>
+
+                          <!-- Contidtional no -->
+
+                          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="other-role">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label" for="width-20">
+                                What is your role?
+                              </label>
+                              <input class="govuk-input govuk-input--width-10" type="text" name="">
+                              <br><br>
+                            </div>
+                          </div>
+
+
+                        </div>
+                        <br>
+                        <p>I have served the documents as stated.</p>
+                      </fieldset>
+
+
+                <br>
+                <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
+                <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+                <p><a href="">Cancel</a></p>
+
+
+
+
+
+            </form>
+
+
+
+
+
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
