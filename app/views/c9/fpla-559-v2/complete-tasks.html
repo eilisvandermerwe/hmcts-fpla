@@ -81,7 +81,7 @@
 
                 <div class="govuk-form-group">
                   <label class="govuk-label" for="width-20">
-                    Name of documents
+                    Documents
                   </label>
                   <span id="passport-issued-hint" class="govuk-hint">
                     For example, standard directions order and c6
@@ -527,54 +527,25 @@
 
                     </div>
 
-                    <h3 class="govuk-heading-m">Declaration</h3>
 
-                    <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                          <h3 class="govuk-heading-m">
+                            Declaration
+                          </h3>
+                        </legend>
 
-                      <p>I am the:</p>
-
-                        <div class="govuk-radios govuk-radios--conditional" data-module="radios">
-
-                          <!-- No -->
-
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-email" >
-                            <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                              applicant
+                        <div class="govuk-checkboxes">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste">
+                              I, Sam@hillingdon.gov.uk (Local-authority), have served the documents as stated.
                             </label>
                           </div>
-
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents-status", "Complete") }}>
-                            <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
-                              solicitor for the applicant
-                            </label>
-                          </div>
-
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="other-role">
-                            <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                              other
-                            </label>
-                          </div>
-
-                          <!-- Contidtional no -->
-
-                          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="other-role">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label" for="width-20">
-                                What is your role?
-                              </label>
-                              <input class="govuk-input govuk-input--width-10" type="text" name="">
-                              <br><br>
-                            </div>
-                          </div>
-
-
                         </div>
-                        <br>
-                        <p>I have served the documents as stated.</p>
                       </fieldset>
+                    </div>
 
 
                 <br>
