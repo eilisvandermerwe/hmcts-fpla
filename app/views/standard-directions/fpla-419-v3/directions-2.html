@@ -41,13 +41,43 @@
                 </tbody>
               </table>
 
-              <h4 class="govuk-heading-s">Request permission for expert evidence</h4>
+
+
+              <h4 class="govuk-heading-s">Serve the application and documents</h4>
 
               <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                  Description
-                </label>
-                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Give all parties access to all documents sent to the court, including: the application form, annex documents, evidential checklist documents, any documents sent later on.</textarea>
+                <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+                  <span id="citizenship-conditional-hint" class="govuk-hint">
+                    Select all options that are relevant to you.
+                  </span>
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                        the application form
+                      </label>
+                    </div>
+
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                        annex documents
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                        evidential checklist documents
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                        any documents sent later on
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
               </div>
 
               <div class="govuk-form-group">
@@ -87,197 +117,60 @@
                 </fieldset>
               </div>
 
-              <h4 class="govuk-heading-s">Request help to take part in proceedings </h4>
+
+              <h4 class="govuk-heading-s">Send missing annex documents to the court and all parties</h4>
 
               <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                  Description
-                </label>
-                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Give all parties access to all documents sent to the court, including: the application form, annex documents, evidential checklist documents, any documents sent later on.</textarea>
-              </div>
-
-              <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
-                  <label class="govuk-label" for="contact-by-phone">
-                    Due date
-                  </label>
-                  <span id="" class="govuk-hint">
-                    For example, 31 3 2016
+                <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+                  <span id="citizenship-conditional-hint" class="govuk-hint">
+                    Select all options that are relevant to you.
                   </span>
-                  <div class="govuk-date-input" id="passport-issued">
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                        Social work chronology
+                      </label>
                     </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
+
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                        Social work statement
+                      </label>
                     </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                        Family tree (genogram)
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                        Social work assessment
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                        Care plan
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                        Threshold document
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                        Index of checklist documents
+                      </label>
                     </div>
                   </div>
                 </fieldset>
-              </div>
-
-              <h4 class="govuk-heading-s">Ask for disclosure</h4>
-
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                  Description
-                </label>
-                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Give all parties access to all documents sent to the court, including: the application form, annex documents, evidential checklist documents, any documents sent later on.</textarea>
-              </div>
-
-              <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
-                  <label class="govuk-label" for="contact-by-phone">
-                    Due date
-                  </label>
-                  <span id="" class="govuk-hint">
-                    For example, 31 3 2016
-                  </span>
-                  <div class="govuk-date-input" id="passport-issued">
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-
-              <h4 class="govuk-heading-s">Arrive at court</h4>
-
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                  Description
-                </label>
-                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Give all parties access to all documents sent to the court, including: the application form, annex documents, evidential checklist documents, any documents sent later on.</textarea>
-              </div>
-
-              <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
-                  <label class="govuk-label" for="contact-by-phone">
-                    Due date
-                  </label>
-                  <span id="" class="govuk-hint">
-                    For example, 31 3 2016
-                  </span>
-                  <div class="govuk-date-input" id="passport-issued">
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-
-              <h4 class="govuk-heading-s">Attend the pre-hearing and hearing at Swansea Civil Court</h4>
-
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                  Description
-                </label>
-                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Give all parties access to all documents sent to the court, including: the application form, annex documents, evidential checklist documents, any documents sent later on.</textarea>
-              </div>
-
-              <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
-                  <label class="govuk-label" for="contact-by-phone">
-                    Due date
-                  </label>
-                  <span id="" class="govuk-hint">
-                    For example, 31 3 2016
-                  </span>
-                  <div class="govuk-date-input" id="passport-issued">
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="">
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-
-              <h4 class="govuk-heading-s">Contact alternative carers as soon as possible</h4>
-
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                  Description
-                </label>
-                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Give all parties access to all documents sent to the court, including: the application form, annex documents, evidential checklist documents, any documents sent later on.</textarea>
               </div>
 
               <div class="govuk-form-group">
