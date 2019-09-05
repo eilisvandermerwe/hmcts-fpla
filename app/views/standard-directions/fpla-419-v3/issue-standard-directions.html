@@ -26,8 +26,8 @@
 
                 <h3 class="govuk-heading-m">Who drafted the order?</h3>
 
-                <h4 class="govuk-heading-s inline-block">Judge or magistrate</h4>
-                
+                <h4 class="govuk-heading-s">Judge or magistrate</h4>
+
                 <div class="govuk-form-group">
                   <label class="govuk-label" for="width-20">
                     Title
@@ -58,7 +58,24 @@
                   </div>
                 </div>
 
-                <p>By continuing, you confirm that you have the authority to issue the standard directions order.</p>
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                      <h3 class="govuk-heading-m">
+                        Declaration
+                      </h3>
+                    </legend>
+
+                    <div class="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                        <label class="govuk-label govuk-checkboxes__label" for="waste">
+                          I, Hmcts-admin@example.com (Hmcts-admin), have the authority to issue the standard directions order.
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
 
 
                 <br>
