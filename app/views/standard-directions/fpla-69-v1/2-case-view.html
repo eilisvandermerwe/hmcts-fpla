@@ -1,0 +1,2560 @@
+
+{% extends "layout-admin.html" %}
+
+<!-- <link rel="stylesheet" type="text/css" href="public/stylesheets/full-width.css"> -->
+
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">#1545-3874-6217-4575</h1>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <div class="govuk-form-group ccd-dropdown">
+          <label class="govuk-label" for="sort">
+            Next step
+          </label>
+          <select class="govuk-select" id="sort" name="sort">
+            <option value="">Select action</option>
+            <option value="">Send to gatekeeper</option>
+            <option value="">Documents</option>
+            <option value="">Add case number</option>
+            <option value="">Add hearing details</option>
+            <option value="">Draft standard directions order</option>
+            <option value="">Issue standard directions order</option>
+          </select>
+          <a href="issue-standard-directions" class="govuk-button">Go</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div class="govuk-tabs" data-module="tabs">
+
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#overview">
+                Overview
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#hearings">
+                Hearings
+              </a>
+            </li>
+            <!-- <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#directions">
+                My directions
+              </a>
+            </li> -->
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#draft-orders">
+                Draft orders
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#orders">
+                Orders
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#people">
+                People in the case
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#legal-basis">
+                Legal basis
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#documents">
+                Documents
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#history">
+                History
+              </a>
+            </li>
+          </ul>
+
+          <section class="govuk-tabs__panel" id="overview">
+
+
+
+          </section>
+
+
+          <section class="govuk-tabs__panel" id="hearings">
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Hearing on the 15 September 2019</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Type of hearing</td>
+                  <td class="govuk-table__cell">Case management</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Date</td>
+                  <td class="govuk-table__cell">15 September 2019</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Pre-hearing attendance</td>
+                  <td class="govuk-table__cell">1:30pm</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Time of hearing</td>
+                  <td class="govuk-table__cell">2:30pm</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Venue</td>
+                  <td class="govuk-table__cell">Family Court Swansea</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Judge</td>
+                  <td class="govuk-table__cell">HHJ Malcolm Sharpe </td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Additional hearing needs</td>
+                  <td class="govuk-table__cell">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Hearing on the 20 September 2019</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Type of hearing</td>
+                  <td class="govuk-table__cell">Further case management</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Date</td>
+                  <td class="govuk-table__cell">20 September 2019</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Pre-hearing attendance</td>
+                  <td class="govuk-table__cell">1:30pm</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Time of hearing</td>
+                  <td class="govuk-table__cell">2:30pm</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Venue</td>
+                  <td class="govuk-table__cell">Family Court Swansea</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Judge</td>
+                  <td class="govuk-table__cell">HHJ Malcolm Sharpe </td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Additional hearing needs</td>
+                  <td class="govuk-table__cell">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Hearing on the 25 September 2019</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Type of hearing</td>
+                  <td class="govuk-table__cell">Issue resolution</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Date</td>
+                  <td class="govuk-table__cell">25 September 2019</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Pre-hearing attendance</td>
+                  <td class="govuk-table__cell">1:30pm</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Time of hearing</td>
+                  <td class="govuk-table__cell">2:30pm</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Venue</td>
+                  <td class="govuk-table__cell">Family Court Swansea</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Judge</td>
+                  <td class="govuk-table__cell">HHJ Malcolm Sharpe </td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Additional hearing needs</td>
+                  <td class="govuk-table__cell">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Hearing on the 30 September 2019</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Type of hearing</td>
+                  <td class="govuk-table__cell">Final hearing</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Date</td>
+                  <td class="govuk-table__cell">30 September 2019</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Pre-hearing attendance</td>
+                  <td class="govuk-table__cell">1:30pm</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Time of hearing</td>
+                  <td class="govuk-table__cell">2:30pm</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Venue</td>
+                  <td class="govuk-table__cell">Family Court Swansea</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Judge</td>
+                  <td class="govuk-table__cell">HHJ Malcolm Sharpe </td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Additional hearing needs</td>
+                  <td class="govuk-table__cell">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Hearing needed</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">When do you need a hearing? </td>
+                  <td class="govuk-table__cell">Within 2 days</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give reason and proposed dates</td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">What type of hearing do you need?</td>
+                  <td class="govuk-table__cell">Standard case management hearing</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give reason</td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Do you need a without notice hearing?</td>
+                  <td class="govuk-table__cell">Yes</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give reason</td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Do you need a hearing with reduced notice?</td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give reason</td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Are respondents aware of proceedings?</td>
+                  <td class="govuk-table__cell">Yes</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give respondent’s views on proceedings </td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </section>
+
+          <!-- <section class="govuk-tabs__panel" id="directions">
+
+            <div class="govuk-width-container">
+
+              <main class="govuk-main-wrapper">
+
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-one-third" style="width: 20% !important">
+                    <p class="govuk-body">Local authority directions </p>
+                  </div>
+                  <div class="govuk-grid-column-two-thirds" style="width: 80% !important">
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Direction 1</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Direction</td>
+                          <td class="govuk-table__cell">Serve application and documents</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Details</td>
+                          <td class="govuk-table__cell">
+                            <p>Give all parties access to all documents sent to the court, including:</p>
+                            <ul class="govuk-list govuk-list--bullet">
+                              <li>the application form</li>
+                              <li>annex documents</li>
+                              <li>evidential checklist documents</li>
+                              <li>any documents sent later on</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Due date</td>
+                          <td class="govuk-table__cell">
+                            1 June 2019
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Time</td>
+                          <td class="govuk-table__cell">
+                            4:00pm
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Direction 2</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Direction</td>
+                          <td class="govuk-table__cell">Send missing annex documents to the court and all parties by 4pm, 1 June 2019</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Details</td>
+                          <td class="govuk-table__cell">
+                            <p>Send the following documents:</p>
+                            <ul class="govuk-list govuk-list--bullet">
+                              <li>Social work chronology</li>
+                              <li>Social work statement</li>
+                              <li>Family tree (genogram)</li>
+                              <li>Social work assessment</li>
+                              <li>Care plan</li>
+                              <li>Threshold document</li>
+                              <li>Index of checklist documents</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Due date</td>
+                          <td class="govuk-table__cell">
+                            1 June 2019
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Time</td>
+                          <td class="govuk-table__cell">
+                            4:00pm
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Direction 3</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Direction</td>
+                          <td class="govuk-table__cell">Identify alternative carers</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Details</td>
+                          <td class="govuk-table__cell">
+                            <p>Contact the parents to make sure there is a complete family tree showing family members who could be alternative carers.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Due date</td>
+                          <td class="govuk-table__cell">
+                            1 June 2019
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Time</td>
+                          <td class="govuk-table__cell">
+                            4:00pm
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Direction 4</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Direction</td>
+                          <td class="govuk-table__cell">Send translated case documents to [name]</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Details</td>
+                          <td class="govuk-table__cell">
+                            <p>The local authority must send translations of case documents to [name] in a language they understand.</p>
+                            <p>This must include documents that the local authority relies on to support allegations and explain why they have made their application for an order.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Due date</td>
+                          <td class="govuk-table__cell">
+                            11 June 2019
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Time</td>
+                          <td class="govuk-table__cell">
+                            11:00am
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Direction 5</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Direction</td>
+                          <td class="govuk-table__cell">Lodge a bundle</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Details</td>
+                          <td class="govuk-table__cell">
+                            <p>It must comply with practice direction 27A from Family Procedure Rules 2010.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Due date</td>
+                          <td class="govuk-table__cell">
+                            13 June 2019
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Time</td>
+                          <td class="govuk-table__cell">
+                            4:00pm
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Direction 6</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Direction</td>
+                          <td class="govuk-table__cell"> Send case summary to all parties</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Details</td>
+                          <td class="govuk-table__cell">
+                            <p>Send to the court and all parties.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Due date</td>
+                          <td class="govuk-table__cell">
+                            17 June 2019
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Time</td>
+                          <td class="govuk-table__cell">
+                            11:00am
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Direction 7</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Direction</td>
+                          <td class="govuk-table__cell">Bring adoption plans to the hearing</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Details</td>
+                          <td class="govuk-table__cell">
+                            <p>Bring any information to the case management hearing about any forward planning for adoption you have done for the child. Include evidence that you have:</p>
+                            <ul class="govuk-list govuk-list--bullet">
+                              <li>completed preliminary paperwork</li>
+                              <li>made a request for an adoption medical</li>
+                            </ul>
+                            <p>Also include:</p>
+                            <ul class="govuk-list govuk-list--bullet">
+                              <li>dates for panel medicals</li>
+                              <li>dates for panel meetings</li>
+                              <li>the date when the plan will be considered by the agency decision maker</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Due date</td>
+                          <td class="govuk-table__cell">
+                            18 June 2019
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Direction 8</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Direction</td>
+                          <td class="govuk-table__cell">Bring adoption plans to the hearing</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Details</td>
+                          <td class="govuk-table__cell">
+                            <p>Bring any information to the case management hearing about any forward planning for adoption you have done for the child. Include evidence that you have:</p>
+                            <ul class="govuk-list govuk-list--bullet">
+                              <li>completed preliminary paperwork</li>
+                              <li>made a request for an adoption medical</li>
+                            </ul>
+                            <p>Also include:</p>
+                            <ul class="govuk-list govuk-list--bullet">
+                              <li>dates for panel medicals</li>
+                              <li>dates for panel meetings</li>
+                              <li>the date when the plan will be considered by the agency decision maker</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Due date</td>
+                          <td class="govuk-table__cell">
+                            18 June 2019
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Direction 9</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Direction</td>
+                          <td class="govuk-table__cell">If there is an issue with jurisdiction </td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Details</td>
+                          <td class="govuk-table__cell">
+                            <p>The court is satisfied it has jurisdiction based on where the children normally live.</p>
+                            <p>If there is an issue, consider it urgently. Ask the relevant state authority for information needed to decide where jurisdiction lies.</p>
+                            <p>Bring this information to the case management hearing.</p>
+                            <p>If the child is a foreign national, tell the [consulate/embassy] in writing that these proceedings are happening and the date of the next hearing by 11am, 9 June 2019.</p>
+                            <p>Invite any representations to be made to the court by 11am, 11 June 2019.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+
+                  </div>
+
+
+                </div>
+
+              </main>
+            </div>
+
+
+
+
+          </section> -->
+
+
+          <section class="govuk-tabs__panel" id="draft-orders">
+
+            <div class="govuk-width-container">
+
+              <main class="govuk-main-wrapper">
+
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-one-third" style="width: 20% !important">
+                    <p class="govuk-body">Standard directions order</p>
+                  </div>
+                  <div class="govuk-grid-column-two-thirds" style="width: 80% !important">
+
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Standard directions order</caption>
+                      <tbody class="govuk-table__body">
+
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header" style="vertical-align: top;">
+                            Directions
+                          </td>
+                          <td class="govuk-table__cell">
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 1</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">This case is allocated for case management to HHJ Andrew Berkley. They will oversee the case and make decisions at all hearings.</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 2</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Request permission for expert evidence</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Your request must be in line with Family Procedure Rules part 25 and Practice Direction 25C. Give other parties a list of names of suitable experts. </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    All parties
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    11 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    11:00am
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 3</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Request help to take part in proceedings</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Make an application to the court if you believe any party or witness needs help with:</p>
+                                    <ul class="govuk-list govuk-list--bullet">
+                                      <li>understanding proceedings and their role in them in court</li>
+                                      <li>putting their views to the court</li>
+                                      <li>instructing their representatives before, during and after the hearins</li>
+                                      <li>attending the hearing without significant distress</li>
+                                    </ul>
+                                    <p>If possible, include in your application:</p>
+                                    <ul class="govuk-list govuk-list--bullet">
+                                      <li>why the party or witness would benefit from help</li>
+                                      <li>the kind of help that would benefit them the most in giving evidence or participating, and is practically possible</li>
+                                      <li>written confirmation from any relevant witnesses of their views</li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    All parties
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    11 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    11:00am
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 4</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Ask for disclosure</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Serve requests for disclosure on any third parties, for example the police or a hospital.</p>
+                                    <p>If you plan to ask for a disclosure order at the case management hearing, let the third party know in writing. Include a copy of this order.</p>
+                                    <p>Anything disclosed in this case is confidential. It cannot be shown to any third party without the court’s permission.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    All parties
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    13 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    4:00pm
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 5</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Arrive at court</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Parties and their legal representatives must come to court one hour early for pre-hearing discussions. </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    All parties
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    19 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    2:30pm
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 6</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Attend the [hearing] at Swansea Civil Court</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>It will take 2 hours.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    All parties
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    30 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    2:30pm
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 7</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Contact alternative carers as soon as possible</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Contact anyone who might want to be a carer if your preferred plan proves to be impossible. Give their contact Description  to the Local Authority.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 8</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Serve application and documents</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Give all parties access to all documents sent to the court, including:</p>
+                                    <ul class="govuk-list govuk-list--bullet">
+                                      <li>the application form</li>
+                                      <li>annex documents</li>
+                                      <li>evidential checklist documents</li>
+                                      <li>any documents sent later on</li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    The local authority
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    1 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    4:00pm
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 9</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Send missing annex documents to the court and all parties by 4pm, 1 June 2019</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Send the following documents:</p>
+                                    <ul class="govuk-list govuk-list--bullet">
+                                      <li>Social work chronology</li>
+                                      <li>Social work statement</li>
+                                      <li>Family tree (genogram)</li>
+                                      <li>Social work assessment</li>
+                                      <li>Care plan</li>
+                                      <li>Threshold document</li>
+                                      <li>Index of checklist documents</li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    The local authority
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    1 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    4:00pm
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 10</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Identify alternative carers</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Contact the parents to make sure there is a complete family tree showing family members who could be alternative carers.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    The local authority
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    1 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    4:00pm
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 11</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Send translated case documents to [name]</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>The local authority must send translations of case documents to [name] in a language they understand.</p>
+                                    <p>This must include documents that the local authority relies on to support allegations and explain why they have made their application for an order.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    The local authority
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    11 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    11:00am
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 12</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Lodge a bundle</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>It must comply with practice direction 27A from Family Procedure Rules 2010.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    The local authority
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    13 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    4:00pm
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 13</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell"> Send case summary to all parties</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Send to the court and all parties.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    The local authority
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    17 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    11:00am
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 14</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Bring adoption plans to the hearing</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Bring any information to the case management hearing about any forward planning for adoption you have done for the child. Include evidence that you have:</p>
+                                    <ul class="govuk-list govuk-list--bullet">
+                                      <li>completed preliminary paperwork</li>
+                                      <li>made a request for an adoption medical</li>
+                                    </ul>
+                                    <p>Also include:</p>
+                                    <ul class="govuk-list govuk-list--bullet">
+                                      <li>dates for panel medicals</li>
+                                      <li>dates for panel meetings</li>
+                                      <li>the date when the plan will be considered by the agency decision maker</li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    The local authority
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    18 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 15</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">If there is an issue with jurisdiction </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>The court is satisfied it has jurisdiction based on where the children normally live.</p>
+                                    <p>If there is an issue, consider it urgently. Ask the relevant state authority for information needed to decide where jurisdiction lies.</p>
+                                    <p>Bring this information to the case management hearing.</p>
+                                    <p>If the child is a foreign national, tell the [consulate/embassy] in writing that these proceedings are happening and the date of the next hearing by 11am, 9 June 2019.</p>
+                                    <p>Invite any representations to be made to the court by 11am, 11 June 2019.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    The local authority
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 16</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Send response to threshold statement to all parties</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Send a written statement to the court and all parties, showing:</p>
+                                    <ul class="govuk-list govuk-list--bullet">
+                                      <li>the parents’ response to the local authority’s threshold statement</li>
+                                      <li>the parents’ proposals for placing the children, immediately and long-term</li>
+                                      <li>whether they agree to a family group conference if one has not taken place yet</li>
+                                    </ul>
+                                    <p>If the parents do not do this, the court can assume they do not disagree with allegations in the threshold statement.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    The parents or respondent
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    11 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    11:00am
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 17</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Appoint a children’s guardian</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Preferably [name]</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    Cafcass
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    31 May 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    11:00am
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 18</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Arrange an advocates’ meeting</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>All of the advocates who will appear at the related hearing must attend. </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    Cafcass
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    13 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    4:00pm
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 19</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Send the children’s guardian’s analysis to all parties</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Send to the court and all parties.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    Cafcass
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    17 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    11:00am
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 20</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell"> Object to a request for disclosure</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>If you object to the disclosure request, attend the case management hearing or write to the court to explain your objection.</p>
+                                    <p>Anything disclosed in this case is confidential. It cannot be shown to any third party without the court’s permission.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    Other parties
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    17 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    4:00pm
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 21</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Arrange an interpreter</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>The court must arrange an interpreter in [language] for [name] at all hearings.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    The court
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    11 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Time</td>
+                                  <td class="govuk-table__cell">
+                                    11:00am
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+
+                  </div>
+
+                </div>
+
+              </main>
+            </div>
+
+
+          </section>
+
+          <section class="govuk-tabs__panel" id="orders">
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Orders and directions needed</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Which orders do you need? </td>
+                  <td class="govuk-table__cell">Interim supervision order </td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Do you need any of these related orders? </td>
+                  <td class="govuk-table__cell">Other order under section 48 or the Children Act 1989</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give details</td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Do you need any of these directions? </td>
+                  <td class="govuk-table__cell">Other direction relating to an emergency protection order</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give details</td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Which order do you need? </td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Do you need any other directions</td>
+                  <td class="govuk-table__cell">Yes</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give details</td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </section>
+
+          <section class="govuk-tabs__panel" id="people">
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Children</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Child 1</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <th class="govuk-table__cell">Child's full name</th>
+                          <td class="govuk-table__cell">Danielle Robinson</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Date of birth</td>
+                          <td class="govuk-table__cell">11 April 2015</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Gender</td>
+                          <td class="govuk-table__cell">Girl</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Describe child's situaton</td>
+                          <td class="govuk-table__cell">In hospital, soon to be discharged</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell" colspan="2">
+                            <table class="govuk-table ccd-table">
+                              <tbody class="govuk-table__body nested-row">
+                                <tr class="govuk-table__row">
+                                  <th class="govuk-table__cell">Current address</th>
+                                  <th class="govuk-table__cell"></th>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <th class="govuk-table__cell">Building and Street</th>
+                                  <td class="govuk-table__cell">1</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell"></td>
+                                  <td class="govuk-table__cell">Upper Cresent</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Town or City</td>
+                                  <td class="govuk-table__cell">Belfast</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Postcode/Zipcode</td>
+                                  <td class="govuk-table__cell">BT7 1N7</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Postcode/Zipcode</td>
+                                  <td class="govuk-table__cell">BT7 1N7</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Example...</td>
+                          <td class="govuk-table__cell">Example...</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Key dates for this child</td>
+                          <td class="govuk-table__cell">test</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Brief summary of care and contact plan</td>
+                          <td class="govuk-table__cell">test</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Are you considering adoption at this stage?</td>
+                          <td class="govuk-table__cell">test</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Are you submitted and application for a placement order? </td>
+                          <td class="govuk-table__cell">test</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Which court are you applying to? </td>
+                          <td class="govuk-table__cell">test</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Mother's full name</td>
+                          <td class="govuk-table__cell">test</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Father's full name</td>
+                          <td class="govuk-table__cell">test</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Does the father have parental responsibility?</td>
+                          <td class="govuk-table__cell">test</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Name of social worker</td>
+                          <td class="govuk-table__cell">test</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Social words telephone number</td>
+                          <td class="govuk-table__cell">test</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Does the child have any additional needs?</td>
+                          <td class="govuk-table__cell">No</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Do you need contact details hidden from other parties?</td>
+                          <td class="govuk-table__cell">No</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Do you believe this child will have problems with litigation capacity (understanding what’s happening in the case)?</td>
+                          <td class="govuk-table__cell">No</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Respondents</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Respondent 1</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <th class="govuk-table__cell">Child's full name</th>
+                          <td class="govuk-table__cell">Danielle Robinson</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Date of birth</td>
+                          <td class="govuk-table__cell">11 April 2015</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Gender</td>
+                          <td class="govuk-table__cell">Girl</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Describe child's situaton</td>
+                          <td class="govuk-table__cell">In hospital, soon to be discharged</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Describe child's situaton</td>
+                          <td class="govuk-table__cell">In hospital, soon to be discharged</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell" colspan="2">
+                            <table class="govuk-table ccd-table">
+                              <tbody class="govuk-table__body nested-row">
+                                <tr class="govuk-table__row">
+                                  <th class="govuk-table__cell">Current address</th>
+                                  <th class="govuk-table__cell"></th>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <th class="govuk-table__cell">Building and Street</th>
+                                  <td class="govuk-table__cell">1</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell"></td>
+                                  <td class="govuk-table__cell">Upper Cresent</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Town or City</td>
+                                  <td class="govuk-table__cell">Belfast</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Postcode/Zipcode</td>
+                                  <td class="govuk-table__cell">BT7 1N7</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">Postcode/Zipcode</td>
+                                  <td class="govuk-table__cell">BT7 1N7</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell">Example...</td>
+                          <td class="govuk-table__cell">Example...</td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Applicant </caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Example...</td>
+                  <td class="govuk-table__cell">Example...</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Solicitor</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Example...</td>
+                  <td class="govuk-table__cell">Example...</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Others to be given notice</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Example...</td>
+                  <td class="govuk-table__cell">Example...</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </section>
+
+          <section class="govuk-tabs__panel" id="legal-basis">
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Statement of service</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Recipient 1</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Name of recipient </td>
+                          <td class="govuk-table__cell">Example</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Address of recipient </td>
+                          <td class="govuk-table__cell">Example</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Name of document(s)</td>
+                          <td class="govuk-table__cell">Example</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">When were they sent?</td>
+                          <td class="govuk-table__cell">15 September 2019</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">How were they sent</td>
+                          <td class="govuk-table__cell">Email</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Recipients email address </td>
+                          <td class="govuk-table__cell">example@example.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">
+                    <table class="govuk-table ccd-table">
+                      <caption class="govuk-table__caption ccd-table-head">Recipient 2</caption>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Name of recipient </td>
+                          <td class="govuk-table__cell">Example</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Address of recipient </td>
+                          <td class="govuk-table__cell">Example</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Name of document(s)</td>
+                          <td class="govuk-table__cell">Example</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">When were they sent?</td>
+                          <td class="govuk-table__cell">15 September 2019</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">How were they sent</td>
+                          <td class="govuk-table__cell">Email</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Recipients email address </td>
+                          <td class="govuk-table__cell">example@example.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">How are there grounds for an emergency protection order?</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Case date...</td>
+                  <td class="govuk-table__cell">Example...</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">How does this case meet the threshold criteria</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Case date...</td>
+                  <td class="govuk-table__cell">Example...</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Risks and harm to children </caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Case date...</td>
+                  <td class="govuk-table__cell">Example...</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Factors affecting parenting </caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Case date...</td>
+                  <td class="govuk-table__cell">Example...</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">International element </caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Case date...</td>
+                  <td class="govuk-table__cell">Example...</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Other proceedings</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Case date...</td>
+                  <td class="govuk-table__cell">Example...</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Allocation proposal</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Which level of judge do you recommend for this case? </td>
+                  <td class="govuk-table__cell">District judge</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give reason</td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">Attending the hearing</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Interpretor </td>
+                  <td class="govuk-table__cell">Yes</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give details including person, language and dialect</td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Spoken or written Welsh </td>
+                  <td class="govuk-table__cell">Yes</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give details </td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Intermediary</td>
+                  <td class="govuk-table__cell">Yes</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give details </td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Facilities or assistance for a disability</td>
+                  <td class="govuk-table__cell">Yes</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give details</td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Separate waiting room or other security measures</td>
+                  <td class="govuk-table__cell">Yes</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give details </td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Something else </td>
+                  <td class="govuk-table__cell">Yes</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell table-header">Give details </td>
+                  <td class="govuk-table__cell">Test</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </section>
+
+          <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="documents">
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">1. Social work chronology</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Document status</th>
+                  <td class="govuk-table__cell">Included in social work evidence template (SWET)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">2. Social work statement and genogram</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Document status</th>
+                  <td class="govuk-table__cell">To follow</td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Explain why the document isn’t included and when you expect to provide it</th>
+                  <td class="govuk-table__cell">Reason</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">3. Social work assessment </caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Document status</th>
+                  <td class="govuk-table__cell">Attached</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">4. Care plan</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Document status</th>
+                  <td class="govuk-table__cell">Attached</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">5. Social work evidence template (SWET)</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Document status</th>
+                  <td class="govuk-table__cell">Attached</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">6. Threshold document</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Document status</th>
+                  <td class="govuk-table__cell">Included in social work evidence template (SWET)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr>
+
+            <table class="govuk-table ccd-table">
+              <caption class="govuk-table__caption ccd-table-head">7. Checklist document </caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Document status</th>
+                  <td class="govuk-table__cell">Included in social work evidence template (SWET)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr>
+
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Additional documents</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Attatched PDF</th>
+                  <td class="govuk-table__cell"><a href="">name_vs_case.pdf</a></td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Notice of proceedings (c6)</th>
+                  <td class="govuk-table__cell"><a href="">Notice_of_proceedings_(c6).pdf</a></td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Statement of service (c9)</th>
+                  <td class="govuk-table__cell"><a href="">Statement_of_service_(c9).pdf</a></td>
+                </tr>
+              </tbody>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__cell">Draft standard direction orders</th>
+                  <td class="govuk-table__cell"><a href="">draft-standard-directions-order.pdf</a></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </section>
+
+          <section class="govuk-tabs__panel" id="history">
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+              <h3 class="govuk-heading-m">History</h3>
+
+              <table class="govuk-table history-table" id="rowClick">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="col">Event</th>
+                    <th class="govuk-table__header" scope="col">Date</th>
+                    <th class="govuk-table__header" scope="col">Author</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body" id="history-row-click">
+                  <tr class="govuk-table__row history-row active" data-tab="five">
+                    <td class="govuk-table__cell"><a href="">Draft standard directions</a></td>
+                    <td class="govuk-table__cell">26 Jul 2019 14:04 30 AM</td>
+                    <td class="govuk-table__cell">HMCTS admin</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row" data-tab="four">
+                    <td class="govuk-table__cell"><a href="">Add hearing details</a></td>
+                    <td class="govuk-table__cell">25 Jul 2019 14:04 30 AM</td>
+                    <td class="govuk-table__cell">HMCTS admin</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row" data-tab="three">
+                    <td class="govuk-table__cell"><a href="">Make allocation proposal</a></td>
+                    <td class="govuk-table__cell">25 Jul 2019 14:04 30 AM</td>
+                    <td class="govuk-table__cell">HMCTS admin</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row" data-tab="two">
+                    <td class="govuk-table__cell"><a href="">Submit case</a></td>
+                    <td class="govuk-table__cell">24 Jul 2019 3:48 24 PM</td>
+                    <td class="govuk-table__cell">Local authority</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row" data-tab="one">
+                    <td class="govuk-table__cell"><a href="">Open case</a></td>
+                    <td class="govuk-table__cell">3 Jan 2019 3:48 24 PM</td>
+                    <td class="govuk-table__cell">Local authority</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+            <div class="details-content" id="one" style="display:none;">
+              <div class="govuk-grid-column-one-half details-table" >
+              <h3 class="govuk-heading-m">Details</h3>
+
+              <table class="govuk-table">
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row history-row" data-tab="one">
+                    <td class="govuk-table__cell">Date</td>
+                    <td class="govuk-table__cell">3 Jan 2019 3:48 24 PM</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Author</td>
+                    <td class="govuk-table__cell">Local authority</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">End state</td>
+                    <td class="govuk-table__cell">Open</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Event</td>
+                    <td class="govuk-table__cell">Open case</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Summary</td>
+                    <td class="govuk-table__cell">-</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Comment</td>
+                    <td class="govuk-table__cell">-</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+
+
+          <div class="details-content" id="two" style="display:none;">
+            <div class="govuk-grid-column-one-half details-table" >
+            <h3 class="govuk-heading-m">Details</h3>
+
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row history-row" data-tab="one">
+                  <td class="govuk-table__cell">Date</td>
+                  <td class="govuk-table__cell">24 Jul 2019 3:48 24 PM</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Author</td>
+                  <td class="govuk-table__cell">Local authority</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">End state</td>
+                  <td class="govuk-table__cell">Open</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Event</td>
+                  <td class="govuk-table__cell">Submit case</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Summary</td>
+                  <td class="govuk-table__cell">-</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Comment</td>
+                  <td class="govuk-table__cell">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+        <div class="details-content" id="three" style="display:none;">
+          <div class="govuk-grid-column-one-half details-table" >
+          <h3 class="govuk-heading-m">Details</h3>
+
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row history-row" data-tab="one">
+                  <td class="govuk-table__cell">Date</td>
+                  <td class="govuk-table__cell">25 Jul 2019 14:04 30 AM</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Author</td>
+                  <td class="govuk-table__cell">HMCTS admin</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">End state</td>
+                  <td class="govuk-table__cell">Open</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Event</td>
+                  <td class="govuk-table__cell">Make allocation proposal</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Summary</td>
+                  <td class="govuk-table__cell">Assigned to Circuit Judge </td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Comment</td>
+                  <td class="govuk-table__cell">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          </div>
+
+
+        <div class="details-content" id="four" style="display:none;">
+          <div class="govuk-grid-column-one-half details-table" >
+          <h3 class="govuk-heading-m">Details</h3>
+
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row history-row" data-tab="one">
+                  <td class="govuk-table__cell">Date</td>
+                  <td class="govuk-table__cell">25 Jul 2019 14:04 30 AM</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Author</td>
+                  <td class="govuk-table__cell">HMCTS admin</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">End state</td>
+                  <td class="govuk-table__cell">Open</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Event</td>
+                  <td class="govuk-table__cell">Add hearing details</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Summary</td>
+                  <td class="govuk-table__cell">Added hearing details for 4 hearings</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Comment</td>
+                  <td class="govuk-table__cell">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          </div>
+
+          <div class="details-content" id="five">
+            <div class="govuk-grid-column-one-half details-table" >
+            <h3 class="govuk-heading-m">Details</h3>
+
+              <table class="govuk-table">
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row history-row" data-tab="one">
+                    <td class="govuk-table__cell">Date</td>
+                    <td class="govuk-table__cell">26 Jul 2019 14:04 30 AM</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Author</td>
+                    <td class="govuk-table__cell">HMCTS admin</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">End state</td>
+                    <td class="govuk-table__cell">Open</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Event</td>
+                    <td class="govuk-table__cell">Draft standard directions</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Summary</td>
+                    <td class="govuk-table__cell">Completed for all parties</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Comment</td>
+                    <td class="govuk-table__cell">-</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            </div>
+
+          </div>
+
+          </section>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}
