@@ -1,5 +1,5 @@
 
-{% extends "layout-admin.html" %}
+{% extends "layout.html" %}
 
 <!-- <link rel="stylesheet" type="text/css" href="public/stylesheets/full-width.css"> -->
 
@@ -31,10 +31,9 @@
             <option value="">Documents</option>
             <option value="">Add case number</option>
             <option value="">Add hearing details</option>
-            <option value="">Draft standard directions order</option>
-            <option value="">Issue standard directions order</option>
+            <option value="">Draft standard directions</option>
           </select>
-          <a href="all-parties" class="govuk-button">Go</a>
+          <a href="" class="govuk-button">Go</a>
         </div>
       </div>
 
@@ -55,14 +54,9 @@
                 Hearings
               </a>
             </li>
-            <!-- <li class="govuk-tabs__list-item">
+            <li class="govuk-tabs__list-item">
               <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#directions">
                 My directions
-              </a>
-            </li> -->
-            <li class="govuk-tabs__list-item">
-              <a class="govuk-tabs__tab" href="#draft-orders">
-                Draft orders
               </a>
             </li>
             <li class="govuk-tabs__list-item">
@@ -351,7 +345,7 @@
 
           </section>
 
-          <!-- <section class="govuk-tabs__panel" id="directions">
+          <section class="govuk-tabs__panel" id="directions">
 
             <div class="govuk-width-container">
 
@@ -400,7 +394,19 @@
                           </td>
                         </tr>
                       </tbody>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell table-header">Action</td>
+                          <td class="govuk-table__cell">
+                            <a href="single-direction">Comply with direction</a>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
+
+                    <a href="single-direction">Comply with direction</a>
+                    <br>
+                    <br>
 
                     <table class="govuk-table ccd-table">
                       <caption class="govuk-table__caption ccd-table-head">Direction 2</caption>
@@ -689,13 +695,10 @@
               </main>
             </div>
 
+          </section>
 
 
-
-          </section> -->
-
-
-          <section class="govuk-tabs__panel" id="draft-orders">
+          <section class="govuk-tabs__panel" id="orders">
 
             <div class="govuk-width-container">
 
@@ -703,12 +706,12 @@
 
                 <div class="govuk-grid-row">
                   <div class="govuk-grid-column-one-third" style="width: 20% !important">
-                    <p class="govuk-body">Draft standard directions order</p>
+                    <p class="govuk-body">Standard directions order</p>
                   </div>
                   <div class="govuk-grid-column-two-thirds" style="width: 80% !important">
 
                     <table class="govuk-table ccd-table">
-                      <caption class="govuk-table__caption ccd-table-head">Draft standard directions order</caption>
+                      <caption class="govuk-table__caption ccd-table-head">Standard directions order</caption>
                       <tbody class="govuk-table__body">
 
                         <tr class="govuk-table__row">
@@ -728,7 +731,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 2</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 1</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -770,7 +773,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 3</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 1</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -825,7 +828,7 @@
 
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 4</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 1</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -869,7 +872,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 5</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 1</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -911,7 +914,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 6</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 1</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -953,7 +956,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 7</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 1</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -971,7 +974,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 8</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 1</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1018,7 +1021,7 @@
                               </tbody>
                             </table>
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 9</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 2</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1069,7 +1072,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 10</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 3</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1111,7 +1114,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 11</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 4</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1154,7 +1157,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 12</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 5</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1196,7 +1199,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 13</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 6</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1239,7 +1242,7 @@
 
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 14</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 7</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1284,7 +1287,52 @@
 
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 15</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 8</caption>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Direction</td>
+                                  <td class="govuk-table__cell">Bring adoption plans to the hearing</td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Description </td>
+                                  <td class="govuk-table__cell">
+                                    <p>Bring any information to the case management hearing about any forward planning for adoption you have done for the child. Include evidence that you have:</p>
+                                    <ul class="govuk-list govuk-list--bullet">
+                                      <li>completed preliminary paperwork</li>
+                                      <li>made a request for an adoption medical</li>
+                                    </ul>
+                                    <p>Also include:</p>
+                                    <ul class="govuk-list govuk-list--bullet">
+                                      <li>dates for panel medicals</li>
+                                      <li>dates for panel meetings</li>
+                                      <li>the date when the plan will be considered by the agency decision maker</li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">For</td>
+                                  <td class="govuk-table__cell">
+                                    The local authority
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell table-header">Due date</td>
+                                  <td class="govuk-table__cell">
+                                    18 June 2019
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+
+                            <table class="govuk-table ccd-table">
+                              <caption class="govuk-table__caption ccd-table-head">Direction 9</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1314,7 +1362,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 16</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 8</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1362,7 +1410,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 17</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 8</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1373,7 +1421,7 @@
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Description </td>
                                   <td class="govuk-table__cell">
-                                    <p>Preferably [name]</p>
+                                    <p>Preferably [name]. </p>
                                   </td>
                                 </tr>
                               </tbody>
@@ -1404,7 +1452,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 18</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 8</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1446,7 +1494,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 19</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 8</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1488,7 +1536,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 20</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 8</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1531,7 +1579,7 @@
                             </table>
 
                             <table class="govuk-table ccd-table">
-                              <caption class="govuk-table__caption ccd-table-head">Direction 21</caption>
+                              <caption class="govuk-table__caption ccd-table-head">Direction 8</caption>
                               <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                   <td class="govuk-table__cell table-header">Direction</td>
@@ -1578,17 +1626,16 @@
                       </tbody>
                     </table>
 
+
+
+
+
                   </div>
 
                 </div>
 
               </main>
             </div>
-
-
-          </section>
-
-          <section class="govuk-tabs__panel" id="orders">
 
             <table class="govuk-table ccd-table">
               <caption class="govuk-table__caption ccd-table-head">Orders and directions needed</caption>
@@ -2298,20 +2345,20 @@
               </tbody>
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
-                  <th class="govuk-table__cell">Notice of proceedings (c6)</th>
+                  <th class="govuk-table__cell">Notice of proceedings</th>
                   <td class="govuk-table__cell"><a href="">Notice_of_proceedings_(c6).pdf</a></td>
                 </tr>
               </tbody>
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
-                  <th class="govuk-table__cell">Statement of service (c9)</th>
+                  <th class="govuk-table__cell">Statement of service</th>
                   <td class="govuk-table__cell"><a href="">Statement_of_service_(c9).pdf</a></td>
                 </tr>
               </tbody>
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
-                  <th class="govuk-table__cell">Draft standard direction orders</th>
-                  <td class="govuk-table__cell"><a href="">draft-standard-directions-order.pdf</a></td>
+                  <th class="govuk-table__cell">Standard directions order</th>
+                  <td class="govuk-table__cell"><a href="">SDO.pdf</a></td>
                 </tr>
               </tbody>
             </table>
@@ -2333,25 +2380,25 @@
                   </tr>
                 </thead>
                 <tbody class="govuk-table__body" id="history-row-click">
-                  <tr class="govuk-table__row history-row active" data-tab="five">
-                    <td class="govuk-table__cell"><a href="">Draft standard directions</a></td>
-                    <td class="govuk-table__cell">26 Jul 2019 14:04 30 AM</td>
-                    <td class="govuk-table__cell">HMCTS admin</td>
-                  </tr>
-                  <tr class="govuk-table__row history-row" data-tab="four">
+                  <tr class="govuk-table__row history-row active" data-tab="three">
                     <td class="govuk-table__cell"><a href="">Add hearing details</a></td>
                     <td class="govuk-table__cell">25 Jul 2019 14:04 30 AM</td>
                     <td class="govuk-table__cell">HMCTS admin</td>
                   </tr>
                   <tr class="govuk-table__row history-row" data-tab="three">
-                    <td class="govuk-table__cell"><a href="">Make allocation proposal</a></td>
+                    <td class="govuk-table__cell"><a href="">Add hearing details</a></td>
+                    <td class="govuk-table__cell">25 Jul 2019 14:04 30 AM</td>
+                    <td class="govuk-table__cell">HMCTS admin</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row" data-tab="three">
+                    <td class="govuk-table__cell"><a href="">Add hearing details</a></td>
                     <td class="govuk-table__cell">25 Jul 2019 14:04 30 AM</td>
                     <td class="govuk-table__cell">HMCTS admin</td>
                   </tr>
                   <tr class="govuk-table__row history-row" data-tab="two">
                     <td class="govuk-table__cell"><a href="">Submit case</a></td>
-                    <td class="govuk-table__cell">24 Jul 2019 3:48 24 PM</td>
-                    <td class="govuk-table__cell">Local authority</td>
+                    <td class="govuk-table__cell">Date</td>
+                    <td class="govuk-table__cell">Author</td>
                   </tr>
                   <tr class="govuk-table__row history-row" data-tab="one">
                     <td class="govuk-table__cell"><a href="">Open case</a></td>
@@ -2363,7 +2410,7 @@
 
             </div>
 
-            <div class="details-content" id="one" style="display:none;">
+            <div class="details-content" id="one">
               <div class="govuk-grid-column-one-half details-table" >
               <h3 class="govuk-heading-m">Details</h3>
 
@@ -2371,11 +2418,11 @@
                 <tbody class="govuk-table__body">
                   <tr class="govuk-table__row history-row" data-tab="one">
                     <td class="govuk-table__cell">Date</td>
-                    <td class="govuk-table__cell">3 Jan 2019 3:48 24 PM</td>
+                    <td class="govuk-table__cell">10 Dec 2018 2:55 24 PM</td>
                   </tr>
                   <tr class="govuk-table__row history-row">
                     <td class="govuk-table__cell">Author</td>
-                    <td class="govuk-table__cell">Local authority</td>
+                    <td class="govuk-table__cell">Judge</td>
                   </tr>
                   <tr class="govuk-table__row history-row">
                     <td class="govuk-table__cell">End state</td>
@@ -2400,7 +2447,7 @@
           </div>
 
 
-          <div class="details-content" id="two" style="display:none;">
+          <div class="details-content" id="two">
             <div class="govuk-grid-column-one-half details-table" >
             <h3 class="govuk-heading-m">Details</h3>
 
@@ -2408,7 +2455,7 @@
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row history-row" data-tab="one">
                   <td class="govuk-table__cell">Date</td>
-                  <td class="govuk-table__cell">24 Jul 2019 3:48 24 PM</td>
+                  <td class="govuk-table__cell">12 Dec 2018 9:15 AM</td>
                 </tr>
                 <tr class="govuk-table__row history-row">
                   <td class="govuk-table__cell">Author</td>
@@ -2420,7 +2467,7 @@
                 </tr>
                 <tr class="govuk-table__row history-row">
                   <td class="govuk-table__cell">Event</td>
-                  <td class="govuk-table__cell">Submit case</td>
+                  <td class="govuk-table__cell">Open case</td>
                 </tr>
                 <tr class="govuk-table__row history-row">
                   <td class="govuk-table__cell">Summary</td>
@@ -2436,7 +2483,8 @@
           </div>
         </div>
 
-        <div class="details-content" id="three" style="display:none;">
+
+        <div class="details-content" id="three">
           <div class="govuk-grid-column-one-half details-table" >
           <h3 class="govuk-heading-m">Details</h3>
 
@@ -2444,44 +2492,7 @@
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row history-row" data-tab="one">
                   <td class="govuk-table__cell">Date</td>
-                  <td class="govuk-table__cell">25 Jul 2019 14:04 30 AM</td>
-                </tr>
-                <tr class="govuk-table__row history-row">
-                  <td class="govuk-table__cell">Author</td>
-                  <td class="govuk-table__cell">HMCTS admin</td>
-                </tr>
-                <tr class="govuk-table__row history-row">
-                  <td class="govuk-table__cell">End state</td>
-                  <td class="govuk-table__cell">Open</td>
-                </tr>
-                <tr class="govuk-table__row history-row">
-                  <td class="govuk-table__cell">Event</td>
-                  <td class="govuk-table__cell">Make allocation proposal</td>
-                </tr>
-                <tr class="govuk-table__row history-row">
-                  <td class="govuk-table__cell">Summary</td>
-                  <td class="govuk-table__cell">Assigned to Circuit Judge </td>
-                </tr>
-                <tr class="govuk-table__row history-row">
-                  <td class="govuk-table__cell">Comment</td>
-                  <td class="govuk-table__cell">-</td>
-                </tr>
-              </tbody>
-            </table>
-
-          </div>
-          </div>
-
-
-        <div class="details-content" id="four" style="display:none;">
-          <div class="govuk-grid-column-one-half details-table" >
-          <h3 class="govuk-heading-m">Details</h3>
-
-            <table class="govuk-table">
-              <tbody class="govuk-table__body">
-                <tr class="govuk-table__row history-row" data-tab="one">
-                  <td class="govuk-table__cell">Date</td>
-                  <td class="govuk-table__cell">25 Jul 2019 14:04 30 AM</td>
+                  <td class="govuk-table__cell">	3 Jan 2019 3:48 24 PM</td>
                 </tr>
                 <tr class="govuk-table__row history-row">
                   <td class="govuk-table__cell">Author</td>
@@ -2497,7 +2508,7 @@
                 </tr>
                 <tr class="govuk-table__row history-row">
                   <td class="govuk-table__cell">Summary</td>
-                  <td class="govuk-table__cell">Added hearing details for 4 hearings</td>
+                  <td class="govuk-table__cell">-</td>
                 </tr>
                 <tr class="govuk-table__row history-row">
                   <td class="govuk-table__cell">Comment</td>
@@ -2508,42 +2519,6 @@
 
           </div>
           </div>
-
-          <div class="details-content" id="five">
-            <div class="govuk-grid-column-one-half details-table" >
-            <h3 class="govuk-heading-m">Details</h3>
-
-              <table class="govuk-table">
-                <tbody class="govuk-table__body">
-                  <tr class="govuk-table__row history-row" data-tab="one">
-                    <td class="govuk-table__cell">Date</td>
-                    <td class="govuk-table__cell">26 Jul 2019 14:04 30 AM</td>
-                  </tr>
-                  <tr class="govuk-table__row history-row">
-                    <td class="govuk-table__cell">Author</td>
-                    <td class="govuk-table__cell">HMCTS admin</td>
-                  </tr>
-                  <tr class="govuk-table__row history-row">
-                    <td class="govuk-table__cell">End state</td>
-                    <td class="govuk-table__cell">Open</td>
-                  </tr>
-                  <tr class="govuk-table__row history-row">
-                    <td class="govuk-table__cell">Event</td>
-                    <td class="govuk-table__cell">Draft standard directions</td>
-                  </tr>
-                  <tr class="govuk-table__row history-row">
-                    <td class="govuk-table__cell">Summary</td>
-                    <td class="govuk-table__cell">Completed for all parties</td>
-                  </tr>
-                  <tr class="govuk-table__row history-row">
-                    <td class="govuk-table__cell">Comment</td>
-                    <td class="govuk-table__cell">-</td>
-                  </tr>
-                </tbody>
-              </table>
-
-            </div>
-            </div>
 
           </div>
 
