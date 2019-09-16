@@ -1193,8 +1193,51 @@
               </div>
             </dl>
 
+            <h4 class="govuk-heading-s">Is this the final draft?</h4>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+              <!-- Yes -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+                <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                  Yes
+                </label>
+              </div>
+
+              <!-- No -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                  No
+                </label>
+              </div>
+
+              <!-- Contidtional yes -->
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <div class="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                        <label class="govuk-label govuk-checkboxes__label" for="waste">
+                          I, Hmcts-admin@example.com (Hmcts-admin), have the authority to issue the standard directions order.
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+
+            </div>
+
+            <br><br>
+
             <button class="govuk-button govuk-button--secondary">Previous</button>
-            <a href="declaration" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+            <a href="2-case-view" class="govuk-button" style="font-size: 19px !important;">Continue</a>
 
             <p><a href="">Cancel</a></p>
 
