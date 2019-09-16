@@ -21,15 +21,47 @@
               <br>
               <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
 
-                <div class="govuk-form-group">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
                   <label class="govuk-label" for="width-20">
                     Judge or magistrate’s title
                   </label>
-                  <span id="event-name-hint" class="govuk-hint">
-                    For example, His Honour Judge or District Judge
-                  </span>
-                  <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
+
+                  <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-email">
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                        Her Honour Judge
+                      </label>
+                    </div>
+
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes" >
+                      <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                        His Honour Judge
+                      </label>
+                    </div>
+
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                        Deputy District Judge
+                      </label>
+                    </div>
+
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                        District Judge
+                      </label>
+                    </div>
+
+                  </div>
+                  </fieldset>
                 </div>
+
 
                 <div class="govuk-form-group">
                   <label class="govuk-label" for="width-20">
