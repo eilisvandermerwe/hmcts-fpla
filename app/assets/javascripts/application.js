@@ -208,3 +208,20 @@ function hideDirectionSeven() {
 function hideDirectionEight() {
    document.getElementById('direction-8').style.display = "none";
 }
+
+
+
+// Branching
+router.post('standard-directions/fpla-419-v4/1-case-view', function (req, res) {
+  // Get the answer from session data
+  // The name between the quotes is the same as the 'name' attribute on the input elements
+  // However in JavaScript we can't use hyphens in variable names
+
+  let over18 = req.session.data['over-18']
+
+  if (over18 === 'false') {
+    res.redirect('views/standard-directions/fpla-419-v4/1-case-view')
+  } else {
+    res.redirect('views/standard-directions/fpla-419-v4/2-case-view')
+  }
+})
