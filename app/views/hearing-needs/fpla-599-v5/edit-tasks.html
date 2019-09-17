@@ -1,0 +1,871 @@
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+              <h1 class="govuk-heading-xl">Add hearing details</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+                <form method="post" class="form">
+
+                  <div class="govuk-inset-text">
+                    <h3 class="govuk-heading-m">Add hearing details (Optional)</h3>
+                    <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingOne()" />
+                    <br>
+
+                    <h4 class="govuk-heading-s inline-block">Hearing 1</h4>
+                    <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingOne()" />
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <label class="govuk-label" for="width-20">
+                          Type of hearing
+                        </label>
+                        <br>
+                        <div class="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="hearing-2-1" name="hearing" type="radio" value="england" checked>
+                            <label class="govuk-label govuk-radios__label" for="hearing-2-1">
+                              Case management
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="hearing-2-2" name="hearing" type="radio" value="scotland">
+                            <label class="govuk-label govuk-radios__label" for="hearing-2-2">
+                              Further case management
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="hearing-2-3" name="hearing" type="radio" value="wales">
+                            <label class="govuk-label govuk-radios__label" for="hearing-2-3">
+                              Issue resolution
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="hearing-2-4" name="hearing" type="radio" value="northern-ireland">
+                            <label class="govuk-label govuk-radios__label" for="hearing-2-4">
+                              Final
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        Venue
+                      </label>
+                      <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="Family Court Swansea">
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                        <label class="govuk-label" for="contact-by-phone">
+                          Date
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          For example, 27 09 2019
+                        </span>
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="15">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="9">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="2019">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-10">
+                        Pre-hearing attendance
+                      </label>
+                      <span id="passport-issued-hint" class="govuk-hint">
+                        This is usually one hour before the hearing
+                      </span>
+                      <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="1:30pm">
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-10">
+                        Hearing time
+                      </label>
+                      <span id="passport-issued-hint" class="govuk-hint">
+                        For example, 2:30pm
+                      </span>
+                      <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="2:30pm">
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-10">
+                        Hearing needs booked
+                      </label>
+                      <span id="passport-issued-hint" class="govuk-hint">
+                        Select all that apply
+                      </span>
+                      <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+                        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="Interpreter-checkbox" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional" checked>
+                            <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                              Interpreter
+                            </label>
+                          </div>
+
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="welsh-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                            <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                              Spoken or written Welsh
+                            </label>
+                          </div>
+
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="intermediary-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                            <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                              Intermediary
+                            </label>
+                          </div>
+
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="disability-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2" checked>
+                            <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                              Facilities or assistance for a disability
+                            </label>
+                          </div>
+
+
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="security-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                            <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                              Separate waiting room or other security measures
+                            </label>
+                          </div>
+
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="mycheckbox" value="0" />
+                            <label class="govuk-label govuk-checkboxes__label" for="other-option">
+                              Something else
+                            </label>
+                          </div>
+
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="hide-checkbox" value="0" />
+                            <label class="govuk-label govuk-checkboxes__label" for="other-option">
+                              None
+                            </label>
+                          </div>
+
+
+                          <div id="hide-div">
+                          <div class="govuk-inset-text">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label" for="contact-by-text">
+                                Give details about the hearing needs booked
+                              </label>
+                              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Spanish interpreter booked. Require wheelchair access to court room.</textarea>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <h4 class="govuk-heading-s inline-block">Judge or magistrates</h4>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        Title
+                      </label>
+                      <span id="event-name-hint" class="govuk-hint">
+                        For example, HHJ
+                      </span>
+                      <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="HHJ">
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        Full name
+                      </label>
+                      <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="Malcolm Sharpe">
+                    </div>
+
+                  </form>
+                    <br>
+                    <form method="post" class="form">
+                    <div id="second-hearing"  class="answer_list" >
+                      <h4 class="govuk-heading-s inline-block">Hearing 2</h4>
+                      <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingTwo()" />
+
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                          <label class="govuk-label" for="width-20">
+                            Type of hearing
+                          </label>
+                          <br>
+                          <div class="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                Case management
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland" checked>
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                Further case management
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                                Issue resolution
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                                Final
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Venue
+                        </label>
+                        <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="Family Court Swansea">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                          <label class="govuk-label" for="contact-by-phone">
+                            Date
+                          </label>
+                          <span id="passport-issued-hint" class="govuk-hint">
+                            For example, 27 09 2019
+                          </span>
+                          <div class="govuk-date-input" id="passport-issued">
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                  Day
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="20">
+                              </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                  Month
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="9">
+                              </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                  Year
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="2019">
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-10">
+                          Pre-hearing attendance
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          This is usually one hour before the hearing
+                        </span>
+                        <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="1:30pm">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-10">
+                          Hearing time
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          For example, 2:30pm
+                        </span>
+                        <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="2:30pm">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-10">
+                          Hearing needs booked
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          Select all that apply
+                        </span>
+                        <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+                          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="Interpreter-checkbox" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional" checked>
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                                Interpreter
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="welsh-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Spoken or written Welsh
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="intermediary-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Intermediary
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="disability-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2" checked>
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Facilities or assistance for a disability
+                              </label>
+                            </div>
+
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="security-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Separate waiting room or other security measures
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="mycheckbox" value="0" />
+                              <label class="govuk-label govuk-checkboxes__label" for="other-option">
+                                Something else
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="hide-checkbox" value="0" />
+                              <label class="govuk-label govuk-checkboxes__label" for="other-option">
+                                None
+                              </label>
+                            </div>
+
+
+                            <div id="hide-div">
+                            <div class="govuk-inset-text">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label" for="contact-by-text">
+                                  Give details about the hearing needs booked
+                                </label>
+                                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Spanish interpreter booked. Require wheelchair access to court room.</textarea>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <h4 class="govuk-heading-s inline-block">Judge or magistrates</h4>
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Title
+                        </label>
+                        <span id="event-name-hint" class="govuk-hint">
+                          For example, HHJ
+                        </span>
+                        <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="HHJ">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Full name
+                        </label>
+                        <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="Malcolm Sharpe">
+                      </div>
+
+
+
+                      <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showDiv()" />
+
+                    </div>
+
+                  </form>
+                    <br>
+
+                    <form method="post" class="form">
+
+                    <div id="second-hearing"  class="answer_list" >
+                      <h4 class="govuk-heading-s inline-block">Hearing 3</h4>
+                      <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingTwo()" />
+
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                          <label class="govuk-label" for="width-20">
+                            Type of hearing
+                          </label>
+                          <br>
+                          <div class="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                Case management
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                Further case management
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales" checked>
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                                Issue resolution
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                                Final
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Venue
+                        </label>
+                        <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="Family Court Swansea">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                          <label class="govuk-label" for="contact-by-phone">
+                            Date
+                          </label>
+                          <span id="passport-issued-hint" class="govuk-hint">
+                            For example, 27 09 2019
+                          </span>
+                          <div class="govuk-date-input" id="passport-issued">
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                  Day
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="25">
+                              </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                  Month
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="9">
+                              </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                  Year
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="2019">
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-10">
+                          Pre-hearing attendance
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          This is usually one hour before the hearing
+                        </span>
+                        <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="1:30pm">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-10">
+                          Hearing time
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          For example, 2:30pm
+                        </span>
+                        <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="2:30pm">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-10">
+                          Hearing needs booked
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          Select all that apply
+                        </span>
+                        <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+                          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="Interpreter-checkbox" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional" checked>
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                                Interpreter
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="welsh-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Spoken or written Welsh
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="intermediary-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Intermediary
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="disability-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2" checked>
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Facilities or assistance for a disability
+                              </label>
+                            </div>
+
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="security-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Separate waiting room or other security measures
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="mycheckbox" value="0" />
+                              <label class="govuk-label govuk-checkboxes__label" for="other-option">
+                                Something else
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="hide-checkbox" value="0" />
+                              <label class="govuk-label govuk-checkboxes__label" for="other-option">
+                                None
+                              </label>
+                            </div>
+
+
+                            <div id="hide-div">
+                            <div class="govuk-inset-text">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label" for="contact-by-text">
+                                  Give details about the hearing needs booked
+                                </label>
+                                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Spanish interpreter booked. Require wheelchair access to court room.</textarea>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <h4 class="govuk-heading-s inline-block">Judge or magistrates</h4>
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Title
+                        </label>
+                        <span id="event-name-hint" class="govuk-hint">
+                          For example, HHJ
+                        </span>
+                        <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="HHJ">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Full name
+                        </label>
+                        <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="Malcolm Sharpe">
+                      </div>
+
+
+
+                      <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showDiv()" />
+
+                    </div>
+
+                  </form>
+                    <br>
+
+                    <form method="post" class="form">
+
+                    <div id="second-hearing"  class="answer_list" >
+                      <h4 class="govuk-heading-s inline-block">Hearing 4</h4>
+                      <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingTwo()" />
+
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                          <label class="govuk-label" for="width-20">
+                            Type of hearing
+                          </label>
+                          <br>
+                          <div class="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                Case management
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                Further case management
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                                Issue resolution
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland" checked>
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                                Final
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Venue
+                        </label>
+                        <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="Family Court Swansea">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                          <label class="govuk-label" for="contact-by-phone">
+                            Date
+                          </label>
+                          <span id="passport-issued-hint" class="govuk-hint">
+                            For example, 27 09 2019
+                          </span>
+                          <div class="govuk-date-input" id="passport-issued">
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                  Day
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="30">
+                              </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                  Month
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="9">
+                              </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                  Year
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="2019">
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-10">
+                          Pre-hearing attendance
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          This is usually one hour before the hearing
+                        </span>
+                        <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="1:30pm">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-10">
+                          Hearing time
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          For example, 2:30pm
+                        </span>
+                        <input class="govuk-input govuk-input--width-10" id="time" name="hearing-start" type="text" value="2:30pm">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-10">
+                          Hearing needs booked
+                        </label>
+                        <span id="passport-issued-hint" class="govuk-hint">
+                          Select all that apply
+                        </span>
+                        <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+                          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="Interpreter-checkbox" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional" checked>
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                                Interpreter
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="welsh-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Spoken or written Welsh
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="intermediary-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Intermediary
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="disability-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2" checked>
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Facilities or assistance for a disability
+                              </label>
+                            </div>
+
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="security-checkbox" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Separate waiting room or other security measures
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="mycheckbox" value="0" />
+                              <label class="govuk-label govuk-checkboxes__label" for="other-option">
+                                Something else
+                              </label>
+                            </div>
+
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" type="checkbox" name="mycheckbox" id="hide-checkbox" value="0" />
+                              <label class="govuk-label govuk-checkboxes__label" for="other-option">
+                                None
+                              </label>
+                            </div>
+
+
+                            <div id="hide-div">
+                            <div class="govuk-inset-text">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label" for="contact-by-text">
+                                  Give details about the hearing needs booked
+                                </label>
+                                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Spanish interpreter booked. Require wheelchair access to court room.</textarea>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <h4 class="govuk-heading-s inline-block">Judge or magistrates</h4>
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Title
+                        </label>
+                        <span id="event-name-hint" class="govuk-hint">
+                          For example, HHJ
+                        </span>
+                        <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="HHJ">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Full name
+                        </label>
+                        <input class="govuk-input govuk-input--width-20" id="width-20" name="hearing-venue" type="text" value="Malcolm Sharpe">
+                      </div>
+
+
+
+                      <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showDiv()" />
+
+                    </div>
+
+                  </div>
+
+                <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
+                <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+                <p><a href="">Cancel</a></p>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
