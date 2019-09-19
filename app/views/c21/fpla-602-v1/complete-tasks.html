@@ -1,0 +1,98 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+
+              <h1 class="govuk-heading-xl">Create an order (c21)</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+              <h3 class="govuk-heading-m">Create an order (c21)</h3>
+
+
+              <form method="post" class="form">
+
+                <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+                  <p>Do you have the recipient’s address?</p>
+
+                    <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                      <!-- No -->
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="yes-address" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          Yes
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="yes-address">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Recipient’s address
+                          </label>
+                          <span id="passport-issued-hint" class="govuk-hint">
+                            Enter a UK postcode
+                          </span>
+                          <input class="govuk-input govuk-input--width-10" type="text" name="">
+                          <br>
+                          <br>
+                          <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
+                        </div>
+                      </div>
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents-status", "Complete") }}>
+                        <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                          No
+                        </label>
+                      </div>
+
+                    </div>
+                  </fieldset>
+
+
+
+                <br>
+                <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
+                <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+                <p><a href="">Cancel</a></p>
+
+
+
+
+
+            </form>
+
+
+
+
+
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

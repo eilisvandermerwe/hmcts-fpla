@@ -31,60 +31,75 @@
 
                 <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
 
-                  <div class="" id="serve-application-no">
+                  <h4 class="govuk-heading-s">Do you agree?</h4>
 
+                    <div class="govuk-radios govuk-radios--conditional" data-module="radios">
 
-                    <h4 class="govuk-heading-s">Is this the right level of judge?</h4>
-                    <form action="check-my-answers" method="post" class="form">
+                      <!-- No -->
 
-                      <div class="govuk-form-group">
-                      <fieldset class="govuk-fieldset">
-                        <div class="govuk-radios">
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-                              Lay justices (magistrates)
-                            </label>
-                          </div>
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                              District judge
-                            </label>
-                          </div>
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-                              Circuit judge
-                            </label>
-                          </div>
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-                              Section 9 circuit judge
-                            </label>
-                          </div>
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-                              High Court judge
-                            </label>
-                          </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="agree" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          Yes
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="disagree" >
+                        <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                          No
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="disagree">
+                        <div class="govuk-form-group">
+                          <p>Which level of judge is needed?</p>
+                          <fieldset class="govuk-fieldset">
+                            <div class="govuk-radios">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                  Lay justices (magistrates)
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                  District judge
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                                  Circuit judge
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                                  Section 9 circuit judge
+                                </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                                <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                                  High Court judge
+                                </label>
+                              </div>
+                            </div>
+
+                          </fieldset>
                         </div>
-                      </fieldset>
-                    </div>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="more-detail">
+                            Give reason
+                          </label>
+                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                        </div>
+                      </div>
 
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="more-detail">
-                        Give reason
-                      </label>
-                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
                     </div>
-
-                    </form>
-                  </div>
                   </fieldset>
-
                   <br>
 
                   <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
