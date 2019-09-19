@@ -24,10 +24,11 @@
 
 
               <form method="post" class="form">
+                <div class="govuk-form-group">
 
                 <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
 
-                  <p>What are you creating?</p>
+                  <p>Are you creating a refusal order?</p>
 
                     <div class="govuk-radios govuk-radios--conditional" data-module="radios">
 
@@ -36,25 +37,40 @@
                       <div class="govuk-radios__item">
                         <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="order" >
                         <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                          order
+                          Yes
                         </label>
                       </div>
 
                       <div class="govuk-radios__item">
                         <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="direction">
                         <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
-                          direction
+                          No
                         </label>
                       </div>
 
                     </div>
                   </fieldset>
+                </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-20">
+                      It is ordered that:
+                    </label>
+                    <input class="govuk-input" type="text" name="">
+                    <br>
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-20">
+                      Order details
+                    </label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                  </div>
 
 
 
                 <br><br>
                 <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
-                <a href="complete-tasks-2" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+                <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
 
                 <p><a href="">Cancel</a></p>
 
