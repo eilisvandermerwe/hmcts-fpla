@@ -22,60 +22,86 @@
               <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
 
               <div class="govuk-form-group">
+
                 <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
 
                   <label class="govuk-label" for="width-20">
                     Judge or magistrate’s title
                   </label>
 
-                  <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+                    <div class="govuk-radios govuk-radios--conditional" data-module="radios">
 
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-email">
-                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                        Her Honour Judge
-                      </label>
+                      <!-- No -->
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="her" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          Her Honour Judge
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="her">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Last name
+                          </label>
+                          <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
+                        </div>
+                      </div>
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="his" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          His Honour Judge
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="his">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Last name
+                          </label>
+                          <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
+                        </div>
+                      </div>
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="district" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          Deputy District Judge
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="district">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Last name
+                          </label>
+                          <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
+                        </div>
+                      </div>
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="magistrate"  >
+                        <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                          Magistrates (JP)
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="magistrate">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-20">
+                            Full name
+                          </label>
+                          <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
+                        </div>
+                      </div>
+
                     </div>
-
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes" >
-                      <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
-                        His Honour Judge
-                      </label>
-                    </div>
-
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
-                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                        Deputy District Judge
-                      </label>
-                    </div>
-
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
-                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                        District Judge
-                      </label>
-                    </div>
-
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
-                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                        Magistrates (JP)
-                      </label>
-                    </div>
-
-                  </div>
                   </fieldset>
+
                 </div>
 
-
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="width-20">
-                    Judge or magistrate’s last name
-                  </label>
-                  <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
-                </div>
 
                 <div class="govuk-radios" id="other-role">
                   <div class="govuk-form-group">
