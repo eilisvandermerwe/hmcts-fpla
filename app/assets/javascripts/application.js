@@ -74,6 +74,14 @@ function hideHearingFour() {
    document.getElementById('third-hearing').style.display = "none";
 }
 
+function showDirection() {
+   document.getElementById('new-direction').style.display = "block";
+}
+
+function hideDirection() {
+   document.getElementById('new-direction').style.display = "none";
+}
+
 $(document).ready(function() {
     $('#mycheckbox').change(function() {
         $('#mycheckboxdiv').toggle();
