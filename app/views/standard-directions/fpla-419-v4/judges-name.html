@@ -34,12 +34,6 @@
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-                      <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                        High Court Registry
-                      </label>
-                    </div>
-                    <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
                       <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
                         High Court Family Division
@@ -71,15 +65,6 @@
                         </label>
                       </div>
 
-                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="her">
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="width-20">
-                            Last name
-                          </label>
-                          <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
-                        </div>
-                      </div>
-
                       <div class="govuk-radios__item">
                         <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="his" >
                         <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
@@ -87,13 +72,11 @@
                         </label>
                       </div>
 
-                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="his">
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="width-20">
-                            Last name
-                          </label>
-                          <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
-                        </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="his" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          Designated Family Judge
+                        </label>
                       </div>
 
                       <div class="govuk-radios__item">
@@ -103,15 +86,6 @@
                         </label>
                       </div>
 
-                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="district">
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="width-20">
-                            Last name
-                          </label>
-                          <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
-                        </div>
-                      </div>
-
                       <div class="govuk-radios__item">
                         <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="magistrate"  >
                         <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
@@ -119,17 +93,22 @@
                         </label>
                       </div>
 
-                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="magistrate">
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="width-20">
-                            Full name
-                          </label>
-                          <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
-                        </div>
-                      </div>
-
                     </div>
                   </fieldset>
+
+                </div>
+
+                <div class="govuk-form-group">
+
+                  <div class="govuk-radios" id="other-role">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        Judge or magistrate's name
+                      </label>
+                      <input class="govuk-input" type="text" name="">
+
+                    </div>
+                  </div>
 
                 </div>
 
