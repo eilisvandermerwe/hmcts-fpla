@@ -30,7 +30,7 @@
                   <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
                     <br>
                     <label class="govuk-label" for="width-20">
-                      <h3 class="govuk-heading-s">Judge or magistrate’s title</h3>
+                      <p class="">Judge or magistrate’s title</p>
                     </label>
 
                       <div class="govuk-radios govuk-radios--conditional" data-module="radios">
@@ -44,15 +44,6 @@
                           </label>
                         </div>
 
-                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="her">
-                          <div class="govuk-form-group">
-                            <label class="govuk-label" for="width-20">
-                              Last name
-                            </label>
-                            <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
-                          </div>
-                        </div>
-
                         <div class="govuk-radios__item">
                           <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="his" >
                           <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
@@ -60,13 +51,11 @@
                           </label>
                         </div>
 
-                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="his">
-                          <div class="govuk-form-group">
-                            <label class="govuk-label" for="width-20">
-                              Last name
-                            </label>
-                            <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
-                          </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="his" >
+                          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                            Designated Family Judge
+                          </label>
                         </div>
 
                         <div class="govuk-radios__item">
@@ -76,15 +65,6 @@
                           </label>
                         </div>
 
-                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="district">
-                          <div class="govuk-form-group">
-                            <label class="govuk-label" for="width-20">
-                              Last name
-                            </label>
-                            <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
-                          </div>
-                        </div>
-
                         <div class="govuk-radios__item">
                           <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="magistrate"  >
                           <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
@@ -92,27 +72,47 @@
                           </label>
                         </div>
 
-                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="magistrate">
-                          <div class="govuk-form-group">
-                            <label class="govuk-label" for="width-20">
-                              Full name
-                            </label>
-                            <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
-                          </div>
-                        </div>
-
                       </div>
                     </fieldset>
 
+
                   </div>
+
+                  <div class="govuk-form-group">
+
+                    <div class="govuk-radios" id="other-role">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Judge or magistrate's name
+                        </label>
+                        <input class="govuk-input" type="text" name="">
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                <div class="govuk-form-group">
+
+                  <div class="govuk-radios" id="other-role">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="width-20">
+                        Legal advisor's name (Optional)
+                      </label>
+                      <input class="govuk-input" type="text" name="">
+
+                    </div>
+                  </div>
+
+                </div>
 
                 <!-- <p style="font-weight: bold;">We need some kind of warning here, so the user knows that once they save, an order will be made.</p> -->
 
                 <!-- <div class="govuk-inset-text" style="font-size: 16px;">
-                  We need some kind of warning here, so the user knows that once they save, an order will be made.
+                  We need some kind of warning here, so the user knows that once they save, an order will be made. Or do we???
                 </div> -->
 
-                <button class="govuk-button govuk-button--secondary" >Previous</button>
+                <button class="govuk-button govuk-button--secondary">Previous</button>
                 <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
 
                 <p><a href="">Cancel</a></p>
