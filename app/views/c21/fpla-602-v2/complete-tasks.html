@@ -1,0 +1,83 @@
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+
+              <h1 class="govuk-heading-xl">Create an order</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+              <h3 class="govuk-heading-m">Create an order</h3>
+
+
+              <form method="post" class="form">
+
+                <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+                  <p>What do you need?</p>
+
+                    <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                      <!-- No -->
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="order" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          an order
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="direction">
+                        <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                          a direction
+                        </label>
+                      </div>
+
+                    </div>
+                  </fieldset>
+
+
+
+                <br><br>
+                <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
+                <a href="complete-tasks-2" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+                <p><a href="">Cancel</a></p>
+
+
+
+
+
+            </form>
+
+
+
+
+
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
