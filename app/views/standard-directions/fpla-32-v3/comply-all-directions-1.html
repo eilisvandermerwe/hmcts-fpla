@@ -1,0 +1,751 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+
+              <h1 class="govuk-heading-xl">Comply with directions</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                <h4 class="govuk-heading-s">Send documents to all parties by 4pm, 1 June 2019 </h4>
+
+                <p class="govuk-body">Give all parties access to all documents sent to the court, including:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>the application form</li>
+                    <li>annex documents</li>
+                    <li>evidential checklist documents</li>
+                    <li>any documents sent later on</li>
+                  </ul>
+
+                <!-- <h4 class="govuk-heading-s">Due date and time</h4>
+
+                <p>4pm, 1 June 2019</p> -->
+
+                <!-- <h4 class="govuk-heading-s">Have you completed this direction?</h4> -->
+                <p>Can you comply with this direction?</p>
+
+                <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                  <!-- Yes -->
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+                    <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                      Yes
+                    </label>
+                  </div>
+
+                  <!-- No -->
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                      No
+                    </label>
+                  </div>
+
+                  <!-- Contidtional yes -->
+
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="serve-application-give-details">
+                        Give details
+                      </label>
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                      <label class="govuk-label" for="file-upload-1">
+                      
+                        <h3 class="govuk-heading-s">Upload file (Optional)</h3>
+                        <span id="changed-name-hint" class="govuk-hint">
+                          You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                        </span>
+                      </label>
+
+                      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                      <br><br>
+
+                      <label class="govuk-label" for="contact-by-email">
+                        File name
+                      </label>
+                      <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+
+                      <br><br>
+
+                    </div>
+                  </div>
+
+                  <!-- Contidtional no -->
+
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+
+                    <p class="govuk-body govuk-!-font-weight-bold">Parties need to comply with directions to keep proceedings on track.</p>
+
+                      <p class="govuk-body">If you can’t comply, you need to explain: </p>
+                        <ul class="govuk-list govuk-list--bullet">
+                          <li>reasons why </li>
+                          <li>impact on timetable and next hearing</li>
+                          <li>next actions </li>
+                        </ul>
+
+                    <div class="govuk-form-group">
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                    </div>
+
+                    <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                      <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste">
+                            A C2 application has been made
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+                  <label class="govuk-label" for="file-upload-1">
+
+                    <h3 class="govuk-heading-s">Upload file (Optional)</h3>
+                    <span id="changed-name-hint" class="govuk-hint">
+                      You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                    </span>
+                  </label>
+
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                  <br><br>
+                  <label class="govuk-label" for="contact-by-email">
+                    File name
+                  </label>
+                  <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+
+                  </div>
+
+                </div>
+
+                </fieldset>
+
+                <br></br>
+
+
+                <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                  <h4 class="govuk-heading-s">Send missing annex documents to the court and all parties by 4pm, 1 June 2019</h4>
+
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>Social work chronology</li>
+                      <li>Social work statement</li>
+                      <li>evidential checklist documents</li>
+                      <li>Family tree (genogram)</li>
+                      <li>Social work assessment</li>
+                      <li>Care plan</li>
+                      <li>Threshold document</li>
+                      <li>Index of checklist documents</li>
+                    </ul>
+
+                  <!-- <h4 class="govuk-heading-s">Due date and time</h4>
+
+                  <p>4pm, 1 June 2019</p> -->
+
+                  <!-- <h4 class="govuk-heading-s">Have you completed this direction?</h4> -->
+                  <p>Have you completed this direction?</p>
+
+                  <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                    <!-- Yes -->
+
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+                      <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                        Yes
+                      </label>
+                    </div>
+
+                    <!-- No -->
+
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                        No
+                      </label>
+                    </div>
+
+                    <!-- Contidtional yes -->
+
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="serve-application-give-details">
+                          Give details
+                        </label>
+                        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                        <label class="govuk-label" for="file-upload-1">
+                          <br>
+                          <h3 class="govuk-heading-s">Upload file (Optional)</h3>
+                          <span id="changed-name-hint" class="govuk-hint">
+                            You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                          </span>
+                        </label>
+
+                        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                        <br><br>
+
+                        <label class="govuk-label" for="contact-by-email">
+                          File name
+                        </label>
+                        <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+
+                        <br><br>
+
+                      </div>
+                    </div>
+
+                    <!-- Contidtional no -->
+
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                          <p>When will it be completed? </p>
+                          <div class="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                Before the next hearing
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                After the next hearing
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-phone">
+                          Give details
+                        </label>
+                        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                      </div>
+                    </div>
+
+                  </div>
+
+              </fieldset>
+
+            </br></br>
+
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                <h4 class="govuk-heading-s">Identify alternative carers by 4pm, 1 June 2019</h4>
+
+                <!-- <h4 class="govuk-heading-s">Due date and time</h4>
+
+                <p>4pm, 1 June 2019</p> -->
+
+                <!-- <h4 class="govuk-heading-s">Have you completed this direction?</h4> -->
+                <p>Have you completed this direction?</p>
+
+                <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                  <!-- Yes -->
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+                    <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                      Yes
+                    </label>
+                  </div>
+
+                  <!-- No -->
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                      No
+                    </label>
+                  </div>
+
+                  <!-- Contidtional yes -->
+
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="serve-application-give-details">
+                        Give details
+                      </label>
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                      <label class="govuk-label" for="file-upload-1">
+                        <br>
+                        <h3 class="govuk-heading-s">Upload file (Optional)</h3>
+                        <span id="changed-name-hint" class="govuk-hint">
+                          You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                        </span>
+                      </label>
+
+                      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                      <br><br>
+
+                      <label class="govuk-label" for="contact-by-email">
+                        File name
+                      </label>
+                      <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+
+                      <br><br>
+
+                    </div>
+                  </div>
+
+                  <!-- Contidtional no -->
+
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <p>When will it be completed? </p>
+                        <div class="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                              Before the next hearing
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                              After the next hearing
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="contact-by-phone">
+                        Give details
+                      </label>
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                    </div>
+                  </div>
+
+                </div>
+
+            </fieldset>
+
+          </br></br>
+
+
+            <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+              <h4 class="govuk-heading-s">Send translated case documents to respondents by 4pm, 1 June 2019</h4>
+
+              <!-- <h4 class="govuk-heading-s">Due date and time</h4>
+
+              <p>4pm, 1 June 2019</p> -->
+
+              <!-- <h4 class="govuk-heading-s">Have you completed this direction?</h4> -->
+              <p>Have you completed this direction?</p>
+
+              <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                <!-- Yes -->
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+                  <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                    Yes
+                  </label>
+                </div>
+
+                <!-- No -->
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                    No
+                  </label>
+                </div>
+
+                <!-- Contidtional yes -->
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="serve-application-give-details">
+                      Give details
+                    </label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                    <label class="govuk-label" for="file-upload-1">
+                      <br>
+                      <h3 class="govuk-heading-s">Upload file (Optional)</h3>
+                      <span id="changed-name-hint" class="govuk-hint">
+                        You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                      </span>
+                    </label>
+
+                    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                    <br><br>
+
+                    <label class="govuk-label" for="contact-by-email">
+                      File name
+                    </label>
+                    <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+
+                    <br><br>
+
+                  </div>
+                </div>
+
+                <!-- Contidtional no -->
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <p>When will it be completed? </p>
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                            Before the next hearing
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                            After the next hearing
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="contact-by-phone">
+                      Give details
+                    </label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                  </div>
+                </div>
+
+              </div>
+
+          </fieldset>
+
+          <br></br>
+
+          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+            <h4 class="govuk-heading-s">Lodge a bundle by 4pm, 1 June 2019</h4>
+
+            <!-- <h4 class="govuk-heading-s">Due date and time</h4>
+
+            <p>4pm, 1 June 2019</p> -->
+
+            <!-- <h4 class="govuk-heading-s">Have you completed this direction?</h4> -->
+            <p>Have you completed this direction?</p>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+              <!-- Yes -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+                <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                  Yes
+                </label>
+              </div>
+
+              <!-- No -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                  No
+                </label>
+              </div>
+
+              <!-- Contidtional yes -->
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="serve-application-give-details">
+                    Give details
+                  </label>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                  <label class="govuk-label" for="file-upload-1">
+                    <br>
+                    <h3 class="govuk-heading-s">Upload file (Optional)</h3>
+                    <span id="changed-name-hint" class="govuk-hint">
+                      You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                    </span>
+                  </label>
+
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                  <br><br>
+
+                  <label class="govuk-label" for="contact-by-email">
+                    File name
+                  </label>
+                  <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+
+                  <br><br>
+
+                </div>
+              </div>
+
+              <!-- Contidtional no -->
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+                    <p>When will it be completed? </p>
+                    <div class="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                          Before the next hearing
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                          After the next hearing
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-phone">
+                    Give details
+                  </label>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+              </div>
+
+            </div>
+
+        </fieldset>
+
+        <br></br>
+
+
+        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+          <h4 class="govuk-heading-s">Send case summary to all parties by 4pm, 1 June 2019</h4>
+
+          <!-- <h4 class="govuk-heading-s">Due date and time</h4>
+
+          <p>4pm, 1 June 2019</p> -->
+
+          <!-- <h4 class="govuk-heading-s">Have you completed this direction?</h4> -->
+          <p>Have you completed this direction?</p>
+
+          <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+            <!-- Yes -->
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+              <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                Yes
+              </label>
+            </div>
+
+            <!-- No -->
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+              <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                No
+              </label>
+            </div>
+
+            <!-- Contidtional yes -->
+
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="serve-application-give-details">
+                  Give details
+                </label>
+                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                <label class="govuk-label" for="file-upload-1">
+                  <br>
+                  <h3 class="govuk-heading-s">Upload file (Optional)</h3>
+                  <span id="changed-name-hint" class="govuk-hint">
+                    You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                  </span>
+                </label>
+
+                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                <br><br>
+
+                <label class="govuk-label" for="contact-by-email">
+                  File name
+                </label>
+                <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+
+                <br><br>
+
+              </div>
+            </div>
+
+            <!-- Contidtional no -->
+
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <p>When will it be completed? </p>
+                  <div class="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                        Before the next hearing
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                        After the next hearing
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-phone">
+                  Give details
+                </label>
+                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+              </div>
+            </div>
+
+          </div>
+
+      </fieldset>
+
+      <br></br>
+
+
+      <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+        <h4 class="govuk-heading-s">If there is an issue with jurisdiction by 4pm, 1 June 2019</h4>
+
+        <!-- <h4 class="govuk-heading-s">Due date and time</h4>
+
+        <p>4pm, 1 June 2019</p> -->
+
+        <!-- <h4 class="govuk-heading-s">Have you completed this direction?</h4> -->
+        <p>Have you completed this direction?</p>
+
+        <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+          <!-- Yes -->
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+            <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+              Yes
+            </label>
+          </div>
+
+          <!-- No -->
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+            <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+              No
+            </label>
+          </div>
+
+          <!-- Contidtional yes -->
+
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="serve-application-give-details">
+                Give details
+              </label>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+              <label class="govuk-label" for="file-upload-1">
+                <br>
+                <h3 class="govuk-heading-s">Upload file (Optional)</h3>
+                <span id="changed-name-hint" class="govuk-hint">
+                  You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                </span>
+              </label>
+
+              <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+              <br><br>
+
+              <label class="govuk-label" for="contact-by-email">
+                File name
+              </label>
+              <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+
+              <br><br>
+
+            </div>
+          </div>
+
+          <!-- Contidtional no -->
+
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <p>When will it be completed? </p>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                      Before the next hearing
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                      After the next hearing
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="contact-by-phone">
+                Give details
+              </label>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
+          </div>
+
+        </div>
+    </fieldset>
+
+                <br>
+
+                <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+                <a href="comply-all-directions-2" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+                <p><a href="">Cancel</a></p>
+
+
+              </div>
+
+              </div>
+
+
+              </form>
+
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
