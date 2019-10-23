@@ -234,9 +234,11 @@ dt {
 
 // Font size to be set to 16px to align with CCD
 
-a, p, caption, td, li, label, select, textarea, govuk-inset-text {
+a, p, caption, td, li, label, select, textarea, .govuk-inset-text, .govuk-file-upload {
   font-size: 16px !important;
 }
+
+
 
 .govuk-heading-xl {
   font-size: 32px !important;
