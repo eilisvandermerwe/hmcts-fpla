@@ -1,0 +1,89 @@
+
+
+{% extends "layout.html" %}
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+
+              <h1 class="govuk-heading-xl">Draft case management order</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+              <h3 class="govuk-heading-m">Draft case management order</h3>
+
+              <div class="govuk-form-group">
+
+                <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+                  <label class="govuk-label" for="width-20">
+                    Which hearing is this order for?
+                  </label>
+
+                    <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                      <!-- No -->
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="her" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          Hearing 1
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="his" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          Hearing 2
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="his" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          Hearing 3
+                        </label>
+                      </div>
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="district" >
+                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                          Hearing 4
+                        </label>
+                      </div>
+
+
+
+                    </div>
+                  </fieldset>
+
+                </div>
+
+
+            <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+            <a href="all-parties" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+            <p><a href="">Cancel</a></p>
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
