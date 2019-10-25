@@ -1,5 +1,4 @@
 
-
 {% extends "layout.html" %}
 {% block pageTitle %}
   GOV.UK Prototype Kit
@@ -20,48 +19,83 @@
               <br>
               <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
 
-              <p>Do you want to include recitals?</p>
+              <h3 class="govuk-heading-m">Recitals</h3>
 
-              <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+              <p>If you want to add recitals, you can below.</p>
 
-                <!-- Yes -->
+              <h4 class="govuk-heading-s">Add recital</h4>
 
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
-                  <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
-                    Yes
-                  </label>
-                </div>
+              <form method="post" class="form">
 
-                <!-- No -->
+                <div class="govuk-inset-text">
 
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
-                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                    No
-                  </label>
-                </div>
+                  <h4 class="govuk-heading-s">Recitals (Optional)</h4>
 
-                <!-- Contidtional yes -->
 
-                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label" for="serve-application-give-details">
-                      Give details
-                    </label>
-                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                  <!-- Second additional hearing   -->
+
+
+                  <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingTwo()" />
+
+
+                  <!-- Second additional hearing   -->
+
+
+
+                  <div id="second-hearing"  style="display:none;" class="answer_list" >
+                    <br>
+
+                    <form method="post" class="form">
+
+                    <div class="answer_list" >
+                      <h4 class="govuk-heading-s inline-block">Recital</h4>
+                      <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingTwo()" />
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Recital title (Optional)
+                        </label>
+                        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="2" aria-describedby="more-detail-hint"></textarea>
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-20">
+                          Description (Optional)
+                        </label>
+                        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                      </div>
+
+                    </div>
+
+                  </form>
+
+                  <br>
+
+                  <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingThree()" />
+
                   </div>
+
+                  </div>
+
                 </div>
+
+                </div>
+
+                <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+                <a href="cafcass" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+                <p><a href="">Cancel</a></p>
+
+
+                </form>
+
 
               </div>
 
-              <br>
+              </div>
 
 
-            <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
-            <a href="declaration" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+              </form>
 
-            <p><a href="">Cancel</a></p>
 
             </div>
 
