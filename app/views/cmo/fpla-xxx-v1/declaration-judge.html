@@ -29,7 +29,7 @@
               <!-- Yes -->
 
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+                <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="send-to-parties">
                 <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
                   Yes, send this to all parties
                 </label>
@@ -51,7 +51,40 @@
                 </label>
               </div>
 
+
               <!-- Contidtional yes -->
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="send-to-parties">
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend">
+                      <p class="govuk-fieldset__heading">
+                        Which hearing is needed next?
+                      </p>
+                    </legend>
+                    <div class="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                          Further case management hearing
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                          Issues resolution hearing
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                          Final hearing
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
 
 
 
