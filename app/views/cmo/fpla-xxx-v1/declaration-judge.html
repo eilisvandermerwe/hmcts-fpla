@@ -38,7 +38,7 @@
               <!-- No -->
 
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="send-to-la" >
                 <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
                   No, the local authority needs to make changes
                 </label>
@@ -52,14 +52,14 @@
               </div>
 
 
-              <!-- Contidtional yes -->
+              <!-- Contidtional Yes, send this to all parties -->
 
               <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="send-to-parties">
                 <div class="govuk-form-group">
                   <fieldset class="govuk-fieldset">
                     <legend class="govuk-fieldset__legend">
                       <p class="govuk-fieldset__heading govuk-body govuk-!-font-weight-bold">
-                        Which hearing is needed next?
+                        What is the next hearing?
                       </p>
                     </legend>
                     <div class="govuk-radios">
@@ -83,6 +83,20 @@
                       </div>
                     </div>
                   </fieldset>
+                </div>
+              </div>
+
+
+              <!-- Contidtional No, the local authority needs to make changes -->
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="send-to-la">
+                <div class="govuk-form-group">
+                    <legend class="govuk-fieldset__legend">
+                      <p class="govuk-fieldset__heading govuk-body govuk-!-font-weight-bold">
+                        What does the Local Authority need to change?
+                      </p>
+                    </legend>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
                 </div>
               </div>
 
