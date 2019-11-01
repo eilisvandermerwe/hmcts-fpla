@@ -20,9 +20,10 @@
             <br>
             <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
 
+            <form method="post" class="form">
+
             <h3 class="govuk-heading-m">For the respondent</h3>
 
-            <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
               <h4 class="govuk-heading-s">Send documents to all parties by 4pm, 1 June 2019 </h4>
 
               <p class="govuk-body">Give all parties access to all documents sent to the court, including:</p>
@@ -33,9 +34,7 @@
                   <li>any documents sent later on</li>
                 </ul>
 
-              <h3 class="govuk-heading-m">Add response</h3>
-
-              <form method="post" class="form">
+              <h4 class="govuk-heading-s">Add response</h4>
 
                 <div class="govuk-inset-text">
 
@@ -49,8 +48,6 @@
 
 
                   <!-- Second additional hearing   -->
-
-
 
                   <div id="second-hearing"  style="display:none;" class="answer_list" >
 
@@ -175,13 +172,11 @@
                           <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
                         </div>
 
-
-
                         </div>
 
                       </div>
 
-                      </fieldset>
+                  </fieldset>
 
                   <br>
 
@@ -191,9 +186,168 @@
 
                   </div>
 
-                </div>
 
-                </div>
+                  <h4 class="govuk-heading-s">Send documents to all parties by 4pm, 1 June 2019 </h4>
+
+                  <p class="govuk-body">Give all parties access to all documents sent to the court, including:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>the application form</li>
+                      <li>annex documents</li>
+                      <li>evidential checklist documents</li>
+                      <li>any documents sent later on</li>
+                    </ul>
+
+                  <h4 class="govuk-heading-s">Add response</h4>
+
+                    <div class="govuk-inset-text">
+
+                      <h4 class="govuk-heading-s">Responses (Optional)</h4>
+
+
+                      <!-- Second additional hearing   -->
+
+
+                      <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingTwo()" />
+
+
+                      <!-- Second additional hearing   -->
+
+                      <div id="second-hearing"  style="display:none;" class="answer_list" >
+
+                        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                          <h4 class="govuk-heading-s inline-block">Response 1</h4>
+                          <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingTwo()" />
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="sort">
+                              For
+                            </label>
+                            <select class="govuk-select" id="sort" name="sort">
+                              <option value="published">Respondent 1</option>
+                              <option value="updated">Respondent 2</option>
+                              <option value="views">Respondent 3</option>
+                              <option value="comments">Respondent 4</option>
+                              <option value="comments">Respondent 5</option>
+                              <option value="comments">Respondent 6</option>
+                              <option value="comments">Respondent 7</option>
+                              <option value="comments">Respondent 8</option>
+                              <option value="comments">Respondent 9</option>
+                              <option value="comments">Respondent 10</option>
+                            </select>
+                          </div>
+
+                          <p>Have you complied with this direction?</p>
+
+                          <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                            <!-- Yes -->
+
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+                              <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                                Yes
+                              </label>
+                            </div>
+
+                            <!-- No -->
+
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                              <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                                No
+                              </label>
+                            </div>
+
+                            <!-- Contidtional yes -->
+
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-yes">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label" for="serve-application-give-details">
+                                  Give details
+                                </label>
+                                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                                <label class="govuk-label" for="file-upload-1">
+
+                                  <h3 class="govuk-heading-s">Upload file (Optional)</h3>
+                                  <span id="changed-name-hint" class="govuk-hint">
+                                    You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                                  </span>
+                                </label>
+
+                                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                                <br><br>
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label" for="serve-application-give-details">
+                                    Give details
+                                  </label>
+                                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <!-- Contidtional no -->
+
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+
+                              <p class="govuk-body govuk-!-font-weight-bold">Parties need to comply with directions to keep proceedings on track.</p>
+
+                                <p class="govuk-body">If you can’t comply, you need to explain: </p>
+                                  <ul class="govuk-list govuk-list--bullet">
+                                    <li>reasons why </li>
+                                    <li>impact on timetable and next hearing</li>
+                                    <li>proposed next actions </li>
+                                  </ul>
+
+                              <div class="govuk-form-group">
+                                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                              </div>
+
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-body govuk-!-font-weight-bold" for="serve-application-give-details">
+                                  C2 applications
+                                </label>
+                              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                                <div class="govuk-checkboxes">
+                                  <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                    <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                      A C2 has been uploaded using the 'Next action' dropdown.
+                                    </label>
+                                  </div>
+                                </div>
+                              </fieldset>
+                            </div>
+
+                            <label class="govuk-label" for="file-upload-1">
+
+                              <h3 class="govuk-heading-s">Upload a supporting file (Optional)</h3>
+                              <span id="changed-name-hint" class="govuk-hint">
+                                You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                              </span>
+                            </label>
+
+                            <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                            <br><br>
+                            <div class="govuk-form-group">
+                              <label class="govuk-label" for="serve-application-give-details">
+                                Give details
+                              </label>
+                              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                            </div>
+
+                            </div>
+
+                          </div>
+
+                      </fieldset>
+
+                      <br>
+
+                      <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingThree()" />
+
+                      </div>
+
+                      </div>
 
                 <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
                 <a href="cafcass" class="govuk-button" style="font-size: 19px !important;">Continue</a>
@@ -207,13 +361,6 @@
 
               </div>
 
-
-              </form>
-
-
-            </div>
-
-          </div>
 
         </main>
 
