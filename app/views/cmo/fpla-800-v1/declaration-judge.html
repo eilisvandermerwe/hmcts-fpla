@@ -1,0 +1,122 @@
+
+{% extends "layout-admin.html" %}
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-xl">Draft case management order</h1>
+            <br>
+            <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+            <h3 class="govuk-heading-m">Check the order</h3>
+
+            <p><a href="">draft-case-management-order.pdf</a></p>
+
+            <h4 class="govuk-heading-s">Is this ready to be sent parties? </h4>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+              <!-- Yes -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="send-to-parties">
+                <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                  Yes, send this to all parties
+                </label>
+              </div>
+
+              <!-- No -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="send-to-la" >
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                  No, the local authority needs to make changes
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                  No, I need to make changes
+                </label>
+              </div>
+
+
+              <!-- Contidtional Yes, send this to all parties -->
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="send-to-parties">
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend">
+                      <p class="govuk-fieldset__heading govuk-body govuk-!-font-weight-bold">
+                        What is the next hearing?
+                      </p>
+                    </legend>
+                    <div class="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                          Further case management hearing
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                          Issues resolution hearing
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                          Final hearing
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+
+              <!-- Contidtional No, the local authority needs to make changes -->
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="send-to-la">
+                <div class="govuk-form-group">
+                    <legend class="govuk-fieldset__legend">
+                      <p class="govuk-fieldset__heading govuk-body govuk-!-font-weight-bold">
+                        What do they need to change?
+                      </p>
+                    </legend>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+              </div>
+
+            </div>
+
+            <br><br>
+
+            <button class="govuk-button govuk-button--secondary">Previous</button>
+            <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+            <p><a href="">Cancel</a></p>
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
