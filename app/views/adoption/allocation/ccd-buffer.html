@@ -1,0 +1,96 @@
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-two-thirds">
+
+              <h1 class="govuk-heading-xl">Allocation decision</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+              <br>
+
+              <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Judge
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    Circuit judge
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="#">
+                      Change<span class="govuk-visually-hidden"> name</span>
+                    </a>
+                  </dd>
+                </div>
+                <!-- <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Agree
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    No
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="#">
+                      Change<span class="govuk-visually-hidden"> name</span>
+                    </a>
+                  </dd>
+                </div> -->
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Reason
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    There is now evidence of sexual abuse and the case should be heard by a Circuit Judge with more seniority due to the additional complexities and more serious nature of the evidence of the case.
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="#">
+                      Change<span class="govuk-visually-hidden"> name</span>
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="width-20">
+                  Event summary (Optional)
+                </label>
+                <span id="" class="govuk-hint">
+                  Enter a few words describing what you've done
+                </span>
+                <input class="govuk-input" type="text" name="" value="">
+              </div>
+
+              <form method="post" class="form">
+
+              <a href="complete-tasks" class="govuk-button govuk-button--secondary" style="font-size: 18px !important;">Previous</a>
+              <a href="2-case-view" class="govuk-button" style="font-size: 18px !important;">Save and continue</a>
+
+              <p><a href="">Cancel</a></p>
+
+            </form>
+
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
