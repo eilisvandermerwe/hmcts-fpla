@@ -1,0 +1,66 @@
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+
+              <h1 class="govuk-heading-xl">Upload placement order</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+              <form method="post" class="form">
+
+                <div class="govuk-form-group">
+
+                  <label class="govuk-label" for="file-upload-1">
+                    <br>
+                    <h3 class="govuk-heading-s">Upload file</h3>
+                    <span id="changed-name-hint" class="govuk-hint">
+                      You can upload JPG, BMP, PNG, TIF or PDF files up to 10MB in size.
+                    </span>
+                  </label>
+
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="serve-application-give-details">
+                    Give details
+                  </label>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+
+                <br>
+                <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
+                <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+                <p><a href="">Cancel</a></p>
+
+
+            </form>
+
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
