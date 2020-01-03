@@ -1,0 +1,185 @@
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container documents">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+          <h1 class="govuk-heading-xl">Upload placement application</h1>
+          <br>
+          <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+          <br>
+          <p>Upload all documents associated with this placement order.</p>
+          <p>This must include the A50 placement application.</p>
+          <p>You can return to this tab to add associated placement documents.</p>
+
+          <h4 class="govuk-heading-m">Upload A50 placement application</h4>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label upload-file" for="file-upload-1">
+              A50 placement application (need to see if we can get rid of this label in ccd)
+              <br><br>
+            </label>
+            <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+          </div>
+
+          <!-- <h3 class="govuk-heading-m">1. Social work chronology (Optional)</h3>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label upload-file" for="file-upload-1">
+                Upload a file (Optional)
+                <br><br>
+              </label>
+              <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+            </div>
+
+            <h3 class="govuk-heading-m">2. Social work statement and genogram (Optional)</h3>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label upload-file" for="file-upload-1">
+                  Upload a file (Optional)
+                  <br><br>
+                </label>
+                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+              </div>
+
+
+              <h3 class="govuk-heading-m">3. Social work assessment (Optional)</h3>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label upload-file" for="file-upload-1">
+                    Upload a file (Optional)
+                    <br><br>
+                  </label>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                </div>
+
+                <h3 class="govuk-heading-m">4. Care plan (Optional)</h3>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label upload-file" for="file-upload-1">
+                      Upload a file (Optional)
+                      <br><br>
+                    </label>
+                    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                  </div>
+
+
+                  <h3 class="govuk-heading-m">5. Social work evidence template (SWET) (Optional)</h3>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label upload-file" for="file-upload-1">
+                        Upload a file (Optional)
+                        <br><br>
+                      </label>
+                      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                    </div>
+
+
+                    <h3 class="govuk-heading-m">6. Threshold document (Optional)</h3>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label upload-file" for="file-upload-1">
+                          Upload a file (Optional)
+                          <br><br>
+                        </label>
+                        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                      </div>
+
+
+                      <h3 class="govuk-heading-m">7. Checklist document (Optional)</h3>
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label upload-file" for="file-upload-1">
+                            Upload a file (Optional)
+                            <br><br>
+                          </label>
+                          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                        </div> -->
+
+                        <h3 class="govuk-heading-m">Upload associated placement documents</h3>
+
+                        <p class="govuk-body">Documents about the child could include:</p>
+                          <ul class="govuk-list govuk-list--bullet">
+                            <li>a certified copy of their full entry in the Register of Live Births</li>
+                            <li>a certified copy of their entry in the Adopted Children Register</li>
+                            <li>written consent for adoption from their parent or guardian</li>
+                            <li>withdrawal of consent for adoption from their parent or guardian</li>
+                            <li>if you’re asking the court to dispense with parental or guardian consent for adoption, a brief statement to explain why</li>
+                            <li>any parental responsibility order or parental responsibility agreement </li>
+                            <li>a final care order</li>
+                          </ul>
+
+                          <p class="govuk-body">If the authority is a party in the case, other documents could include::</p>
+                            <ul class="govuk-list govuk-list--bullet">
+                              <li>any other final order</li>
+                              <li>any maintenance agreements or maintenance awards</li>
+                              <li>any final order for a sibling, half-sibling or step-sibling</li>
+                            </ul>
+
+                          <div class="govuk-inset-text">
+
+                            <h4 class="govuk-heading-s">Add document (Optional)</h4>
+
+                            <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingTwo()" />
+
+                            <div id="second-hearing"  style="display:none;" class="answer_list" >
+                              <h4 class="govuk-heading-s inline-block">Document</h4>
+                              <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingTwo()" />
+
+                              <form method="post" class="form">
+
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label upload-file" for="file-upload-1">
+                                    Upload file
+                                  </label>
+                                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                                </div>
+
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label" for="serve-application-give-details">
+                                    Give details
+                                  </label>
+                                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                                </div>
+
+                            </form>
+
+                            <br><br>
+
+                            <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingThree()" />
+
+                            </div>
+
+                          </div>
+
+
+                        <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+                        <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+                        <p><a href="">Cancel</a></p>
+
+
+                      </div>
+
+                    </div>
+
+                  </main>
+
+                </div>
+
+              </div>
+
+
+
+
+{% endblock %}
