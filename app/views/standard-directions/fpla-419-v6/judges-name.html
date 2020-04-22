@@ -1,0 +1,165 @@
+
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-one-half">
+
+
+          <h1 class="govuk-heading-xl">Who is the Judge and Justices' Legal Adviser?</h1>
+
+          <div class="govuk-form-group">
+
+            <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+              <label class="govuk-label" for="width-20">
+                Judge or magistrate's title (Optional)
+              </label>
+
+              <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                <!-- No -->
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="Her" >
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                    Her Honour Judge
+                  </label>
+                </div>
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="Her">
+                  <label class="govuk-label" for="contact-by-email">
+                    Last name
+                  </label>
+                  <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="His" >
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                    His Honour Judge
+                  </label>
+                </div>
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="His">
+                  <label class="govuk-label" for="contact-by-email">
+                    Last name
+                  </label>
+                  <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="District" >
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                    District Judge
+                  </label>
+                </div>
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="District">
+                  <label class="govuk-label" for="contact-by-email">
+                    Last name
+                  </label>
+                  <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="Deputy" >
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                    Deputy District Judge
+                  </label>
+                </div>
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="Deputy">
+                  <label class="govuk-label" for="contact-by-email">
+                    Last name
+                  </label>
+                  <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="District-Magistrates"  >
+                  <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                    District Judge Magistrates Court
+                  </label>
+                </div>
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="District-Magistrates">
+                  <label class="govuk-label" for="contact-by-email">
+                    Last name
+                  </label>
+                  <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="Magistrates"  >
+                  <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                    Magistrates (JP)
+                  </label>
+                </div>
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="Magistrates">
+                  <label class="govuk-label" for="contact-by-email">
+                    Full name (Optional)
+                  </label>
+                  <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+                </div>
+
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="judges-name-other"  >
+                  <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                    Other
+                  </label>
+                </div>
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="judges-name-other">
+                  <label class="govuk-label" for="contact-by-email">
+                    Last name
+                  </label>
+                  <input class="govuk-input" id="registration-number" name="serve-application-details-yes" type="text">
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+
+          <div class="govuk-radios" id="other-role">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="width-20">
+                Justices' Legal Adviser's full name (Optional)
+              </label>
+              <input class="govuk-input" type="text" name="">
+            </div>
+          </div>
+
+
+          <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+          <a href="all-parties" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+          <p><a href="">Cancel</a></p>
+
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
+
+
+{% endblock %}

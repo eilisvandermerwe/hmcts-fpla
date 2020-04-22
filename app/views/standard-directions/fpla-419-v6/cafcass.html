@@ -1,0 +1,453 @@
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-one-half">
+
+
+          <h1 class="govuk-heading-xl">Directions for Cafcass</h1>
+
+
+          <div class="govuk-inset-text">
+            The next hearing is on 15 September at 2:30pm.
+          </div>
+
+
+          <!-- Direction  -->
+
+          <div class="govuk-form-group">
+
+          <h2 class="govuk-heading-m">Arrange an advocates' meeting</h2>
+          <p>Is this direction needed?</p>
+
+          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+              <!-- No -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="direction-1" type="radio" value="Incomplete" data-aria-controls="direction-1" >
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                  Yes
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="direction-1" type="radio" value="Complete" data-aria-controls="">
+                <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                  No
+                </label>
+              </div>
+
+              <div class="govuk-radios__conditional--applicants" id="direction-1">
+                <br>
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                    <label class="govuk-label" for="contact-by-phone">
+                      Due date and time
+                    </label>
+                    <span id="" class="govuk-hint">
+                      For example, 31 3 2016 2 30 00
+                    </span>
+                    <div class="govuk-date-input" id="passport-issued">
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Day
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                            Month
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                            Year
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Hour
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Minutes
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+
+            </div>
+          </fieldset>
+
+        </div>
+
+          <!-- End of direction -->
+
+
+          <!-- Direction  -->
+
+          <div class="govuk-form-group">
+
+          <h2 class="govuk-heading-m">Send the guardian's analysis to all parties</h2>
+          <p>Is this direction needed?</p>
+
+          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+              <!-- No -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="direction-2" type="radio" value="Incomplete" data-aria-controls="yes-address" >
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                  Yes
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="direction-2" type="radio" value="Complete" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents-status", "Complete") }}>
+                <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                  No
+                </label>
+              </div>
+
+              <div class="govuk-radios__conditional--applicants" id="yes-address">
+                <br>
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                    <label class="govuk-label" for="contact-by-phone">
+                      Due date and time
+                    </label>
+                    <span id="" class="govuk-hint">
+                      For example, 31 3 2016 2 30 00
+                    </span>
+                    <div class="govuk-date-input" id="passport-issued">
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Day
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                            Month
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                            Year
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Hour
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Minutes
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+
+            </div>
+          </fieldset>
+
+        </div>
+
+          <!-- End of direction -->
+
+
+          <!-- Direction  -->
+
+          <div class="govuk-form-group">
+
+          <h2 class="govuk-heading-m">Appoint a children's guardian</h2>
+          <p>Is this direction needed?</p>
+
+          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+              <!-- No -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="direction-3" type="radio" value="Incomplete" data-aria-controls="yes-address" >
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                  Yes
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="direction-3" type="radio" value="Complete" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents-status", "Complete") }}>
+                <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                  No
+                </label>
+              </div>
+
+              <div class="govuk-radios__conditional--applicants" id="yes-address">
+                <br>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="more-detail">
+                    Description
+                  </label>
+                  <span id="more-detail-hint" class="govuk-hint">
+                    Check the description, you may need to add some details.
+                  </span>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">WHY IS THIS HERE???</textarea>
+                </div>
+
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                    <label class="govuk-label" for="contact-by-phone">
+                      Due date and time
+                    </label>
+                    <span id="" class="govuk-hint">
+                      For example, 31 3 2016 2 30 00
+                    </span>
+                    <div class="govuk-date-input" id="passport-issued">
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Day
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                            Month
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                            Year
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Hour
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Minutes
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+
+            </div>
+          </fieldset>
+
+        </div>
+
+
+          <!-- End of direction -->
+
+
+
+
+          <!-- Add a hew direction   -->
+
+
+
+          <h3 class="govuk-heading-m">Add a new direction</h3>
+
+
+          <div class="govuk-inset-text">
+
+            <h4 class="govuk-heading-s">Directions (Optional)</h4>
+
+
+            <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingTwo()" />
+
+
+            <!-- Second additional hearing   -->
+
+            <div id="second-hearing"  style="display:none;" class="answer_list" >
+              <br>
+
+              <div class="answer_list" >
+                <h4 class="govuk-heading-s inline-block">Direction</h4>
+                <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingTwo()" />
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="width-20">
+                    Direction title
+                  </label>
+                  <span id="" class="govuk-hint">
+                    You must include a brief direction summary
+                  </span>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="2" aria-describedby="more-detail-hint"></textarea>
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="width-20">
+                    Description (Optional)
+                  </label>
+                  <span id="" class="govuk-hint">
+                    Add more details
+                  </span>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                    <label class="govuk-label" for="contact-by-phone">
+                      Due date and time
+                    </label>
+                    <span id="" class="govuk-hint">
+                      For example, 31 3 2016 2 30 00
+                    </span>
+                    <div class="govuk-date-input" id="passport-issued">
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Day
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                            Month
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                            Year
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Hour
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Minutes
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                        </div>
+                      </div>
+
+                    </div>
+                  </fieldset>
+                </div>
+
+
+
+              </div>
+
+
+              <br>
+
+              <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingThree()" />
+
+            </div>
+
+          </div>
+
+
+          <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+          <a href="other-parties" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+          <p><a href="">Cancel</a></p>
+
+
+
+        </main>
+
+      </div>
+
+    </div>
+
+
+    {% endblock %}

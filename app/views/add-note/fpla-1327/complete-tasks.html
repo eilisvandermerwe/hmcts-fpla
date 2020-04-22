@@ -1,0 +1,112 @@
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-two-thirds">
+
+              <h1 class="govuk-heading-xl">Add a note</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+                <form action="ccd-buffer" method="post" class="form">
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-10">
+                      Note created by
+                    </label>
+                    <input class="govuk-input" type="text" name="" value="">
+                  </div>
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                      <label class="govuk-label" for="contact-by-phone">
+                        Date
+                      </label>
+                      <span id="" class="govuk-hint">
+                        For example, 31 3 2019
+                      </span>
+                      <div class="govuk-date-input" id="passport-issued">
+                        <div class="govuk-date-input__item">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                              Day
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                          </div>
+                        </div>
+                        <div class="govuk-date-input__item">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                              Month
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                          </div>
+                        </div>
+                        <div class="govuk-date-input__item">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                              Year
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="hearing-date" type="number" pattern="[0-9]*" value="">
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+
+                  <!-- <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-10">
+                      Note title
+                    </label>
+                    <span id="more-detail-hint" class="govuk-hint">
+                      Write a short description of note
+                    </span>
+                    <input class="govuk-input" type="text" name="" value="">
+                  </div> -->
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="more-detail">
+                      Note
+                    </label>
+                    <span id="more-detail-hint" class="govuk-hint">
+                      Add note detail, including relevant dates and people involved
+                    </span>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                  </div>
+
+
+
+                <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
+                <button class="govuk-button" onclick="doMath();" >Continue</button>
+
+                <p><a href="">Cancel</a></p>
+
+
+              </form>
+
+
+
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

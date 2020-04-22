@@ -1,0 +1,531 @@
+
+
+{% extends "layout-admin.html" %}
+
+<!-- <link rel="stylesheet" type="text/css" href="public/stylesheets/full-width.css"> -->
+
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">#1545-3874-6217-4575</h1>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <div class="govuk-form-group ccd-dropdown">
+          <label class="govuk-label" for="sort">
+            Next step
+          </label>
+          <select class="govuk-select" id="sort" name="sort">
+            <option value="">Select action</option>
+            <option value="">Send to gatekeeper</option>
+            <option value="">Add case number</option>
+            <option value="">Add hearing details</option>
+            <option value="">Orders and directions needed</option>
+            <option value="">Hearing needed</option>
+            <option value="">Children</option>
+            <option value="">Respondents</option>
+            <option value="">Applicant</option>
+            <option value="">Others to be given notice</option>
+            <option value="">Grounds for application</option>
+            <option value="">Risk and harm to the children</option>
+            <option value="">Factors affecting parenting</option>
+            <option value="">International element</option>
+            <option value="">Other proceedings</option>
+            <option value="">Attending the hearing</option>
+            <option value="">Allocation proposal</option>
+            <option value="">Documents</option>
+            <option value="">Change case name</option>
+          </select>
+          <a href="complete-tasks" class="govuk-button">Go</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="govuk-grid-row confidential-history-tabs">
+      <div class="govuk-grid-column-full">
+        <div class="govuk-tabs" data-module="tabs">
+
+          <ul class="govuk-tabs__list">
+
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#history">
+                History
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#orders-and-hearing">
+                Orders and hearing
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#people">
+                People in the case
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#legal-basis">
+                Legal basis
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#documents">
+                Documents
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#confidential-details">
+                Confidential details
+              </a>
+            </li>
+
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#notes">
+                Notes
+              </a>
+            </li>
+          </ul>
+
+
+          <section class="govuk-tabs__panel" id="overview">
+
+          </section>
+
+
+          <section class="govuk-tabs__panel" id="history">
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+              <h3 class="govuk-heading-m">History</h3>
+
+              <table class="govuk-table history-table" id="rowClick">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="col">Event</th>
+                    <th class="govuk-table__header" scope="col">Date</th>
+                    <th class="govuk-table__header" scope="col">Author</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body" id="history-row-click">
+                  <tr class="govuk-table__row history-row active" data-tab="confidential-event">
+                    <td class="govuk-table__cell"><a href="">Children</a></td>
+                    <td class="govuk-table__cell">5 Jan 2019 2:15 24 PM</td>
+                    <td class="govuk-table__cell">HMCTS admin</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row" data-tab="one">
+                    <td class="govuk-table__cell"><a href="">Open case</a></td>
+                    <td class="govuk-table__cell">3 Jan 2019 3:48 24 PM</td>
+                    <td class="govuk-table__cell">Tester TESTER</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row" data-tab="two">
+                    <td class="govuk-table__cell"><a href="">Event name</a></td>
+                    <td class="govuk-table__cell">Date</td>
+                    <td class="govuk-table__cell">Author</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row" data-tab="three">
+                    <td class="govuk-table__cell"><a href="">Event name</a></td>
+                    <td class="govuk-table__cell">Date</td>
+                    <td class="govuk-table__cell">Author</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+            <div class="details-content" id="confidential-event">
+              <div class="govuk-grid-column-one-half details-table" >
+              <h3 class="govuk-heading-m">Details</h3>
+
+              <table class="govuk-table">
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row history-row active" data-tab="one">
+                    <td class="govuk-table__cell">Date</td>
+                    <td class="govuk-table__cell">5 Jan 2019 2:15 24 PM</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Author</td>
+                    <td class="govuk-table__cell">HMCTS admin</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">End state</td>
+                    <td class="govuk-table__cell">Open</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Event</td>
+                    <td class="govuk-table__cell">Children</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Summary</td>
+                    <td class="govuk-table__cell">Changed childs details to confidential following c8 request.</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Comment</td>
+                    <td class="govuk-table__cell">-</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+
+            <div class="details-content" id="one">
+              <div class="govuk-grid-column-one-half details-table" >
+              <h3 class="govuk-heading-m">Details</h3>
+
+              <table class="govuk-table">
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row history-row active" data-tab="one">
+                    <td class="govuk-table__cell">Date</td>
+                    <td class="govuk-table__cell">10 Dec 2018 2:55 24 PM</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Author</td>
+                    <td class="govuk-table__cell">Judge</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">End state</td>
+                    <td class="govuk-table__cell">Open</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Event</td>
+                    <td class="govuk-table__cell">Open case</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Summary</td>
+                    <td class="govuk-table__cell">-</td>
+                  </tr>
+                  <tr class="govuk-table__row history-row">
+                    <td class="govuk-table__cell">Comment</td>
+                    <td class="govuk-table__cell">-</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+
+
+          <div class="details-content" id="two">
+            <div class="govuk-grid-column-one-half details-table" >
+            <h3 class="govuk-heading-m">Details</h3>
+
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row history-row" data-tab="one">
+                  <td class="govuk-table__cell">Date</td>
+                  <td class="govuk-table__cell">12 Dec 2018 9:15 AM</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Author</td>
+                  <td class="govuk-table__cell">Local authority</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">End state</td>
+                  <td class="govuk-table__cell">Open</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Event</td>
+                  <td class="govuk-table__cell">Open case</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Summary</td>
+                  <td class="govuk-table__cell">-</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Comment</td>
+                  <td class="govuk-table__cell">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+
+        <div class="details-content" id="three">
+          <div class="govuk-grid-column-one-half details-table" >
+          <h3 class="govuk-heading-m">Details</h3>
+
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row history-row" data-tab="one">
+                  <td class="govuk-table__cell">Date</td>
+                  <td class="govuk-table__cell">3 Jan 2019 3:48 24 PM</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Author</td>
+                  <td class="govuk-table__cell">Tester TESTER</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">End state</td>
+                  <td class="govuk-table__cell">Open</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Event</td>
+                  <td class="govuk-table__cell">Open case</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Summary</td>
+                  <td class="govuk-table__cell">-</td>
+                </tr>
+                <tr class="govuk-table__row history-row">
+                  <td class="govuk-table__cell">Comment</td>
+                  <td class="govuk-table__cell">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+      </div>
+
+      </section>
+
+      <section class="govuk-tabs__panel" id="orders-and-hearing">
+
+      </section>
+
+      <section class="govuk-tabs__panel" id="people">
+
+        <table class="govuk-table ccd-table">
+          <caption class="govuk-table__caption ccd-table-head">Child 1</caption>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__cell">Child's full name</th>
+              <td class="govuk-table__cell">Danielle Robinson</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Date of birth</td>
+              <td class="govuk-table__cell">11 April 2015</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Gender</td>
+              <td class="govuk-table__cell">Girl</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Describe child's situaton</td>
+              <td class="govuk-table__cell">In hospital, soon to be discharged</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Describe child's situaton</td>
+              <td class="govuk-table__cell">In hospital, soon to be discharged</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Current address
+              </td>
+              <td class="govuk-table__cell">
+                Confidential
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Key dates for this child</td>
+              <td class="govuk-table__cell">test</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Key dates for this child</td>
+              <td class="govuk-table__cell">test</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Brief summary of care and contact plan</td>
+              <td class="govuk-table__cell">test</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Are you considering adoption at this stage?</td>
+              <td class="govuk-table__cell">test</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Are you submitted and application for a placement order? </td>
+              <td class="govuk-table__cell">test</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Which court are you applying to? </td>
+              <td class="govuk-table__cell">test</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Mother's full name</td>
+              <td class="govuk-table__cell">test</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Father's full name</td>
+              <td class="govuk-table__cell">test</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Does the father have parental responsibility?</td>
+              <td class="govuk-table__cell">test</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Name of social worker</td>
+              <td class="govuk-table__cell">test</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Social words telephone number</td>
+              <td class="govuk-table__cell">test</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Does the child have any additional needs?</td>
+              <td class="govuk-table__cell">No</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Do you need contact details hidden from other parties?</td>
+              <td class="govuk-table__cell">No</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Do you believe this child will have problems with litigation capacity (understanding what’s happening in the case)?</td>
+              <td class="govuk-table__cell">No</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </section>
+
+      <section class="govuk-tabs__panel" id="legal-basis">
+
+      </section>
+
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="documents">
+
+      </section>
+
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="confidential-details">
+
+        <table class="govuk-table ccd-table">
+          <caption class="govuk-table__caption ccd-table-head">Child 1</caption>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" colspan="2">
+                <table class="govuk-table ccd-table">
+                  <tbody class="govuk-table__body nested-row">
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__cell">Current address</th>
+                      <th class="govuk-table__cell"></th>
+                    </tr>
+                  </tbody>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__cell">Building and Street</th>
+                      <td class="govuk-table__cell">1</td>
+                    </tr>
+                  </tbody>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"></td>
+                      <td class="govuk-table__cell">Upper Cresent</td>
+                    </tr>
+                  </tbody>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">Town or City</td>
+                      <td class="govuk-table__cell">Belfast</td>
+                    </tr>
+                  </tbody>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">Postcode/Zipcode</td>
+                      <td class="govuk-table__cell">BT7 1N7</td>
+                    </tr>
+                  </tbody>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">Postcode/Zipcode</td>
+                      <td class="govuk-table__cell">BT7 1N7</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+      <section class="govuk-tabs__panel" id="notes">
+
+
+        <table class="govuk-table ccd-table">
+          <caption class="govuk-table__caption ccd-table-head">Note 1</caption>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__cell">Note created by</th>
+              <td class="govuk-table__cell">Danielle Robinson</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Date</td>
+              <td class="govuk-table__cell">11 April 2019</td>
+            </tr>
+          </tbody>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Note</td>
+              <td class="govuk-table__cell">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </section>
+
+    </div>
+
+  </div>
+
+  </div>
+
+</main>
+</div>
+
+{% endblock %}

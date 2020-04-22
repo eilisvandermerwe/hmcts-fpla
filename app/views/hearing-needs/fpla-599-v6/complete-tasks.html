@@ -89,14 +89,25 @@
                       </fieldset>
                     </div>
 
+
                     <div class="govuk-form-group">
-                      <label class="govuk-label" for="width-20">
+                      <label class="govuk-label" for="sort">
                         Venue
                       </label>
-                      <span id="passport-issued-hint" class="govuk-hint">
-                        For example, Swansea Family Court
-                      </span>
-                      <input class="govuk-input" id="width-20" name="hearing-venue" type="text">
+                      <select class="govuk-select" id="sort" name="sort" style="width: 100% !important;">
+                        <option value="published">--Select a value--</option>
+                        <option value="published">Other</option>
+                        <option value="updated">Swansea Family Court</option>
+                        <option value="views">Etc</option>
+                        <option value="comments">Etc</option>
+                        <option value="comments">Etc</option>
+                        <option value="comments">Etc</option>
+                        <option value="comments">Etc</option>
+                        <option value="comments">Etc</option>
+                        <option value="comments">Etc</option>
+                        <option value="comments">Etc</option>
+                        <option value="comments">Etc</option>
+                      </select>
                     </div>
 
                       <div class="govuk-form-group">
@@ -111,6 +122,40 @@
                         <br>
                         <p style="height: 40px;"><a href="" class="govuk-button" style="font-size: 19px !important;">Find address</a></p>
                       </div>
+
+                      <fieldset class="govuk-fieldset">
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="address-line-1">
+                            Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+                          </label>
+                          <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="Aberdeen Tribunal Hearing Centre">
+                        </div>
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="address-line-2">
+                            <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                          </label>
+                          <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2" value="48 Huntly Street">
+                        </div>
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="address-town">
+                            Town or city
+                          </label>
+                          <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" Value="Aberdeen">
+                        </div>
+                        
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="address-postcode">
+                            Postcode
+                          </label>
+                          <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code" value="AB10 1SH">
+                        </div>
+
+                      </fieldset>
+
+                      <br>
 
                     <div class="govuk-form-group">
                       <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
