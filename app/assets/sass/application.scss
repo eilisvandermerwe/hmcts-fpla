@@ -17,6 +17,30 @@ $govuk-global-styles: true;
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+.custom-checkbox-table {
+    dd, dt, a, p, li {
+      font-size: 19px !important;
+    }
+    h1 {
+      font-size: 36px !important;
+    }
+    .govuk-caption-xl {
+      font-size: 24px !important;
+    }
+  .width-1 {
+    width: 1px !important;
+  }
+  .direction-body {
+    width: 50% !important;
+  }
+  .direction-text-right {
+    padding-left: 100px !important;
+    text-align: left;
+  }
+  .bold {
+    font-weight: bold;
+  }
+}
 
 .sdo-manage-items {
   th {

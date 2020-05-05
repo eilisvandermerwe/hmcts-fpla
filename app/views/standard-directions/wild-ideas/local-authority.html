@@ -6,8 +6,10 @@ GOV.UK Prototype Kit
 {% endblock %}
 
 {% block content %}
-<div class="ccd-container">
+<div class="ccd-container custom-checkbox-table">
   <div class="govuk-width-container">
+
+    <a href="#" class="govuk-back-link">Back</a>
 
     <main class="govuk-main-wrapper">
 
@@ -15,48 +17,53 @@ GOV.UK Prototype Kit
 
         <div class="govuk-grid-column-full">
 
+
           <span class="govuk-caption-xl">Issue standard directions</span>
           <h1 class="govuk-heading-xl">For the local authority</h1>
 
+          <br>
+
 
           <!-- <div class="govuk-inset-text">
-            The next hearing is on 15 September at 2:30pm.
-          </div> -->
+          The next hearing is on 15 September at 2:30pm.
+        </div> -->
 
 
-  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-    <div class="govuk-checkboxes">
-
-          <table class="govuk-table sdo-manage-items">
-            <thead class="govuk-table__head">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">
-                  <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+        <div class="govuk-checkboxes">
+          <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value width-1">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
 
                   </label>
                 </div>
-              </th>
-                <th scope="col" class="govuk-table__header">Direction</th>
-                <th scope="col" class="govuk-table__header">Due date and time</th>
-                <th scope="col" class="govuk-table__header"></th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header" style="width: 1px !important;">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              </dd>
+              <dt class="govuk-summary-list__key direction-body">
+                Direction
+              </dt>
+              <dd class="govuk-summary-list__actions direction-text-right bold">
+                  Due date and time
+              </dd>
+              <dd class="govuk-summary-list__actions">
 
-                    </label>
-                  </div>
-                </th>
-                <td scope="row" class="govuk-table__header">Send documents to all parties
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value width-1">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+
+                  </label>
+                </div>
+              </dd>
+              <dt class="govuk-summary-list__key direction-body">
+                Send documents to all parties
                 <br><br>
                 <span style="font-weight: normal;">
-                  <p class="govuk-body">Including</p>
+                  <p class="govuk-body">Including:</p>
                   <ul class="govuk-list govuk-list--bullet">
                     <li>The application form</li>
                     <li>Annex documents</li>
@@ -64,124 +71,182 @@ GOV.UK Prototype Kit
                     <li>Any documents sent later on</li>
                   </ul>
                 </span>
-                </td>
-                <td class="govuk-table__cell">15 September at 2:30pm</td>
-                <td class="govuk-table__cell"><a href="">Change</a></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+              </dt>
+              <dd class="govuk-summary-list__actions direction-text-right">
+                15 September at 2:30pm
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-direction-list">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
 
-                    </label>
-                  </div>
-                </th>
-                <td scope="row" class="govuk-table__header">Send missing annex documents to the court and all parties
-                  <br><br>
-                  <span style="font-weight: normal;">
-                    <p class="govuk-body">Including</p>
-                    <ul class="govuk-list govuk-list--bullet">
-                      <li>Social work chronology</li>
-                      <li>Social work statement</li>
-                      <li>Family tree (genogram)</li>
-                      <li>Social work assessment</li>
-                      <li>Care plan</li>
-                      <li>Threshold document</li>
-                      <li>Index of checklist documents</li>
-                    </ul>
-                  </span>
-                  </td>
-                <td class="govuk-table__cell">15 September at 2:30pm</td>
-                <td class="govuk-table__cell"><a href="">Change</a></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    </label>
-                  </div>
-                </th>
-                <td scope="row" class="govuk-table__header">Identify alternative carers</td>
-                <td class="govuk-table__cell">15 September at 2:30pm</td>
-                <td class="govuk-table__cell"><a href="">Change</a></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    </label>
-                  </div>
-                </th>
-                <td scope="row" class="govuk-table__header">Send translated case documents to respondents
-                <br>
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+
+                  </label>
+                </div>
+              </dd>
+              <dt class="govuk-summary-list__key">
+                Send missing annex documents to the court and all parties
+                <br><br>
                 <span style="font-weight: normal;">
-                  <strong class="govuk-tag govuk-tag--grey" style="color: #144e81;background: #d2e2f1;">Add details</strong>
+                  <p class="govuk-body">Including:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>Social work chronology</li>
+                    <li>Social work statement</li>
+                    <li>Family tree (genogram)</li>
+                    <li>Social work assessment</li>
+                    <li>Care plan</li>
+                    <li>Threshold document</li>
+                    <li>Index of checklist documents</li>
+                  </ul>
                 </span>
+              </dt>
+              <dd class="govuk-summary-list__actions direction-text-right">
+                15 September at 2:30pm
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-direction">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
 
-                </td>
-                <td class="govuk-table__cell">15 September at 2:30pm</td>
-                <td class="govuk-table__cell"><a href="">Change</a></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    </label>
-                  </div>
-                </th>
-                <td scope="row" class="govuk-table__header">Lodge a bundle</td>
-                <td class="govuk-table__cell">15 September at 2:30pm</td>
-                <td class="govuk-table__cell"><a href="">Change</a></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    </label>
-                  </div>
-                </th>
-                <td scope="row" class="govuk-table__header">Send case summary to all parties</td>
-                <td class="govuk-table__cell">15 September at 2:30pm</td>
-                <td class="govuk-table__cell"><a href="">Change</a></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    </label>
-                  </div>
-                </th>
-                <td scope="row" class="govuk-table__header">Urgently consider jurisdiction and invite any representations
-                  <br>
-                  <span style="font-weight: normal;">The court has jurisdiction, based on all of the relevant law and facts, for example habitual residency.</span>
-                  </td>
-                <td class="govuk-table__cell">15 September at 2:30pm</td>
-                <td class="govuk-table__cell"><a href="">Change</a></td>
-              </tr>
-            </tbody>
-          </table>
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+
+                  </label>
+                </div>
+              </dd>
+              <dt class="govuk-summary-list__key">
+                Identify alternative carers
+              </dt>
+              <dd class="govuk-summary-list__actions direction-text-right">
+                15 September at 2:30pm
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-direction">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+
+                  </label>
+                </div>
+              </dd>
+              <dt class="govuk-summary-list__key direction-body">
+                Send translated case documents to respondents
+                <strong class="govuk-tag govuk-tag--grey" style="color: #144e81;background: #d2e2f1;">Add details</strong>
+              </dt>
+              <dd class="govuk-summary-list__actions direction-text-right">
+                15 September at 2:30pm
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-direction">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+
+                  </label>
+                </div>
+              </dd>
+              <dt class="govuk-summary-list__key">
+                Lodge a bundle
+              </dt>
+              <dd class="govuk-summary-list__actions direction-text-right">
+                15 September at 2:30pm
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-direction">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+
+                  </label>
+                </div>
+              </dd>
+              <dt class="govuk-summary-list__key">
+                Send case summary to all parties
+              </dt>
+              <dd class="govuk-summary-list__actions direction-text-right">
+                15 September at 2:30pm
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-direction">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dd class="govuk-summary-list__value">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+
+                  </label>
+                </div>
+              </dd>
+              <dt class="govuk-summary-list__key">
+                Urgently consider jurisdiction and invite any representations
+                <br>
+                <span style="font-weight: normal;">The court has jurisdiction, based on all of the relevant law and facts, for example habitual residency.</span>
+              </dt>
+              <dd class="govuk-summary-list__actions direction-text-right">
+                15 September at 2:30pm
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="change-direction">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
+
+
+          </dl>
 
           <button class="govuk-button govuk-button--secondary" aria-disabled="true">Add another direction</button>
 
-
-
         </div>
-      </fieldset>
 
 
-          <a href="parents" class="govuk-button" style="font-size: 19px !important;">Save and continue</a>
+        <br>
 
-        </main>
+        <a href="parents" class="govuk-button" style="font-size: 19px !important;">Save and continue</a>
 
-      </div>
+      </main>
 
     </div>
 
+  </div>
 
-    {% endblock %}
+
+  {% endblock %}
