@@ -9,9 +9,9 @@ $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 });
 
-$("a.govuk-back-link").click(function() {
-    return false;
-});
+// $("a.govuk-back-link").click(function() {
+//     return false;
+// });
 
 $("a.govuk-back-link").click(function(){
   parent.history.back();

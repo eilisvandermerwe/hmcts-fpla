@@ -1,0 +1,51 @@
+
+
+{% extends "layout.html" %}
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+
+              <h1 class="govuk-heading-xl">Draft CMO</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="sort">
+                  Which hearing is this order for?
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                  <option value="published" selected>--Select a value</option>
+                  <option value="published">1 July 2020</option>
+                  <option value="updated">10 July 2020</option>
+                  <option value="views">20 July 2020</option>
+                </select>
+              </div>
+
+            <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+            <a href="all-parties" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+            <p><a href="">Cancel</a></p>
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

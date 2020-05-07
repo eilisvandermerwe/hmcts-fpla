@@ -1,0 +1,76 @@
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-one-half">
+
+
+          <h1 class="govuk-heading-xl">Check and send the order</h1>
+
+          <p>Use this link to download and check the order before sending:</p>
+
+          <p><a href="">draft_standard_directions_order_20May.pdf</a></p>
+
+
+          <!-- Direction  -->
+
+          <div class="govuk-form-group">
+
+
+          <p>Is this the final version?</p>
+
+          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+              <!-- No -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="direction-1" type="radio" value="Incomplete" data-aria-controls="direction-1" >
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                  Yes, it can be sealed and sent to parties
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="direction-1" type="radio" value="Complete" data-aria-controls="">
+                <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                  No, I need to make changes
+                </label>
+              </div>
+
+
+
+            </div>
+          </fieldset>
+
+        </div>
+
+
+
+          <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+          <a href="2-case-view" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+          <p><a href="">Cancel</a></p>
+
+
+
+        </main>
+
+      </div>
+
+    </div>
+
+
+    {% endblock %}

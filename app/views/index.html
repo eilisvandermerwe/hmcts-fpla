@@ -6,144 +6,40 @@
 {% endblock %}
 
 {% block content %}
-<div class="ccd-container">
+<div class="ccd-container custom-checkbox-table">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl">
-        Family and Public Law
+        Family and Public Law prorotypes based on the CCD UI
       </h1>
 
       <!-- <h3 class="govuk-heading-m"><a href="fpl/version-1/case-list.html">Versio 1</a></h3> -->
       <br>
 
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Private beta enhancements
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <p>As a local authority:</p>
-          <p><a href="private-beta/documents">Documents</a> - Changing dropdowns to radio buttons (FPLA-355)</p>
+      <strong class="govuk-tag govuk-tag--grey">
+      Design review May 2020
+      </strong>
 
-          <p>Here you can see all of the <a href="https://miro.com/app/board/o9J_kx58ffQ=/">private beta enhancements</a>.</p>
-        </div>
-      </details>
-
-
-      <!-- <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Complying with orders.
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <h3 class="govuk-heading-m">Pre-ccd styling</h3>
-          <p>As a local authority:</p>
-          <ul class="govuk-list govuk-list--bullet">
-            <li><a href="task-management/old/version-1/task-management/concept-1/case-view.html">Concept 1</a> - View list of tasks</li>
-            <li><a href="task-management/old/version-1/task-management/concept-2/case-view.html">Concept 2</a> - Create my own task</li>
-            <li><a href="task-management/old/version-1/task-management/concept-3/case-view.html">Concept 3</a> - Checklist</li>
-            <li><a href="task-management/old/version-1/task-management/concept-4/case-view.html">Concept 4</a> - Using the task list model</li>
-            <li><a href="task-management/old/version-1/task-management/concept-/case-view.html">Concept 5</a> - Task that can be assigned to any party</li>
-          </ul>
-
-          <h3 class="govuk-heading-m">CCD - Version 1</h3>
-          <p><a href="task-management/v1/case-view">Complying with orders</a></p>
-        </div>
-      </details> -->
+      <br><br><br>
 
       <details class="govuk-details" data-module="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
-            Add a note
+            Standard directions order
           </span>
         </summary>
         <div class="govuk-details__text">
 
-          <p>As an HMCTS admin:</p>
-          <p><a href="add-note/fpla-1327/1-case-view">FPLA-583</a> - I need to change confidentiality setting for contact details</p>
-        </div>
-      </details>
+          <p>Discussions on the design (as is and iterations) can be <a href="https://miro.com/app/board/o9J_kvABlgs=/?moveToWidget=3074457347819975252&cot=13">found on Miro</a> and on <a href="https://tools.hmcts.net/jira/browse/FPLA-1658">Jira - FPLA-1658</a>.</p>
+          <h4 class="govuk-heading-s">End to end journeys</h4>
+          <p><a href="standard-directions/fpla-419-v6/1-case-view">Version 1</a> - Taking diretions out of the add new collection. Cleaning up the noisy content.</p>
 
+          <p><a href="standard-directions/wild-ideas/1-case-view">Version 2</a> - Moving to a checkbox pattern, where users can manage items in a list. (Maybe a little too out there for CCD, but a good conversation point.)</p>
 
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Confidentiality
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <p>As an local authority:</p>
-          <p><a href="confidentiality/fpla-262/case-view">FPLA-262</a> - I need to submit C8 during open case</p>
+          <h4 class="govuk-heading-s">Single page iterations</h4>
 
-          <p>As an HMCTS admin:</p>
-          <p><a href="confidentiality/fpla-583/1-case-view">FPLA-583</a> - I need to change confidentiality setting for contact details</p>
-        </div>
-      </details>
-
-
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Hearing details
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <h4 class="govuk-heading-s">Version 1</h4>
-
-          <p>As an HMCTS admin:</p>
-          <p><a href="hearing-details/fpla-46/1-case-view">FPLA-46</a> - I need to add hearing booking details to case</p>
-
-          <h4 class="govuk-heading-s">Version 2</h4>
-
-          <p>As an HMCTS admin:</p>
-          <p><a href="hearing-details/fpla-46-v2/1-case-view">FPLA-46</a> - I need to add hearing booking details to case</p>
-
-          <h4 class="govuk-heading-s">Version 3</h4>
-
-          <p>Scenario:</p>
-          <ol class="govuk-list govuk-list--number">
-            <li>The Case management and Further case management hearings have already passed. The HMCTS admin needs to add hearing details for the Issue resolution and the final hearing.</li>
-            <li>The HMCTS admin needs to update the hearing date for the Final hearing.</li>
-          </ol>
-
-          <p>As an HMCTS admin:</p>
-          <p><a href="hearing-details/fpla-46-v3/1-case-view">FPLA-46</a> - I need to add hearing booking details to case</p>
-        </div>
-      </details>
-
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Hearing needs
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <h4 class="govuk-heading-s">Version 1</h4>
-
-          <p>Scenario using the "add hearing hearing details" event:</p>
-          <ol class="govuk-list govuk-list--number">
-            <li>Add new - first instance shows textarea.</li>
-            <li>Add new - second instance shows radio buttons.</li>
-          </ol>
-
-          <p>As a caseworker charged with listing a case:</p>
-          <p><a href="hearing-needs/fpla-599-v1/1-case-view">FPLA-599</a> - I need to add hearing needs details to the case (at booking)</p>
-
-          <h4 class="govuk-heading-s">Version 2</h4>
-          <p>As a caseworker charged with listing a case:</p>
-          <p class="govuk-body govuk-!-font-weight-bold">2.1</p>
-          <p><a href="hearing-needs/fpla-599-v2/1-case-view">FPLA-599</a> - I need to add hearing needs details to the case (at booking)</p>
-          <p class="govuk-body govuk-!-font-weight-bold">2.2</p>
-          <p><a href="hearing-needs/fpla-599-v3/1-case-view">FPLA-599</a> - I need to add hearing needs details to the case (at booking)</p>
-          <p class="govuk-body govuk-!-font-weight-bold">2.3</p>
-          <p><a href="hearing-needs/fpla-599-v4/1-case-view">FPLA-599</a> - I need to add hearing needs details to the case (at booking)</p>
-          <p class="govuk-body govuk-!-font-weight-bold">2.4</p>
-          <p><a href="hearing-needs/fpla-599-v5/1-case-view">FPLA-599</a> - I need to add hearing needs details to the case (at booking)</p>
-          <p class="govuk-body govuk-!-font-weight-bold">2.5</p>
-          <p><a href="hearing-needs/fpla-599-v6/1-case-view">FPLA-599</a> - I need to add hearing needs details to the case (at booking)</p>
+          <p><a href="standard-directions/single-page-iterations/all-parties">Directions for all parties</a> - checkbox pattern</p>
 
         </div>
       </details>
@@ -152,246 +48,25 @@
       <details class="govuk-details" data-module="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
-            Make allocation decision
+            Case management order
           </span>
         </summary>
         <div class="govuk-details__text">
-          <h4 class="govuk-heading-s">Version 1</h4>
+          <h4 class="govuk-heading-s">Current CMO journey in live service</h4>
+            <p><a href="cmo/fpla-886-v3/1-case-view">Current journey</a> - May 2020</p>
 
-          <p class="govuk-body govuk-!-font-weight-bold">Scenario showing the LA making a proposal</p>
-          <p>As a Gatekeeper:</p>
-          <p><a href="allocation/fpla-60-v2/1-case-view">FPLA-60</a> - I need to make the allocation decision</p>
-
-          <h4 class="govuk-heading-s">Version 2</h4>
-          <p>As a Gatekeeper:</p>
-          <p><a href="allocation/fpla-60-v1/1-case-view">FPLA-60</a> - I need to make the allocation decision</p>
-
-          <p class="govuk-body govuk-!-font-weight-bold">Scenario - LA has made an allocation proposal</p>
-          <p>As a Gatekeeper:</p>
-          <p><a href="allocation/fpla-60-v3/1-case-view">FPLA-60</a> - I need to make the allocation decision</p>
-
-          <h4 class="govuk-heading-s">Version 3</h4>
-
-          <p class="govuk-body govuk-!-font-weight-bold">If the LA has made a recommendation:</p>
-          <p>As a Gatekeeper:</p>
-          <p><a href="allocation/fpla-60-v4/1-case-view">FPLA-60</a> - I need to make the allocation decision</p>
-          <p class="govuk-body govuk-!-font-weight-bold">If there is no recommendation:</p>
-          <p>As a Gatekeeper:</p>
-          <p><a href="allocation/fpla-60-v4-2/1-case-view">FPLA-60</a> - I need to make the allocation decision</p>
-
-        </div>
-      </details>
-
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Orders
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <h4 class="govuk-heading-s">C6 and C6a</h4>
-            <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-          <p>Event to create an order</p>
-          <p>As a HMCTS Admin, Gatekeeper and Judg:</p>
-          <p><a href="c6/fpla-634-v1/1-case-view">FPLA-634</a> - I need to produce a C6 in CCD</p>
-
-          <p class="govuk-body govuk-!-font-weight-bold">Version 2</p>
-          <p>Event to create a C6, user can view the details about the hearing</p>
-          <p>As HMCTS Admin, Gatekeeper and Judg:</p>
-          <p><a href="c6/fpla-634-v2/1-case-view">FPLA-634</a> - I need to produce a C6 in CCD</p>
-
-          <p class="govuk-body govuk-!-font-weight-bold">Version 3</p>
-          <p>Event to create a C6, user can select which hearing they would like to create the c6/c6a for</p>
-          <p>As HMCTS Admin, Gatekeeper and Judg:</p>
-          <p><a href="c6/fpla-634-v2/1-case-view">FPLA-634</a> - I need to produce a C6 in CCD</p>
-
-          <h4 class="govuk-heading-s">C9</h4>
-          <p>As a Local authority:</p>
-          <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-          <p><a href="c9/fpla-559-v1/1-case-view">FPLA-559</a> - I need to enter C9 details within CCD</p>
-          <p class="govuk-body govuk-!-font-weight-bold">Version 2</p>
-          <p><a href="c9/fpla-559-v2/1-case-view">FPLA-559</a> - I need to enter C9 details within CCD</p>
-
-          <h4 class="govuk-heading-s">C2</h4>
-          <p>As HMCTS Admin, LA or Cafcass:</p>
-          <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-          <p><a href="c2/fpla-600-v1/1-case-view">FPLA-600</a> - I needto be able to upload a C2 directly to a case</p>
-
-          <h4 class="govuk-heading-s">C21</h4>
-          <p>As a Judge, Gatekeeper or Admin:</p>
-          <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-          <p class="govuk-body govuk-!-font-weight-bold">If I choose order:</p>
-          <p><a href="c21/fpla-602-v1/1-case-view">FPLA-602</a> - I needto be create court orders as a result of a C2 application</p>
-          <p class="govuk-body govuk-!-font-weight-bold">If I choose direction:</p>
-          <p><a href="c21/fpla-602-v1-1/1-case-view">FPLA-602</a> - I needto be create court orders as a result of a C2 application</p>
-
-          <p class="govuk-body govuk-!-font-weight-bold">Version 2</p>
-          <p><a href="c21/fpla-602-v2/1-case-view">FPLA-602</a> - I needto be create court orders as a result of a C2 application</p>
-
-        </div>
-      </details>
-
-
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Standard directions
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <h4 class="govuk-heading-s">Drafting standard directions</h4>
-            <p>As Gatekeeper:</p>
-            <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-
-            <p><a href="standard-directions/fpla-419-v1/1-case-view">FPLA-419</a> - I need to draft pre-populated standard Direction Online</p>
-
-            <p class="govuk-body govuk-!-font-weight-bold">Version 2</p>
-            <p><a href="standard-directions/fpla-419-v2/1-case-view">FPLA-419</a> - I need to draft pre-populated standard Direction Online</p>
-
-            <p class="govuk-body govuk-!-font-weight-bold">Version 3</p>
-            <p><a href="standard-directions/fpla-419-v3/1-case-view">FPLA-419</a> - I need to draft pre-populated standard Direction Online</p>
-
-            <p class="govuk-body govuk-!-font-weight-bold">Version 4</p>
-            <p><a href="standard-directions/fpla-419-v4/1-case-view">FPLA-419</a> - I need to draft pre-populated standard Direction Online</p>
-
-            <p class="govuk-body govuk-!-font-weight-bold">Version 4.2 - showing all parties directions with additional CCD restrictions</p>
-            <p><a href="standard-directions/fpla-419-v5/all-parties">FPLA-419</a> - all parties directions</p>
-
-            <hr>
-            <strong class="govuk-tag govuk-tag--grey">
-            Redesign
-            </strong>
-            <br><br>
-
-            <p class="govuk-body govuk-!-font-weight-bold">Version 5</p>
-
-            <p><a href="standard-directions/fpla-419-v6/1-case-view">FPLA-419</a> - I need to draft pre-populated standard Direction Online</p>
-
-            <p class="govuk-body govuk-!-font-weight-bold">Version 6 (wild ideas)</p>
-
-            <p><a href="standard-directions/wild-ideas/1-case-view">FPLA-419</a> - I need to draft pre-populated standard Direction Online</p>
-
-            <hr>
-
-            <h4 class="govuk-heading-s">Issuing standard directions</h4>
-              <p>As Gatekeeper:</p>
-              <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-
-              <p><a href="standard-directions/fpla-69-v1/1-case-view">FPLA-69</a> - I need to be able to issue standard directions</p>
-
-              <h4 class="govuk-heading-s">Comply with standard directions</h4>
-                <p>As Local authority:</p>
-                <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-
-              <p><a href="standard-directions/fpla-32-v1/1-case-view">FPLA-32</a> - I need to comply with a single direction in an order</p>
-
-              <p class="govuk-body govuk-!-font-weight-bold">Version 2</p>
-
-              <p><a href="standard-directions/fpla-32-v2/1-case-view">FPLA-32</a> - I need to comply with a single direction in an order</p>
-
-              <p class="govuk-body govuk-!-font-weight-bold">Version 3</p>
-
-              <p><a href="standard-directions/fpla-32-v3/1-case-view">FPLA-32</a> - I need to comply with a single direction in an order</p>
-
-              <h4 class="govuk-heading-s">Amend served standard directions</h4>
-                <p>As Gatekeeper:</p>
-                <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-
-                <p><a href="standard-directions/fpla-431-v1/1-case-view">FPLA-431</a> - I need to be able to amend served standard directions</p>
-
-            </div>
-          </details>
-
-
-          <details class="govuk-details" data-module="govuk-details">
-            <summary class="govuk-details__summary">
-              <span class="govuk-details__summary-text">
-                Case management order
-              </span>
-            </summary>
-            <div class="govuk-details__text">
-              <h4 class="govuk-heading-s">Drafting the CMO</h4>
-                <p>As Local Authority:</p>
-                <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-
-                <p><a href="cmo/fpla-886-v1/1-case-view">FPLA-886</a> - I need to draft the case managment order online</p>
-
-                <p class="govuk-body govuk-!-font-weight-bold">Version 2</p>
-
-                <p><a href="cmo/fpla-886-v2/1-case-view">FPLA-886</a> - I need to draft the case managment order online</p>
-
-                <p>As Judge:</p>
-                <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-                <p><a href="cmo/fpla-886-v1/declaration-judge">FPLA-24</a> - I need to action the CMO</p>
-
-                <h4 class="govuk-heading-s">Amending the CMO</h4>
-
-                <p>As Local Authority:</p>
-                <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-                <p>Following the same journey as drafting. However we show the case status after the hearings page.</p>
-
-                <p><a href="cmo/fpla-800-v1/changes-needed">FPLA-800</a> - I need amend the rejected CMO (Changes are required)</p>
-                <p><a href="cmo/fpla-800-v1/in-review">FPLA-800</a> - I need amend the rejected CMO (In review)</p>
-
-
-                <h4 class="govuk-heading-s">Comply with case management order</h4>
-                  <p>As an HMCTS admin:</p>
-                  <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-
-                <p><a href="cmo/fpla-894-v1/1-case-view">FPLA-894</a> - I need to be able to respond to directions on other parties behalf</p>
-
-              </div>
-            </details>
-
-
-            <details class="govuk-details" data-module="govuk-details">
-              <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                  Access control
-                </span>
-              </summary>
-              <div class="govuk-details__text">
-                <h4 class="govuk-heading-s">Adding users to a case</h4>
-                  <p>As an LA and HMCTS Admin:</p>
-                  <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-
-                  <p><a href="access/fpla-911-v1/1-case-view">FPLA-911</a> - I need to add users to the case</p>
-
-                </div>
-              </details>
-
-              <details class="govuk-details" data-module="govuk-details">
-                <summary class="govuk-details__summary">
-                  <span class="govuk-details__summary-text">
-                    Placement
-                  </span>
-                </summary>
-                <div class="govuk-details__text">
-                  <h4 class="govuk-heading-s">Upload placement application</h4>
-                  <p>As a Local Authority Representative or HMCTS Admin:</p>
-                  <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-                  <p><a href="placement/fpla-820-v1/1-case-view">FPLA-820</a> - I needto upload an A50 (placement application) to a case</p>
-
-                  <h4 class="govuk-heading-s">Upload placement order</h4>
-                  <p>As an HMCTS Admin or Judge:</p>
-                  <p class="govuk-body govuk-!-font-weight-bold">Version 1</p>
-                  <p><a href="placement/fpla-941-v1/1-case-view">FPLA-820</a> - I needto upload a placement order to a case</p>
-
-
-                  </div>
-                </details>
+          </div>
+        </details>
 
 
 
-              <h2 class="govuk-heading-l">
-                Adoption
-              </h2>
 
-              <p class="govuk-body"><a href="adoption/check/1-case-view" style="font-size: 19px !important;">Checked by the court</a></p>
-              <p class="govuk-body"><a href="adoption/link-case/1-case-view" style="font-size: 19px !important;">Link to other case</a></p>
-              <p class="govuk-body"><a href="adoption/link-case-v2/1-case-view" style="font-size: 19px !important;">Link to other case - if we need to be able to remove the linked case</a></p>
-              <p class="govuk-body"><a href="adoption/allocation/1-case-view" style="font-size: 19px !important;">Make allocation decision</a></p>
-              <p class="govuk-body"><a href="adoption/directions/1-case-view" style="font-size: 19px !important;">Generate initial directions</a></p>
+      <hr><br>
+
+      <h4 class="govuk-heading-s">History</h4>
+
+      <p><a href="index-old">View old prototypes</a></p>
+
 
     </div>
   </div>
