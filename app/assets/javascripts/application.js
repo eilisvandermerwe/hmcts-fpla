@@ -9,6 +9,9 @@ $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 });
 
+
+
+
 // $("a.govuk-back-link").click(function() {
 //     return false;
 // });
@@ -185,24 +188,53 @@ $(document).ready(function() {
 });
 
 
+function showDirectionOne() {
+   document.getElementById('direction-1').style.display = "block";
+}
+
 function hideDirectionOne() {
    document.getElementById('direction-1').style.display = "none";
 }
 
+function showDirectionTwo() {
+   document.getElementById('direction-2').style.display = "block";
+   document.getElementById('button-1').style.display = "none";
+}
+
 function hideDirectionTwo() {
    document.getElementById('direction-2').style.display = "none";
+   document.getElementById('button-1').style.display = "block";
+}
+
+function showDirectionThree() {
+   document.getElementById('direction-3').style.display = "block";
+   document.getElementById('button-2').style.display = "none";
 }
 
 function hideDirectionThree() {
    document.getElementById('direction-3').style.display = "none";
+   document.getElementById('button-2').style.display = "block";
+
+}
+
+function showDirectionFour() {
+   document.getElementById('direction-4').style.display = "block";
+   document.getElementById('button-3').style.display = "none";
 }
 
 function hideDirectionFour() {
    document.getElementById('direction-4').style.display = "none";
+   document.getElementById('button-3').style.display = "block";
+}
+
+function showDirectionFive() {
+   document.getElementById('direction-5').style.display = "block";
+   document.getElementById('button-4').style.display = "none";
 }
 
 function hideDirectionFive() {
    document.getElementById('direction-5').style.display = "none";
+   document.getElementById('button-4').style.display = "block";
 }
 
 function hideDirectionSix() {
