@@ -10,6 +10,22 @@ $(document).ready(function () {
 });
 
 
+function Clone() {
+
+
+  var clone = document.getElementById('thediv').cloneNode(true); // "deep" clone
+  document.getElementById("answer_list").appendChild(clone);
+}
+
+function Delete(button) {
+  var parent = button.parentNode;
+  var grand_father = parent.parentNode;
+  grand_father.removeChild(parent);
+};
+
+
+
+
 
 
 // $("a.govuk-back-link").click(function() {

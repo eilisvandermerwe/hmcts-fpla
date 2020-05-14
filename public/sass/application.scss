@@ -67,6 +67,9 @@ $govuk-global-styles: true;
   .govuk-hint {
     font-size: 16px;
   }
+  .govuk-date-input__item {
+    margin-right: 10px !important;
+  }
 }
 
 .govuk-width-container {
