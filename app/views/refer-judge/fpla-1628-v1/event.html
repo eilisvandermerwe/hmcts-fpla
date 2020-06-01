@@ -1,0 +1,97 @@
+
+
+{% extends "layout.html" %}
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+
+              <h1 class="govuk-heading-xl">Review referral</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+              <h4 class="govuk-heading-s">Request to check or approve </h4>
+              <p>[show what the admin wrote in the refer request]</p>
+
+              <div class="govuk-form-group">
+              <p>Approve or reject application or order</p>
+
+              <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                <!-- Yes -->
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+                  <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                    Approve
+                  </label>
+                </div>
+
+                <!-- No -->
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                    Reject
+                  </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-hearing" >
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                    Schedule hearing or meeting to discuss
+                  </label>
+                </div>
+
+                <!-- Contidtional yes -->
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="serve-application-no">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="serve-application-give-details">
+                      Add why its been rejected
+                    </label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="serve-application-give-details">
+                Add comments (Optional)
+              </label>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
+
+
+
+
+            <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+            <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+            <p><a href="1-case-view">Cancel</a></p>
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

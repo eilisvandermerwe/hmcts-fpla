@@ -1,0 +1,56 @@
+
+{% extends "layout.html" %}
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-xl">Review referral</h1>
+            <br>
+            <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="event-name">
+                Event summary (optional)
+              </label>
+              <span id="more-detail-hint" class="govuk-hint">
+                A few words describing the purpose of the event.
+              </span>
+              <input class="govuk-input" id="event-name" name="event-name" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="more-detail">
+                Event description (optional)
+              </label>
+
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
+
+
+            <button class="govuk-button govuk-button--secondary">Previous</button>
+            <a href="2-case-view" class="govuk-button" style="font-size: 19px !important;">Save and continue</a>
+
+            <p><a href="1-case-view">Cancel</a></p>
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

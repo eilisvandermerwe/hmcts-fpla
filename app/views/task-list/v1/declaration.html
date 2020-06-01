@@ -1,0 +1,80 @@
+
+{% extends "layout.html" %}
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-xl">Draft CMO</h1>
+            <br>
+            <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+            <h3 class="govuk-heading-m">Case management order</h3>
+
+            <h3 class="govuk-heading-s">Check the order</h3>
+
+            <p><a href="">draft-case-management-order.pdf</a></p>
+
+            <p>Is this ready to be sent to the judge? </p>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+              <!-- Yes -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes">
+                <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                  Yes, send this to the judge
+                </label>
+              </div>
+
+              <!-- No -->
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                  No, parties need to review it
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="serve-application-no" >
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                  No, I need to make changes
+                </label>
+              </div>
+
+              <!-- Contidtional yes -->
+
+
+
+            </div>
+
+            <br><br>
+
+            <button class="govuk-button govuk-button--secondary">Previous</button>
+            <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+            <p><a href="1-case-view">Cancel</a></p>
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
