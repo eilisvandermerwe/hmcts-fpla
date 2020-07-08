@@ -1,0 +1,63 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container documents">
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-one-half">
+
+          <h1 class="govuk-heading-xl">Upload documents</h1>
+          <br>
+          <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+          <br>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                <h1 class="govuk-fieldset__heading">
+                  Do you want to upload another type of document?
+                </h1>
+              </legend>
+              <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="changed-name">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+          <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+          <p><a href="1-case-view">Cancel</a></p>
+
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
+
+{% endblock %}

@@ -21,8 +21,7 @@
 
 
         <h2 class="govuk-heading-m" style="font-weight: normal;">
-          FamilyMan ID: SX124C9000
-          <br>CCD ID: #1545-3874-6217-4575</h2>
+          CCD ID: #1545-3874-6217-4575</h2>
       </div>
 
       <div class="govuk-grid-column-one-third">
@@ -90,7 +89,7 @@
 
             <h2 class="govuk-heading-m">Application details</h2>
 
-            <p><a href="">View draft application</a></p>
+            <p><a href="draft-pdf">Download draft application PDF</a></p>
 
             <h3 class="govuk-heading-s">Orders and directions sought</h2>
 
@@ -829,14 +828,25 @@
                   </li>
                   <li class="app-task-list__item">
                     <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
-                      Hearing needed
+                      Hearing urgency
                     </a>
                     <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="submit-pay-status" style="color:#144e81;background:#d2e2f1; float:right;">In progress</strong>
 
                   </li>
+
+
+                </ul>
+              </li>
+
+              <li>
+                <h2 class="app-task-list__section">
+                  <span class="app-task-list__section-number"></span> Add grounds for the application
+                </h2>
+                <ul class="app-task-list__items">
+
                   <li class="app-task-list__item">
                     <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
-                      Grounds for the application
+                      Threshold criteria
                     </a>
                     <!-- <strong class="govuk-tag app-task-list__task-completed" id="read-declaration-completed">Completed</strong> -->
                   </li>
@@ -851,37 +861,28 @@
                       Factors affecting parenting
                     </a>
                   </li>
-                  <li class="app-task-list__item">
-                    <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
-                      Supporting documents
-                    </a>
-                    <!-- <strong class="govuk-tag app-task-list__task-completed" id="read-declaration-completed">Completed</strong> -->
-                  </li>
-                  <h3 class="app-task-list__section" style="font-size:19px;">
-                    Some sort of optional title
-                  </h3>
-                  <div class="govuk-inset-text" style="
-                        margin-bottom: 10px;
-                        margin-top: 10px;
-                        background-color: #f9f9f9;
-                    ">
-                    Only complete if relevant
-                  </div>
-                  <li class="app-task-list__item">
-                    <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
-                      Other proceedings for the child
-                    </a>
-                  </li>
-                  <li class="app-task-list__item">
-                    <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
-                      International element
-                    </a>
-                    <!-- <strong class="govuk-tag app-task-list__task-completed" id="read-declaration-completed">Completed</strong> -->
-                  </li>
+
 
                 </ul>
               </li>
 
+              <li>
+                <h2 class="app-task-list__section">
+                  <span class="app-task-list__section-number"></span>Add supporting documents
+                  <span id="changed-name-hint" class="govuk-hint" style="margin-bottom:unset; padding-top:10px;font-size: 16px;">
+                    For example, the social work chronology and care plan
+                  </span>
+                </h2>
+                <ul class="app-task-list__items">
+
+                  <li class="app-task-list__item">
+                    <a class="app-task-list__task-name" href="upload-documents" aria-describedby="read-declaration-completed">
+                      Upload documents
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
 
               <li>
                 <h2 class="app-task-list__section">
@@ -890,7 +891,7 @@
                 <ul class="app-task-list__items">
                   <li class="app-task-list__item">
                     <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
-                      Local authority's details
+                      Your organisation's details
                     </a>
                     <strong class="govuk-tag app-task-list__task-completed" id="read-declaration-completed">Completed</strong>
                   </li>
@@ -902,37 +903,16 @@
                   </li>
                   <li class="app-task-list__item">
                     <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
-                      Respondent's details
+                      Respondents' details
                     </a>
                     <strong class="govuk-tag app-task-list__task-completed" id="read-declaration-completed">Completed</strong>
-                  </li>
-
-                  <li class="app-task-list__item">
-                    <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
-                      Other people in the case
-                    </a>
-                    <!-- <strong class="govuk-tag app-task-list__task-completed" id="read-declaration-completed">Completed</strong> -->
                   </li>
 
                 </ul>
               </li>
 
 
-              <!-- <li>
-                <h2 class="app-task-list__section">
-                  <span class="app-task-list__section-number"></span>Upload documents
-                </h2>
-                <ul class="app-task-list__items">
 
-                  <li class="app-task-list__item">
-                    <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
-                      Documents
-                    </a>
-                    <strong class="govuk-tag app-task-list__task-completed" id="read-declaration-completed">Completed</strong>
-                  </li>
-
-                </ul>
-              </li> -->
 
               <li>
                 <h2 class="app-task-list__section">
@@ -944,17 +924,14 @@
                       Allocation proposal
                     </a>
                   </li>
-                  <li class="app-task-list__item">
-                    <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
-                      Facilities or services needed in court
-                    </a>
-                  </li>
+
                 </ul>
               </li>
 
+
               <li>
                 <h2 class="app-task-list__section">
-                  <span class="app-task-list__section-number"></span> Some sort of optional title
+                  <span class="app-task-list__section-number"></span> Add additional information
                 </h2>
                 <div class="govuk-inset-text" style="
                       margin-bottom: 20px;
