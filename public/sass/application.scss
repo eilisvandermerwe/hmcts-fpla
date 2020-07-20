@@ -17,6 +17,10 @@ $govuk-global-styles: true;
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+.hide {
+  display: none;
+}
+
 .custom-checkbox-table {
     dd, dt, a, p, li {
       font-size: 19px !important;
@@ -301,9 +305,12 @@ a, p, caption, td, li, label, select, textarea, .govuk-inset-text, .govuk-file-u
 // Documents
 
 .documents {
+  .upload-file {
+    height: 10px !important;
+  }
   .govuk-file-upload {
     font-size: 16px;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 5px;
     width: 98%;
   }

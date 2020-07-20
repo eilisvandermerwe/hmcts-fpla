@@ -1,0 +1,72 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container documents">
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-one-half">
+
+          <h1 class="govuk-heading-xl">Upload documents</h1>
+          <br>
+          <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+          <br>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                <h1 class="govuk-fieldset__heading">
+                  What type of document are you uploading?
+                </h1>
+              </legend>
+              <span id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </span>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Further evidence documents
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Correspondence
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    C2 supporting documents
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+          <a href="event-7" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+          <p><a href="1-case-view">Cancel</a></p>
+
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
+
+{% endblock %}
