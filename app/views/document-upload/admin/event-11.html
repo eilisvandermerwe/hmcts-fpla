@@ -19,6 +19,13 @@ GOV.UK Prototype Kit
           <br>
           <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
 
+          <h4 class="govuk-heading-s">Hearings</h4>
+
+          <p>Hearing 1: Case management hearing 14 May 2020</p>
+          <p>Hearing 2: Further case management hearing 18 May 2020</p>
+          <p>Hearing 3: Issue resolution hearing 21 May 2020</p>
+          <p>Hearing 4: Final  hearing 23 May 2020</p>
+
           <h3 class="govuk-heading-m">Upload further evidence documents</h3>
 
 
@@ -67,12 +74,10 @@ GOV.UK Prototype Kit
                     <label class="govuk-label" for="sort">
                       Which hearing?
                     </label>
-                    <select class="govuk-select" id="sort" name="sort">
-                      <option value="published" selected>Select</option>
-                      <option value="updated">Hearing 1: case management hearing 10 May 2020</option>
-                      <option value="views">Hearing 2: case management hearing 15 May 2020</option>
-                      <option value="comments">Hearing 3: Final hearing 23 May 2020</option>
-                    </select>
+                    <span id="changed-name-hint" class="govuk-hint">
+                      For example, 'Hearing 1'.
+                    </span>
+                    <input class="govuk-input" id="event-name" name="event-name" type="text">
                   </div>
                 </div>
 
