@@ -1,0 +1,189 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container documents">
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-one-half">
+
+          <h1 class="govuk-heading-xl">Upload documents</h1>
+          <br>
+          <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+          <br>
+
+          <!-- <label for="myCheck">Checkbox:</label>
+<input type="checkbox" id="myCheck" onclick="myFunction()">
+
+<p id="text" style="display:none">Checkbox is CHECKED!</p> -->
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                <h1 class="govuk-fieldset__heading">
+                  What type of document are you uploading?
+                </h1>
+              </legend>
+              <span id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </span>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" name="waste" type="checkbox" value="carcasses" id="myCheck" onclick="myFunction()">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Further evidence documents
+                  </label>
+                </div>
+
+                <!-- <div class="govuk-form-group hide govuk-inset-text" id="div1">
+                  <fieldset class="govuk-fieldset">
+                    <label class="govuk-label" for="sort">
+                      Does the document relate to a hearing?
+                    </label>
+                    <div class="govuk-radios govuk-radios--inline">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes" onclick="show2();">
+                        <label class="govuk-label govuk-radios__label" for="changed-name">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no" onclick="show1();">
+                        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div> -->
+
+
+
+
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Correspondence
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" name="waste" type="checkbox" value="farm" id="myCheck2" onclick="myFunction2()">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    C2 supporting documents
+                  </label>
+                </div>
+
+
+              </div>
+            </fieldset>
+          </div>
+
+          <div id="text" style="display:none" class="govuk-form-group">
+
+            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+
+              <h3 class="govuk-heading-s">Further evidence documents</h3>
+
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <label class="govuk-label" for="sort">
+                    Does the evidence document relate to a hearing?
+                  </label>
+                  <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes" onclick="show2();">
+                      <label class="govuk-label govuk-radios__label" for="changed-name">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no" onclick="show1();">
+                      <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div id="div1" class="hide govuk-checkboxes__conditional">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Which hearing?
+                  </label>
+                  <select class="govuk-select" id="sort" name="sort">
+                    <option value="published" selected>Select</option>
+                    <option value="updated">Hearing 1: case management hearing 10 May 2020</option>
+                    <option value="views">Hearing 2: case management hearing 15 May 2020</option>
+                    <option value="comments">Hearing 3: Final hearing 23 May 2020</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- <div class="govuk-form-group">
+                <label class="govuk-label" for="sort">
+                  Choose the relevant hearing for this document
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                  <option value="published" selected>Select</option>
+                  <option value="updated">Hearing 1: case management hearing 10 May 2020</option>
+                  <option value="views">Hearing 2: case management hearing 15 May 2020</option>
+                  <option value="comments">Hearing 3: Final hearing 23 May 2020</option>
+                  <option value="comments">None</option>
+                </select>
+              </div> -->
+
+            </div>
+          </div>
+
+          <div id="text2" style="display:none" class="govuk-form-group">
+
+
+
+            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+              <h3 class="govuk-heading-s">C2 supporting documents</h3>
+              
+              <div class="govuk-form-group">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Choose the relevant C2 application for this document
+                  </label>
+                  <select class="govuk-select" id="sort" name="sort">
+                    <option value="published" selected>Select</option>
+                    <option value="updated">Application 1: 15 July 2020</option>
+                    <option value="views">Application 1: 20 July 2020</option>
+                    <option value="comments">Application 1: 23 July 2020</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+          <a href="event-13" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+          <p><a href="1-case-view">Cancel</a></p>
+
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
+
+{% endblock %}
