@@ -1,0 +1,145 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container documents">
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-one-half">
+
+          <h1 class="govuk-heading-xl">Upload social work documents</h1>
+          <br>
+          <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+          <br>
+
+          <p>Select which social work documents you're uploading, either within the SWET or as separate documents.</p>
+
+
+          <div class="govuk-form-group">
+            <!-- <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                <h4 class="govuk-fieldset__heading">
+                   Documents included in the SWET
+                </h4>
+              </legend>
+              <span id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </span> -->
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Social work chronology
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Social work statement and genogram
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Social work assessment
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Care plan for each child
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Child impact analysis on each individual child
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Threshold document
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Checklist document
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Analysis of parenting capability
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Analysis of wider family capability
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Views and issues raised by other parties
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" name="waste" type="checkbox" value="farm" id="myCheck" onclick="myFunction()">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Other document type
+                  </label>
+                </div>
+
+                <div id="text" style="display:none" class="govuk-form-group">
+
+                  <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="full-name">
+                        What other social work documents are you including?
+                      </label>
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+
+
+              </div>
+            </fieldset>
+          </div>
+
+            <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+            <a href="upload-documents-7" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+            <p><a href="3-case-view">Cancel</a></p>
+
+
+
+
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,115 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container documents">
+  <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-one-half">
+
+          <h1 class="govuk-heading-xl">Upload social work documents</h1>
+          <br>
+          <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+          <br>
+
+          <p>Give each document a meaningful name, for example, 'SWET' or 'Threshold'.</p>
+
+          <form method="post" class="form">
+
+            <div class="govuk-inset-text">
+
+              <h4 class="govuk-heading-s">Upload documents</h4>
+
+
+
+              <input type="button" class="govuk-button add" name="answer" value="Add new" onclick="showDirectionOne()" />
+
+
+              <!-- First direction   -->
+
+
+
+              <div id="direction-1"  style="display:none;" class="answer_list" >
+                <br>
+
+                <div class="answer_list" >
+                  <h4 class="govuk-heading-s inline-block">Upload documents</h4>
+                  <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideDirectionOne()" />
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label upload-file" for="file-upload-1" style="height: 20px !important;">
+                      Document name
+
+                    </label>
+                    <span id="changed-name-hint" class="govuk-hint">
+                      Use a meaningful name. For example, Care plan
+                    </span>
+                    <input class="govuk-input" id="event-name" name="event-name" type="text">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label upload-file" for="file-upload-1" style="height: 20px !important;">
+                      Upload a file
+                      <br><br>
+                    </label>
+                    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                  </div>
+
+
+
+                </div>
+
+                <br>
+
+                <input type="button" id="button-1" class="govuk-button" name="answer" value="Add new" onclick="showDirectionTwo()" />
+
+              </div>
+
+              <!-- end of doc-upload -->
+
+            </div>
+
+            <!-- end of inset text -->
+
+
+
+            <div class="govuk-form-group">
+
+              <h4 class="govuk-heading-s">Documents to follow</h4>
+              <span id="changed-name-hint" class="govuk-hint">
+                List the documents you still need to send and when you think you'll send them.
+              </span>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
+
+
+
+
+            <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+            <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+            <p><a href="3-case-view">Cancel</a></p>
+
+
+          </form>
+
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
+
+{% endblock %}
