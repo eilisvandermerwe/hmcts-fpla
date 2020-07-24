@@ -113,25 +113,46 @@ GOV.UK Prototype Kit
 
             <!-- end of inset text -->
 
-
             <div class="govuk-form-group">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                <h1 class="govuk-fieldset__heading">
-                  Documents to follow
-                </h1>
-              </legend>
-              <span id="changed-name-hint" class="govuk-hint">
-                List the documents you still need to send and when you think you'll send them.
-              </span>
-              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+              <fieldset class="govuk-fieldset">
+                <label class="govuk-label" for="sort">
+                  Do you have any documents to follow?
+                </label>
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes" onclick="show2();">
+                    <label class="govuk-label govuk-radios__label" for="changed-name">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no" onclick="show1();">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
             </div>
 
 
 
-            <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
-            <a href="" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+            <div id="div1" class="hide govuk-radios__conditional">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="sort">
+                List the documents you still need to send and when you think you'll send them.
+              </label>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
+            </div>
 
-            <p><a href="1-case-view">Cancel</a></p>
+
+
+
+            <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+            <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+            <p><a href="3-case-view">Cancel</a></p>
 
 
           </form>
